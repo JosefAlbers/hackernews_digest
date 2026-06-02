@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Show HN Digest</title>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<style>
+body {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #2563eb;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.nav {
+    margin-bottom: 2rem;
+}
+
+.post-list {
+    list-style: none;
+    padding: 0;
+}
+
+.post-list li {
+    margin: 12px 0;
+}
+
+.meta {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.error {
+    color: red;
+}
+
+hr {
+    margin: 2rem 0;
+}
+
+pre {
+    overflow-x: auto;
+}
+</style>
+</head>
+<body>
+
+<div id="app">Loading...</div>
+
+<script>
+
+async function fetchJson(url) {
+    const r = await fetch(url);
+
+    if (!r.ok) {
+        throw new Error(`${url}: ${r.status}`);
+    }
+
+    return await r.json();
+}
+
+function params() {
+    return new URLSearchParams(window.location.search);
+}
+
+function escapeHtml(str) {
+    return str
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;");
+}
+
+function render(html) {
+    document.getElementById("app").innerHTML = html;
+}
+
+async function showPast() {
+    const dates = await fetchJson("data/dates.json");
+
+    render(`
+        <h1>Available Dates</h1>
+
+        <div class="nav">
+            <a href="./">Home</a>
+        </div>
+
+        <ul class="post-list">
+            ${dates.map(date => `
+                <li>
+                    <a href="?date=${date}">
+                        ${date}
+                    </a>
+                </li>
+            `).join("")}
+        </ul>
+    `);
+}
+
+async function showDate(date) {
+    const posts = await fetchJson(
+        `data/posts_${date}.json`
+    );
+
+    render(`
+        <h1>${date}</h1>
+
+        <div class="nav">
+            <a href="./">Home</a>
+            ·
+            <a href="?view=past">Past</a>
+        </div>
+
+        <ul class="post-list">
+            ${posts.map(post => `
+                <li>
+                    <a href="?date=${date}&id=${post.item_id}">
+                        ${escapeHtml(post.title)}
+                    </a>
+                </li>
+            `).join("")}
+        </ul>
+    `);
+}
+
+async function showPost(date, id) {
+    const posts = await fetchJson(
+        `data/posts_${date}.json`
+    );
+
+    const post = posts.find(
+        p => String(p.item_id) === String(id)
+    );
+
+    if (!post) {
+        render(`
+            <h1>Post Not Found</h1>
+            <a href="?date=${date}">
+                Back
+            </a>
+        `);
+        return;
+    }
+
+    render(`
+        <div class="nav">
+            <a href="?date=${date}">
+                ← Back
+            </a>
+        </div>
+
+        <h1>${escapeHtml(post.title)}</h1>
+
+        <div class="meta">
+            <a href="${post.project_url}"
+               target="_blank">
+               Project
+            </a>
+
+            &nbsp;·&nbsp;
+
+            <a href="${post.hn_url}"
+               target="_blank">
+               Hacker News
+            </a>
+        </div>
+
+        <hr>
+
+        <div>
+            ${marked.parse(post.content)}
+        </div>
+    `);
+}
+
+async function showLatest() {
+    const dates = await fetchJson(
+        "data/dates.json"
+    );
+
+    if (dates.length === 0) {
+        render("<h1>No data yet</h1>");
+        return;
+    }
+
+    await showDate(dates[0]);
+}
+
+async function main() {
+    try {
+        const p = params();
+
+        const view = p.get("view");
+        const date = p.get("date");
+        const id = p.get("id");
+
+        if (view === "past") {
+            await showPast();
+            return;
+        }
+
+        if (date && id) {
+            await showPost(date, id);
+            return;
+        }
+
+        if (date) {
+            await showDate(date);
+            return;
+        }
+
+        await showLatest();
+
+    } catch (err) {
+        console.error(err);
+
+        render(`
+            <h1>Error</h1>
+
+            <div class="error">
+                ${escapeHtml(String(err))}
+            </div>
+        `);
+    }
+}
+
+main();
+
+</script>
+
+</body>
+</html>
