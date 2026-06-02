@@ -105,4 +105,4 @@ The website is automatically served through GitHub Pages.
 
 Reading Hacker News comments is often more valuable than reading the article itself, but following every discussion is impossible.
 
-hn2mc turns long comment threads into concise daily digests that can be browsed later.
+`hackernews digest` turns long comment threads into concise daily digests that can be browsed later.
