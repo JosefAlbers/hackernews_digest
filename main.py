@@ -33,7 +33,7 @@ def extract_show_hn_from_soup(soup, show_hn):
     return (show_hn_ids, show_hn_titles)
 
 
-def get_hn_post_ids_for_date(date_str, max_pages=1, show_hn=False):
+def get_hn_post_ids_for_date(date_str, max_pages=1, show_hn=True): # don't want to overload free tier gemini
     base_url = "https://news.ycombinator.com/"
     current_url = f"{base_url}front?day={date_str}"
     headers = {

@@ -1,6 +1,6 @@
-# hn2mc
+# hackernews digest
 
-A static Hacker News digest generated from discussion threads and hosted on [GitHub Pages](https://josefalbers.github.io/hn2mc).
+A static Hacker News digest generated from discussion threads and hosted on [GitHub Pages](https://josefalbers.github.io/hackernews_digest).
 
 ## What it does
 
