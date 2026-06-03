@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "item_id": 48356946,
+    "date": "2026-06-01",
+    "title": "Show HN: A CSS 3D Engine (no WebGL)",
+    "project_url": "https://github.com/LayoutitStudio/polycss",
+    "hn_url": "https://news.ycombinator.com/item?id=48356946",
+    "content": "This thread discusses **PolyCSS**, a CSS 3D engine that renders 3D models using DOM elements and CSS transforms rather than WebGL.\n\n**Key points of the discussion include:**\n\n*   **The \"Why\" vs. \"Why Not\":** Critics argue that PolyCSS is significantly less performant than WebGL for rendering 3D objects, comparing it to \"rendering Doom in Excel cells.\" The creator explains that the goal is not to replace high-performance engines like Three.js, but to provide a tool for low-poly or voxel-based scenes where easy integration with standard HTML/CSS layout, styling, and DOM events is preferred.\n*   **The Advantage of DOM-based 3D:** A primary benefit cited is the simplicity of interaction; because each polygon is a DOM node, developers can use standard event listeners (like `onClick`) directly on 3D elements, eliminating the need for complex raycasting required by WebGL.\n*   **Potential Use Cases:** Participants suggest that this approach could be useful for projects where tight DOM integration is required, or for scenarios where users have disabled JavaScript (as static 3D animations could theoretically be rendered via pure CSS).\n*   **Performance Reality:** Even supporters acknowledge the limitations. The engine struggles with high polygon counts, and users noted that even simple models can drop below 60fps. Most agree that while the project is a fascinating technical experiment or \"cool trick,\" it is not intended for production-grade, high-fidelity 3D applications.\n*   **Context:** The thread includes mentions of similar projects, such as *CSS Doom*, *Minecraft in CSS*, and the 3D maps in *corru.observer*, highlighting a niche community interest in pushing CSS transform capabilities to their absolute limits."
+  },
+  {
+    "item_id": 48338145,
+    "date": "2026-06-01",
+    "title": "Show HN: A free Linux adaptation of NETworkManager by BornToBeRoot",
+    "project_url": "https://github.com/thongor77/nmlinux",
+    "hn_url": "https://news.ycombinator.com/item?id=48338145",
+    "content": "The thread discusses the release of **NMLinux**, a new GUI-based network diagnostics tool for Linux. Created by user *thongor77*, the tool is a Linux adaptation of the Windows utility \"NETworkManager\" (by BornToBeRoot) and is built using Python 3 and PySide6 (Qt6).\n\n**Key points:**\n* **Functionality:** It provides 23 tools in one interface, including IP scanning, SSH/VNC/RDP, Traceroute, MTR, Nmap, and firewall management.\n* **Clarification:** The creator clarified that \"NMLinux\" is not related to the standard Linux *NetworkManager* daemon.\n* **Reception:** The project received positive feedback from an Arch Linux user for its availability on the AUR, while another user expressed nostalgia for earlier Python-based network tools like \"WiFi Radar.\""
+  }
+]

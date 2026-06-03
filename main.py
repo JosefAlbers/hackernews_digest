@@ -1,4 +1,5 @@
 import asyncio
+import time
 import html
 import json
 import re
@@ -42,16 +43,38 @@ def get_hn_post_ids_for_date(date_str, max_pages=2, show_hn=True): # don't want 
     all_show_hn_ids = []
     all_show_hn_titles = []
     pages_crawled = 0
+    session = requests.Session()
+    session.headers.update(headers)
     while current_url and pages_crawled < max_pages:
         print(f"Fetching: {current_url}")
         try:
-            response = requests.get(current_url, headers=headers)
-            response.raise_for_status()
+            # response = requests.get(current_url, headers=headers)
+            for attempt in range(5):
+                response = session.get(current_url, timeout=30)
+
+                if response.status_code != 429:
+                    response.raise_for_status()
+                    break
+
+                retry_after = response.headers.get("Retry-After")
+                sleep_time = (
+                    int(retry_after)
+                    if retry_after
+                    else min(60, 2 ** (attempt+1))
+                )
+
+                print(f"429 received, sleeping {sleep_time}s")
+                time.sleep(sleep_time)
+            else:
+                raise requests.exceptions.HTTPError(
+                    "Still receiving 429 after 5 retries"
+                )
             soup = BeautifulSoup(response.text, "html.parser")
             page_ids, page_titles = extract_show_hn_from_soup(soup, show_hn=show_hn)
             all_show_hn_ids.extend(page_ids)
             all_show_hn_titles.extend(page_titles)
             pages_crawled += 1
+            time.sleep(1)
             more_link_element = soup.find("a", class_="morelink")
             if more_link_element and max_pages > pages_crawled:
                 href = more_link_element.get("href")
@@ -76,6 +99,7 @@ def clean_text(text: str) -> str:
 
 
 def fetch_item(item_id: int, session: requests.Session) -> dict:
+    time.sleep(0.05)
     base_url = "https://hacker-news.firebaseio.com/v0/item/{}.json"
     resp = session.get(base_url.format(item_id))
     resp.raise_for_status()
@@ -148,7 +172,9 @@ async def summarize(pp):
         base_url = "https://generativelanguage.googleapis.com", 
         model = "gemini-3.1-flash-lite",
     )
+    print(pp)
     result = await agent.run(pp)
+    print(result)
     result = "\n".join(
         [i.get("text", "") for i in result["content"] if i.get("type") == "text"]
     )
@@ -171,9 +197,9 @@ def main(target_date):
     outdir = Path("data")
     outdir.mkdir(exist_ok=True)
     outfile = outdir / f"posts_{target_date}.json"
-    if outfile.exists():
-        print(f"{outfile} already exists")
-        return
+    # if outfile.exists():
+    #     print(f"{outfile} already exists")
+    #     return
     kb = KB(db_path=f"{target_date}.json")
     lod = []
     for item_id in get_hn_post_ids_for_date(target_date):
