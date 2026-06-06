@@ -14,6 +14,8 @@ from bs4 import BeautifulSoup
 
 from mlx_code.mcb import KB
 from mlx_code.repl import Agent
+from translate import translate_all_languages
+
 
 def extract_show_hn_from_soup(soup, show_hn):
     show_hn_ids = []
@@ -68,6 +70,7 @@ def get_hn_post_ids_for_date(date_str: str, show_hn: bool = True, max_pages: int
     ]
     print(f"Got {len(hits)} front page stories, {len(all_ids)} Show HN")
     return all_ids
+
 
 def clean_text(text: str) -> str:
     if not text:
@@ -143,16 +146,14 @@ def get_hackernews_comments(url: str | int) -> List[Dict]:
     return (result, title, url_str)
 
 
-
-
 async def summarize(pp):
     agent = Agent(
         system='Summarize the following thread.',
-        tool_names=[], 
-        api = 'gemini', 
-        api_key = os.environ.get("GEMINI_API_KEY"), 
-        base_url = "https://generativelanguage.googleapis.com", 
-        model = "gemini-3.1-flash-lite",
+        tool_names=[],
+        api='gemini',
+        api_key=os.environ.get("GEMINI_API_KEY"),
+        base_url="https://generativelanguage.googleapis.com",
+        model="gemini-3.1-flash-lite",
     )
     print(pp)
     result = await agent.run(pp)
@@ -205,6 +206,9 @@ def main(target_date):
         outfile.write_text(json.dumps(lod, indent=2), encoding="utf-8")
 
     update_dates_json(target_date)
+
+    translate_all_languages(target_date)
+
 
 if __name__ == "__main__":
     import sys

@@ -1,0 +1,18 @@
+[
+  {
+    "item_id": 48356946,
+    "date": "2026-06-01",
+    "title": "Show HN: CSS 3Dエンジン（WebGL不使用）",
+    "project_url": "https://github.com/LayoutitStudio/polycss",
+    "hn_url": "https://news.ycombinator.com/item?id=48356946",
+    "content": "このスレッドでは、WebGLではなくDOM要素とCSSのtransformを使用して3DモデルをレンダリングするCSS 3Dエンジン、**PolyCSS**について議論しています。\n\n**議論の主なポイント:**\n\n*   **「なぜやるのか」対「なぜやらないのか」:** 批判的な意見として、PolyCSSは3DオブジェクトのレンダリングにおいてWebGLよりもパフォーマンスが著しく劣るとされ、「ExcelのセルでDoomをレンダリングするようなもの」と比喩されています。作成者は、Three.jsのような高性能エンジンの代替を目指しているわけではなく、標準的なHTML/CSSのレイアウトやスタイリング、DOMイベントとの統合が容易な、ローポリゴンやボクセルベースのシーン向けのツールを提供することが目的であると説明しています。\n*   **DOMベースの3Dの利点:** 挙げられた最大のメリットはインタラクションの単純さです。各ポリゴンがDOMノードであるため、開発者は3D要素に対して直接標準のイベントリスナー（`onClick`など）を使用でき、WebGLで必要となる複雑なレイキャスティングが不要になります。\n*   **想定されるユースケース:** 参加者からは、密接なDOM統合が必要なプロジェクトや、ユーザーがJavaScriptを無効にしている環境（理論上、純粋なCSSで静的な3Dアニメーションをレンダリングできるため）で有用であるとの提案がありました。\n*   **パフォーマンスの現実:** 支持者でさえも限界を認めています。このエンジンはポリゴン数が多いと動作が重くなり、単純なモデルであっても60fpsを下回る可能性があることが指摘されています。このプロジェクトは技術的な実験や「面白いテクニック」としては魅力的ですが、プロダクション品質の高精細な3Dアプリケーション向けではないという点で大方の意見が一致しています。\n*   **背景:** このスレッドでは、*CSS Doom*、*Minecraft in CSS*、*corru.observer*の3Dマップなど、類似のプロジェクトについても言及されており、CSSのtransform機能の限界に挑むニッチなコミュニティの関心が浮き彫りになっています。"
+  },
+  {
+    "item_id": 48338145,
+    "date": "2026-06-01",
+    "title": "Show HN: BornToBeRootによるNETworkManagerの無料Linux移植版",
+    "project_url": "https://github.com/thongor77/nmlinux",
+    "hn_url": "https://news.ycombinator.com/item?id=48338145",
+    "content": "このスレッドでは、Linux向けの新しいGUIベースのネットワーク診断ツールである**NMLinux**のリリースについて議論されています。ユーザー*thongor77*によって作成されたこのツールは、Windows用ユーティリティ「NETworkManager」（BornToBeRoot作）のLinux移植版であり、Python 3とPySide6（Qt6）を使用して構築されています。\n\n**主なポイント:**\n* **機能性:** IPスキャン、SSH/VNC/RDP、Traceroute、MTR、Nmap、ファイアウォール管理など、23種類のツールを1つのインターフェースで提供します。\n* **補足:** 作者は「NMLinux」がLinux標準の*NetworkManager*デーモンとは無関係であることを明らかにしました。\n* **反響:** AURで利用可能である点についてArch Linuxユーザーから肯定的なフィードバックが寄せられたほか、別のユーザーからは「WiFi Radar」のような初期のPythonベースのネットワークツールを懐かしむ声も上がっています。"
+  }
+]

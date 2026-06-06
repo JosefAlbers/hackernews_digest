@@ -32,6 +32,34 @@ a:hover {
 
 .nav {
     margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.nav-left {
+    display: flex;
+    gap: 0.4rem;
+    align-items: baseline;
+}
+
+.lang-switcher {
+    display: flex;
+    gap: 0.4rem;
+    align-items: baseline;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.lang-switcher a {
+    color: #888;
+}
+
+.lang-switcher a.active {
+    color: #2563eb;
+    font-weight: 600;
 }
 
 .post-list {
@@ -67,15 +95,88 @@ pre {
 
 <script>
 
+// ---------------------------------------------------------------------------
+// Language helpers
+// ---------------------------------------------------------------------------
+
+const SUPPORTED_LANGS = ["en", "de", "ja", "ko"];
+const LANG_LABELS = { en: "EN", de: "DE", ja: "日本語", ko: "한국어" };
+
+const UI = {
+    en: { home: "Home", past: "Past", back: "← Back",
+          project: "Project", hn: "Hacker News",
+          available: "Available Dates", noData: "No data yet",
+          notFound: "Post Not Found" },
+    de: { home: "Startseite", past: "Archiv", back: "← Zurück",
+          project: "Projekt", hn: "Hacker News",
+          available: "Verfügbare Daten", noData: "Noch keine Daten",
+          notFound: "Beitrag nicht gefunden" },
+    ja: { home: "ホーム", past: "過去", back: "← 戻る",
+          project: "プロジェクト", hn: "Hacker News",
+          available: "利用可能な日付", noData: "データなし",
+          notFound: "投稿が見つかりません" },
+    ko: { home: "홈", past: "지난 날짜", back: "← 뒤로",
+          project: "프로젝트", hn: "Hacker News",
+          available: "날짜 목록", noData: "데이터 없음",
+          notFound: "게시물을 찾을 수 없습니다" },
+};
+
+function t() { return UI[getLang()] ?? UI.en; }
+
+function getLang() {
+    const saved = localStorage.getItem("lang");
+    if (saved && SUPPORTED_LANGS.includes(saved)) return saved;
+
+    // Match browser locale to a supported language (e.g. "ja-JP" → "ja")
+    const nav = (navigator.language || "en").split("-")[0].toLowerCase();
+    return SUPPORTED_LANGS.includes(nav) ? nav : "en";
+}
+
+function setLang(code) {
+    localStorage.setItem("lang", code);
+    location.reload();
+}
+
+function langSwitcherHtml() {
+    const current = getLang();
+    return `
+        <div class="lang-switcher">
+            ${SUPPORTED_LANGS.map(code => `
+                <a href="#"
+                   class="${code === current ? "active" : ""}"
+                   onclick="setLang('${code}');return false">
+                    ${LANG_LABELS[code]}
+                </a>
+            `).join(" · ")}
+        </div>
+    `;
+}
+
+// ---------------------------------------------------------------------------
+// Data fetching with language fallback
+// ---------------------------------------------------------------------------
+
 async function fetchJson(url) {
     const r = await fetch(url);
-
-    if (!r.ok) {
-        throw new Error(`${url}: ${r.status}`);
-    }
-
+    if (!r.ok) throw new Error(`${url}: ${r.status}`);
     return await r.json();
 }
+
+async function fetchPosts(date) {
+    const lang = getLang();
+    if (lang !== "en") {
+        try {
+            return await fetchJson(`data/posts_${date}_${lang}.json`);
+        } catch (_) {
+            // Translated file missing — fall through to English
+        }
+    }
+    return await fetchJson(`data/posts_${date}.json`);
+}
+
+// ---------------------------------------------------------------------------
+// Misc utils
+// ---------------------------------------------------------------------------
 
 function params() {
     return new URLSearchParams(window.location.search);
@@ -92,14 +193,21 @@ function render(html) {
     document.getElementById("app").innerHTML = html;
 }
 
+// ---------------------------------------------------------------------------
+// Views
+// ---------------------------------------------------------------------------
+
 async function showPast() {
     const dates = await fetchJson("data/dates.json");
 
     render(`
-        <h1>Available Dates</h1>
+        <h1>${t().available}</h1>
 
         <div class="nav">
-            <a href="./">Home</a>
+            <div class="nav-left">
+                <a href="./">${t().home}</a>
+            </div>
+            ${langSwitcherHtml()}
         </div>
 
         <ul class="post-list">
@@ -115,17 +223,18 @@ async function showPast() {
 }
 
 async function showDate(date) {
-    const posts = await fetchJson(
-        `data/posts_${date}.json`
-    );
+    const posts = await fetchPosts(date);
 
     render(`
         <h1>${date}</h1>
 
         <div class="nav">
-            <a href="./">Home</a>
-            ·
-            <a href="?view=past">Past</a>
+            <div class="nav-left">
+                <a href="./">${t().home}</a>
+                &nbsp;·&nbsp;
+                <a href="?view=past">${t().past}</a>
+            </div>
+            ${langSwitcherHtml()}
         </div>
 
         <ul class="post-list">
@@ -141,9 +250,7 @@ async function showDate(date) {
 }
 
 async function showPost(date, id) {
-    const posts = await fetchJson(
-        `data/posts_${date}.json`
-    );
+    const posts = await fetchPosts(date);
 
     const post = posts.find(
         p => String(p.item_id) === String(id)
@@ -151,35 +258,26 @@ async function showPost(date, id) {
 
     if (!post) {
         render(`
-            <h1>Post Not Found</h1>
-            <a href="?date=${date}">
-                Back
-            </a>
+            <h1>${t().notFound}</h1>
+            <a href="?date=${date}">Back</a>
         `);
         return;
     }
 
     render(`
         <div class="nav">
-            <a href="?date=${date}">
-                ← Back
-            </a>
+            <div class="nav-left">
+                <a href="?date=${date}">${t().back}</a>
+            </div>
+            ${langSwitcherHtml()}
         </div>
 
         <h1>${escapeHtml(post.title)}</h1>
 
         <div class="meta">
-            <a href="${post.project_url}"
-               target="_blank">
-               Project
-            </a>
-
+            <a href="${post.project_url}" target="_blank">${t().project}</a>
             &nbsp;·&nbsp;
-
-            <a href="${post.hn_url}"
-               target="_blank">
-               Hacker News
-            </a>
+            <a href="${post.hn_url}" target="_blank">${t().hn}</a>
         </div>
 
         <hr>
@@ -191,52 +289,37 @@ async function showPost(date, id) {
 }
 
 async function showLatest() {
-    const dates = await fetchJson(
-        "data/dates.json"
-    );
+    const dates = await fetchJson("data/dates.json");
 
     if (dates.length === 0) {
-        render("<h1>No data yet</h1>");
+        render(`<h1>${t().noData}</h1>`);
         return;
     }
 
     await showDate(dates[0]);
 }
 
+// ---------------------------------------------------------------------------
+// Router
+// ---------------------------------------------------------------------------
+
 async function main() {
     try {
         const p = params();
-
         const view = p.get("view");
         const date = p.get("date");
-        const id = p.get("id");
+        const id   = p.get("id");
 
-        if (view === "past") {
-            await showPast();
-            return;
-        }
-
-        if (date && id) {
-            await showPost(date, id);
-            return;
-        }
-
-        if (date) {
-            await showDate(date);
-            return;
-        }
-
+        if (view === "past")  { await showPast();            return; }
+        if (date && id)       { await showPost(date, id);    return; }
+        if (date)             { await showDate(date);        return; }
         await showLatest();
 
     } catch (err) {
         console.error(err);
-
         render(`
             <h1>Error</h1>
-
-            <div class="error">
-                ${escapeHtml(String(err))}
-            </div>
+            <div class="error">${escapeHtml(String(err))}</div>
         `);
     }
 }

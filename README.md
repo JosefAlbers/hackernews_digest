@@ -6,13 +6,14 @@ A static Hacker News digest generated from discussion threads and hosted on [Git
 
 For each day:
 
-1. Fetches front-page Hacker News stories.
+1. Fetches Show HN stories from Hacker News.
 2. Downloads the full comment thread for each story.
 3. Uses an LLM to generate a concise summary of the discussion.
-4. Saves the results as JSON files.
-5. Publishes everything as a static website via GitHub Pages.
+4. Translates each summary into German, Japanese, and Korean.
+5. Saves everything as JSON files.
+6. Publishes a static website via GitHub Pages.
 
-The site can be browsed by date and each summary links to both the original article and the Hacker News discussion.
+The site auto-detects your browser language and falls back to English if a translation is unavailable. You can also switch languages manually from any page.
 
 ## Example
 
@@ -20,14 +21,7 @@ For a story like:
 
 > Show HN: VimLM – A Local, Offline Coding Assistant for Vim
 
-hn2mc will:
-
-* fetch the submission
-* fetch all comments
-* summarize the discussion
-* store the result as structured JSON
-
-and make it available through the website.
+the digest will fetch the submission and all comments, summarize the discussion, translate it, and make it available through the website.
 
 ## Repository Structure
 
@@ -36,9 +30,13 @@ and make it available through the website.
 ├── data/
 │   ├── dates.json
 │   ├── posts_2025-05-30.json
-│   └── posts_2025-05-31.json
+│   ├── posts_2025-05-30_de.json
+│   ├── posts_2025-05-30_ja.json
+│   ├── posts_2025-05-30_ko.json
+│   └── ...
 ├── index.html
 ├── main.py
+├── translate.py
 └── .github/
     └── workflows/
         └── update.yml
@@ -52,16 +50,29 @@ Install dependencies:
 pip install requests beautifulsoup4 mlx-code
 ```
 
-Generate summaries for a specific date:
+Set your Gemini API key:
+
+```bash
+export GEMINI_API_KEY=your_key_here
+```
+
+Generate summaries and translations for a specific date:
 
 ```bash
 python main.py 2025-02-15
 ```
 
-Generate summaries for two days ago:
+Or for two days ago (the default):
 
 ```bash
 python main.py
+```
+
+To run only the translation pass on already-generated data:
+
+```bash
+python translate.py 2025-02-15           # all languages
+python translate.py 2025-02-15 ja        # one language
 ```
 
 Serve the website locally:
@@ -70,11 +81,7 @@ Serve the website locally:
 python -m http.server 8000
 ```
 
-Then open:
-
-```text
-http://localhost:8000
-```
+Then open `http://localhost:8000`.
 
 ## Data Format
 
@@ -91,18 +98,22 @@ Each generated file contains a list of posts:
 }
 ```
 
+Translated files (`posts_<date>_<lang>.json`) have the same structure with `title` and `content` replaced by the translated versions.
+
 ## Automation
 
-A GitHub Actions workflow runs daily and:
+A GitHub Actions workflow runs daily at 03:00 UTC and:
 
-1. Generates a new digest.
-2. Updates the data files.
-3. Commits the changes back to the repository.
+1. Generates a new digest for the previous day.
+2. Translates it into all configured languages.
+3. Commits the updated data files back to the repository.
 
 The website is automatically served through GitHub Pages.
 
 ## Why?
 
-Reading Hacker News comments is often more valuable than reading the article itself, but following every discussion is impossible.
+Reading Hacker News comments is often more valuable than reading the article itself, but following every discussion is impossible. This turns long comment threads into concise daily digests you can browse later, in your own language.
 
-`hackernews digest` turns long comment threads into concise daily digests that can be browsed later.
+## License
+
+MIT

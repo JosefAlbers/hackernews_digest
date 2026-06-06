@@ -1,0 +1,18 @@
+[
+  {
+    "item_id": 48356946,
+    "date": "2026-06-01",
+    "title": "Show HN: CSS 3D 엔진 (WebGL 미사용)",
+    "project_url": "https://github.com/LayoutitStudio/polycss",
+    "hn_url": "https://news.ycombinator.com/item?id=48356946",
+    "content": "이 스레드에서는 WebGL 대신 DOM 요소와 CSS 변환을 사용하여 3D 모델을 렌더링하는 CSS 3D 엔진인 **PolyCSS**에 대해 논의합니다.\n\n**주요 논의 사항은 다음과 같습니다:**\n\n*   **\"왜\" 그리고 \"왜 아닌가\":** 비판적인 의견들은 PolyCSS가 3D 객체를 렌더링할 때 WebGL보다 성능이 현저히 떨어진다며, 이를 \"엑셀 셀에서 둠(Doom)을 렌더링하는 것\"에 비유합니다. 제작자는 이 엔진의 목표가 Three.js와 같은 고성능 엔진을 대체하는 것이 아니라, 표준 HTML/CSS 레이아웃, 스타일링, DOM 이벤트와의 쉬운 통합이 필요한 로우 폴리(low-poly) 또는 복셀 기반 장면에 도구를 제공하는 것이라고 설명합니다.\n*   **DOM 기반 3D의 장점:** 언급된 주요 이점은 상호작용의 단순함입니다. 각 폴리곤이 DOM 노드이기 때문에 개발자는 WebGL에서 요구되는 복잡한 레이캐스팅(raycasting) 없이도 3D 요소에 직접 표준 이벤트 리스너(예: `onClick`)를 사용할 수 있습니다.\n*   **잠재적 사용 사례:** 참여자들은 이 접근 방식이 긴밀한 DOM 통합이 필요한 프로젝트나, 사용자가 자바스크립트를 비활성화한 환경(이론적으로 순수 CSS를 통해 정적 3D 애니메이션을 렌더링할 수 있음)에서 유용할 수 있다고 제안합니다.\n*   **성능의 현실:** 지지자들조차 한계를 인정합니다. 이 엔진은 폴리곤 수가 많아지면 처리하기 어려우며, 단순한 모델조차 60fps 이하로 떨어질 수 있다는 점이 지적되었습니다. 대부분은 이 프로젝트가 흥미로운 기술적 실험이나 \"멋진 기술(cool trick)\"일 뿐, 프로덕션급의 고성능 3D 애플리케이션을 위한 것은 아니라는 점에 동의합니다.\n*   **배경:** 이 스레드에서는 *CSS Doom*, *Minecraft in CSS*, *corru.observer*의 3D 맵 등 유사한 프로젝트들이 언급되며, CSS 변환 기능을 극한까지 끌어올리는 틈새 커뮤니티의 관심을 강조하고 있습니다."
+  },
+  {
+    "item_id": 48338145,
+    "date": "2026-06-01",
+    "title": "Show HN: BornToBeRoot의 NETworkManager를 리눅스용으로 무료 개작한 프로그램",
+    "project_url": "https://github.com/thongor77/nmlinux",
+    "hn_url": "https://news.ycombinator.com/item?id=48338145",
+    "content": "이 스레드는 리눅스용 새 GUI 기반 네트워크 진단 도구인 **NMLinux**의 출시를 다룹니다. 사용자 *thongor77*이 제작한 이 도구는 BornToBeRoot의 윈도우용 유틸리티인 \"NETworkManager\"를 리눅스에 맞게 개작한 것으로, Python 3와 PySide6(Qt6)를 사용하여 구축되었습니다.\n\n**주요 내용:**\n* **기능:** IP 스캔, SSH/VNC/RDP, Traceroute, MTR, Nmap, 방화벽 관리 등 23가지 도구를 하나의 인터페이스에서 제공합니다.\n* **참고 사항:** 제작자는 \"NMLinux\"가 표준 리눅스 *NetworkManager* 데몬과는 관련이 없음을 명시했습니다.\n* **반응:** AUR에서 사용할 수 있다는 점에 대해 Arch Linux 사용자로부터 긍정적인 평가를 받았으며, 다른 사용자는 \"WiFi Radar\"와 같은 초기 파이썬 기반 네트워크 도구들에 대한 향수를 드러내기도 했습니다."
+  }
+]
