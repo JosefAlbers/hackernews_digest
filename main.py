@@ -4,7 +4,7 @@ import html
 import json
 import re
 import os
-from datetime import date, timedelta
+from datetime import date, timedelta, datetime, timezone
 from pathlib import Path
 from typing import Dict, List, Optional
 from urllib.parse import parse_qs, urljoin, urlparse
@@ -34,58 +34,40 @@ def extract_show_hn_from_soup(soup, show_hn):
     return (show_hn_ids, show_hn_titles)
 
 
-def get_hn_post_ids_for_date(date_str, max_pages=2, show_hn=True): # don't want to overload free tier gemini
-    base_url = "https://news.ycombinator.com/"
-    current_url = f"{base_url}front?day={date_str}"
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"
+def get_hn_post_ids_for_date(date_str: str, show_hn: bool = True, max_pages: int = 2) -> list[int]:
+    day_start = datetime.fromisoformat(date_str).replace(tzinfo=timezone.utc)
+    day_end = day_start + timedelta(days=1)
+    ts_start = int(day_start.timestamp())
+    ts_end = int(day_end.timestamp())
+
+    url = "https://hn.algolia.com/api/v1/search"
+    params = {
+        "tags": "story",
+        "numericFilters": f"created_at_i>={ts_start},created_at_i<{ts_end}",
+        "hitsPerPage": 30 * max_pages,
     }
-    all_show_hn_ids = []
-    all_show_hn_titles = []
-    pages_crawled = 0
+
     session = requests.Session()
-    session.headers.update(headers)
-    while current_url and pages_crawled < max_pages:
-        print(f"Fetching: {current_url}")
-        try:
-            # response = requests.get(current_url, headers=headers)
-            for attempt in range(5):
-                response = session.get(current_url, timeout=30)
+    session.headers.update({"User-Agent": "hn-archive-bot/1.0"})
 
-                if response.status_code != 429:
-                    response.raise_for_status()
-                    break
-
-                retry_after = response.headers.get("Retry-After")
-                sleep_time = (
-                    int(retry_after)
-                    if retry_after
-                    else min(60, 2 ** (attempt+1))
-                )
-
-                print(f"429 received, sleeping {sleep_time}s")
-                time.sleep(sleep_time)
-            else:
-                raise requests.exceptions.HTTPError(
-                    "Still receiving 429 after 5 retries"
-                )
-            soup = BeautifulSoup(response.text, "html.parser")
-            page_ids, page_titles = extract_show_hn_from_soup(soup, show_hn=show_hn)
-            all_show_hn_ids.extend(page_ids)
-            all_show_hn_titles.extend(page_titles)
-            pages_crawled += 1
-            time.sleep(1)
-            more_link_element = soup.find("a", class_="morelink")
-            if more_link_element and max_pages > pages_crawled:
-                href = more_link_element.get("href")
-                current_url = urljoin(base_url, href)
-            else:
-                current_url = None
-        except requests.exceptions.RequestException as e:
-            print(f"An error occurred on page {pages_crawled + 1}: {e}")
+    for attempt in range(5):
+        resp = session.get(url, params=params, timeout=30)
+        if resp.status_code != 429:
+            resp.raise_for_status()
             break
-    return all_show_hn_ids
+        sleep_time = min(60, 2 ** (attempt + 1))
+        print(f"429 from Algolia, sleeping {sleep_time}s")
+        time.sleep(sleep_time)
+    else:
+        raise requests.exceptions.HTTPError("Still 429 after 5 retries")
 
+    hits = resp.json().get("hits", [])
+    all_ids = [
+        int(h["objectID"]) for h in hits
+        if not show_hn or h.get("title", "").lower().startswith("show hn:")
+    ]
+    print(f"Got {len(hits)} front page stories, {len(all_ids)} Show HN")
+    return all_ids
 
 def clean_text(text: str) -> str:
     if not text:
@@ -197,28 +179,32 @@ def main(target_date):
     outdir = Path("data")
     outdir.mkdir(exist_ok=True)
     outfile = outdir / f"posts_{target_date}.json"
-    # if outfile.exists():
-    #     print(f"{outfile} already exists")
-    #     return
-    kb = KB(db_path=f"{target_date}.json")
+
     lod = []
+    done_ids = set()
+    if outfile.exists():
+        lod = json.loads(outfile.read_text(encoding="utf-8"))
+        done_ids = {p["item_id"] for p in lod}
+
+    kb = KB(db_path=f"{target_date}.json")
     for item_id in get_hn_post_ids_for_date(target_date):
+        if item_id in done_ids:
+            print(f"Skipping {item_id}, already done")
+            continue
         thread, title, project_url = get_hackernews_comments(item_id)
         kb.db |= thread
         summary = asyncio.run(summarize(kb.get_branch(item_id)))
-        lod.append(
-            {
-                "item_id": item_id,
-                "date": target_date,
-                "title": title,
-                "project_url": project_url,
-                "hn_url": f"https://news.ycombinator.com/item?id={item_id}",
-                "content": summary.strip(),
-            }
-        )
-    outfile.write_text(json.dumps(lod, indent=2), encoding="utf-8")
-    update_dates_json(target_date)
+        lod.append({
+            "item_id": item_id,
+            "date": target_date,
+            "title": title,
+            "project_url": project_url,
+            "hn_url": f"https://news.ycombinator.com/item?id={item_id}",
+            "content": summary.strip(),
+        })
+        outfile.write_text(json.dumps(lod, indent=2), encoding="utf-8")
 
+    update_dates_json(target_date)
 
 if __name__ == "__main__":
     import sys
