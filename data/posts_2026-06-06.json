@@ -1,0 +1,10 @@
+[
+  {
+    "item_id": 48420494,
+    "date": "2026-06-06",
+    "title": "Show HN: ABC Classic 100 Rankings visualised",
+    "project_url": "https://classic100.gotski.workers.dev/",
+    "hn_url": "https://news.ycombinator.com/item?id=48420494",
+    "content": "The thread discusses a \"Show HN\" post featuring a custom-built data visualization of the ABC Classic FM \"Classic 100\" countdowns. \n\n**Key takeaways from the discussion:**\n\n*   **The Project:** The creator developed a bump chart to visualize how classical music rankings have shifted over several years. They used custom-written SVG paths with Bezier curves rather than existing libraries like eCharts.\n*   **User Feedback & Suggestions:**\n    *   **Accessibility:** Users suggested making the text selectable or linking directly to YouTube/Spotify for easier listening, as it is currently difficult to look up tracks.\n    *   **Data Integrity:** Participants noted oddities in the historical data (such as double entries) and debated whether to cross-reference against sources like Archive.org to fix potential errors in the original ABC datasets.\n    *   **Defining \"Classical\":** The inclusion of film scores (e.g., *Lord of the Rings*, *The Mission*) and non-traditional composers sparked a debate about the definition of \"classical\" music and how listener demographics and station programming influence voting outcomes.\n*   **Future Plans:** The creator intends to update the visualization with future countdown data, potentially include film-specific segments, and implement UI improvements like hover-over text selection and external platform links.\n*   **Community Resources:** Commenters shared various curated playlists (Apple Music, YouTube, Spotify) that mirror the Classic 100 countdowns for those looking to explore the music."
+  }
+]

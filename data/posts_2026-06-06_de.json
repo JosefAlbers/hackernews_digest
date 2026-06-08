@@ -1,0 +1,10 @@
+[
+  {
+    "item_id": 48420494,
+    "date": "2026-06-06",
+    "title": "Show HN: ABC Classic 100 Rankings visualisiert",
+    "project_url": "https://classic100.gotski.workers.dev/",
+    "hn_url": "https://news.ycombinator.com/item?id=48420494",
+    "content": "Der Thread diskutiert einen „Show HN“-Beitrag, der eine maßgeschneiderte Datenvisualisierung der „Classic 100“-Countdowns von ABC Classic FM präsentiert.\n\n**Wichtige Erkenntnisse aus der Diskussion:**\n\n*   **Das Projekt:** Der Entwickler erstellte ein „Bump Chart“, um zu visualisieren, wie sich die Platzierungen klassischer Musik über mehrere Jahre hinweg verändert haben. Anstelle vorhandener Bibliotheken wie eCharts wurden eigens geschriebene SVG-Pfade mit Bezier-Kurven verwendet.\n*   **Nutzerfeedback & Vorschläge:**\n    *   **Barrierefreiheit:** Nutzer schlugen vor, den Text auswählbar zu machen oder direkt auf YouTube/Spotify zu verlinken, um das Anhören zu erleichtern, da es derzeit schwierig ist, Titel nachzuschlagen.\n    *   **Datenintegrität:** Teilnehmer bemerkten Ungereimtheiten in den historischen Daten (wie doppelte Einträge) und debattierten darüber, ob man diese mit Quellen wie Archive.org abgleichen sollte, um potenzielle Fehler in den ursprünglichen ABC-Datensätzen zu korrigieren.\n    *   **Definition von „Klassik“:** Die Aufnahme von Filmmusik (z. B. *Der Herr der Ringe*, *The Mission*) und nicht-traditionellen Komponisten löste eine Debatte über die Definition von „klassischer“ Musik aus und darüber, wie die demografische Zusammensetzung der Zuhörer und das Programm des Senders die Abstimmungsergebnisse beeinflussen.\n*   **Zukunftspläne:** Der Ersteller beabsichtigt, die Visualisierung mit zukünftigen Countdown-Daten zu aktualisieren, möglicherweise filmspezifische Segmente aufzunehmen und UI-Verbesserungen wie Textauswahl bei Mouseover und Links zu externen Plattformen zu implementieren.\n*   **Community-Ressourcen:** Kommentatoren teilten verschiedene kuratierte Playlists (Apple Music, YouTube, Spotify), die die Classic 100-Countdowns widerspiegeln, für diejenigen, die die Musik erkunden möchten."
+  }
+]
