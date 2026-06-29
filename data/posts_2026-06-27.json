@@ -1,0 +1,34 @@
+[
+  {
+    "item_id": 48701512,
+    "date": "2026-06-27",
+    "title": "Show HN: Adrafinil \u2013 keep a lid-closed Mac awake only while agents work",
+    "project_url": "https://github.com/kageroumado/adrafinil",
+    "hn_url": "https://news.ycombinator.com/item?id=48701512",
+    "content": "The thread discusses the release of **Adrafinil**, an open-source macOS utility designed to keep MacBooks awake while the lid is closed, specifically to support background tasks like AI agents (e.g., Claude Code). \n\n### Key Features of Adrafinil:\n*   **Context-Aware:** Unlike generic sleep-prevention apps (like Amphetamine or the `caffeinate` command), Adrafinil only disables sleep when it detects active agent activity through hooks. It automatically re-enables sleep when tasks are finished, the battery is low, or the system detects overheating.\n*   **Privacy & Safety:** It is notarized, open-source (MIT), and separates logic from a small root helper to manage sleep settings securely.\n\n### Community Reactions and Discussion:\n*   **Alternative Solutions:** Many users questioned the need for a dedicated app, citing existing tools like `caffeinate`, `Amphetamine`, or even simple one-line `pmset` terminal commands. Proponents of Adrafinil argued that their tool is more specialized, automating the process so users don't have to manually manage state or risk leaving their laptops awake (and draining battery) indefinitely.\n*   **Naming Trends:** The app\u2019s name continues a trend of using \"afinil\" stimulants (referencing Modafinil), following previous tools named *Caffeine* and *Amphetamine*. Some users joked about this naming convention becoming a \"pharmaceutical extended universe.\"\n*   **Hardware Concerns:** Several participants warned about the thermal risks of running a MacBook in a backpack or with the lid closed. While modern Apple Silicon chips are efficient, the lack of airflow in a closed state can still lead to overheating or thermal throttling.\n*   **The \"AI\" Context:** A recurring theme was the observation that engineers are increasingly \"reinventing the wheel\" for problems specific to AI agent workflows, sometimes overlooking simpler, long-established solutions because they don't explicitly market themselves for AI.\n\nOverall, while some users criticized the tool as unnecessary \"bloat,\" others praised its specific utility in preventing the frustration of AI agents being cut off by system sleep, particularly during long-running tasks."
+  },
+  {
+    "item_id": 48693912,
+    "date": "2026-06-27",
+    "title": "Show HN: Hacker News on a train station-style flip board",
+    "project_url": "https://popflame.quickish.space/hn-flipboard/",
+    "hn_url": "https://news.ycombinator.com/item?id=48693912",
+    "content": "The thread discusses a \"Show HN\" project featuring a web-based, train station-style split-flap board that displays real-time Hacker News headlines. The creator built this to demonstrate a new \"vibe host\" platform, which allows users to remix and publish their own web apps.\n\n**Key points from the discussion include:**\n\n*   **Project Feedback:** Users generally enjoyed the aesthetic and the nostalgic \"click\" sounds, though some critiqued the sound design, noting it sounds more like synthetic clicking than the mechanical rustle of classic Solari boards. Others offered suggestions to optimize the layout, such as dropping vote counts to improve title readability.\n*   **Technical Challenges:** The project experienced significant traffic (30k visits in an hour), leading to temporary rate-limiting issues that the creator subsequently patched.\n*   **Aesthetic Trends:** Participants debated the current ubiquity of \"glowing, dark-mode, hacker-style\" UI aesthetics, with some attributing it to the influence of AI design tools and others labeling it \"pointlessly greebled\" (adding complexity for the sake of visual impression).\n*   **Split-Flap Interest:** The thread sparked a side conversation about real-world split-flap displays, with users sharing links to commercial products (like Vestaboard), DIY tutorials, and historical examples of artistic installations using recycled flip-board components.\n*   **Remixability:** The creator emphasized the project's purpose as a demonstration of their platform\u2019s ease of use, encouraging users to download the source, remix the board, and host their own versions."
+  },
+  {
+    "item_id": 48702104,
+    "date": "2026-06-27",
+    "title": "Show HN: Starglyphs - A constellation puzzle game based on Euler paths",
+    "project_url": "https://starglyphs.com",
+    "hn_url": "https://news.ycombinator.com/item?id=48702104",
+    "content": "The thread discusses the release of **Starglyphs**, a web-based puzzle game inspired by the \"astvarium\" constellation puzzles from *Dragon Age: Inquisition*. The developer explains that the game uses procedural generation based on Euler paths to create solvable puzzles.\n\n**Key takeaways:**\n* **Development:** The game was built using the Phaser framework, with randomized, colorful aesthetics created through custom Photoshop textures.\n* **Reception:** Early feedback is positive, with users praising the game's \"calm and peaceful\" atmosphere.\n* **Technical Issues:** At least one user reported experiencing a blank screen issue, which the developer is currently investigating.\n* **Future Plans:** The developer intends to port the web game to Steam and mobile platforms."
+  },
+  {
+    "item_id": 48701771,
+    "date": "2026-06-27",
+    "title": "Show HN: Kiso, an open-source publishing engine for Open Knowledge Format",
+    "project_url": "https://oak-invest.github.io/kiso/",
+    "hn_url": "https://news.ycombinator.com/item?id=48701771",
+    "content": "The thread introduces **Kiso**, an open-source publishing engine designed to support the **Open Knowledge Format (OKF)**. Kiso serves as a tool for structuring, managing, and publishing knowledge-based content in a standardized, accessible way."
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "item_id": 48701512,
+    "date": "2026-06-27",
+    "title": "Show HN: Adrafinil – hält Macs bei geschlossenem Deckel nur wach, solange Agents arbeiten",
+    "project_url": "https://github.com/kageroumado/adrafinil",
+    "hn_url": "https://news.ycombinator.com/item?id=48701512",
+    "content": "Der Thread diskutiert die Veröffentlichung von **Adrafinil**, einem Open-Source-macOS-Dienstprogramm, das dafür entwickelt wurde, MacBooks bei geschlossenem Deckel wach zu halten, insbesondere um Hintergrundaufgaben wie KI-Agents (z. B. Claude Code) zu unterstützen.\n\n### Hauptmerkmale von Adrafinil:\n*   **Kontextsensitiv:** Im Gegensatz zu allgemeinen Apps zur Schlafverhinderung (wie Amphetamine oder der Befehl `caffeinate`) deaktiviert Adrafinil den Ruhezustand nur, wenn es über Hooks eine aktive Agenten-Aktivität erkennt. Es reaktiviert den Ruhezustand automatisch, wenn Aufgaben beendet sind, der Akkustand niedrig ist oder das System eine Überhitzung erkennt.\n*   **Privatsphäre & Sicherheit:** Es ist notariell beglaubigt, Open-Source (MIT) und trennt die Logik von einem kleinen Root-Helper, um die Ruhezustandseinstellungen sicher zu verwalten.\n\n### Reaktionen und Diskussionen der Community:\n*   **Alternative Lösungen:** Viele Nutzer hinterfragten die Notwendigkeit einer dedizierten App und verwiesen auf bestehende Tools wie `caffeinate`, `Amphetamine` oder sogar einfache einzeilige `pmset`-Terminalbefehle. Befürworter von Adrafinil argumentierten, dass ihr Tool spezialisierter sei und den Prozess automatisiere, damit Benutzer den Status nicht manuell verwalten müssen oder riskieren, ihre Laptops unbegrenzt wach zu lassen (und den Akku zu entladen).\n*   **Namensgebungstrends:** Der Name der App setzt den Trend fort, \"Afinil\"-Stimulanzien (in Anlehnung an Modafinil) zu verwenden, nach früheren Tools namens *Caffeine* und *Amphetamine*. Einige Benutzer scherzten darüber, dass diese Namenskonvention zu einem \"pharmazeutischen erweiterten Universum\" werde.\n*   **Hardware-Bedenken:** Mehrere Teilnehmer warnten vor den thermischen Risiken, wenn ein MacBook in einem Rucksack oder bei geschlossenem Deckel betrieben wird. Obwohl moderne Apple-Silicon-Chips effizient sind, kann der mangelnde Luftstrom im geschlossenen Zustand dennoch zu Überhitzung oder thermischer Drosselung führen.\n*   **Der \"KI\"-Kontext:** Ein wiederkehrendes Thema war die Beobachtung, dass Ingenieure zunehmend das \"Rad neu erfinden\" für Probleme, die spezifisch für KI-Agenten-Workflows sind, und dabei manchmal einfachere, längst etablierte Lösungen übersehen, weil diese sich nicht explizit als KI-Lösungen vermarkten.\n\nInsgesamt kritisierten einige Benutzer das Tool zwar als unnötigen \"Ballast\", andere lobten jedoch seinen spezifischen Nutzen, da es verhindert, dass KI-Agents durch den System-Ruhezustand unterbrochen werden, insbesondere bei lang laufenden Aufgaben."
+  },
+  {
+    "item_id": 48693912,
+    "date": "2026-06-27",
+    "title": "Show HN: Hacker News auf einer Anzeigetafel im Bahnhofsstil",
+    "project_url": "https://popflame.quickish.space/hn-flipboard/",
+    "hn_url": "https://news.ycombinator.com/item?id=48693912",
+    "content": "Der Thread diskutiert ein „Show HN“-Projekt, das eine webbasierte Anzeigetafel im Stil eines Bahnhofs-Fallblattanzeigers zeigt, auf der Hacker News-Schlagzeilen in Echtzeit dargestellt werden. Der Ersteller hat dies entwickelt, um eine neue „Vibe Host“-Plattform zu demonstrieren, die es Nutzern ermöglicht, eigene Web-Apps zu remixen und zu veröffentlichen.\n\n**Wichtige Punkte aus der Diskussion sind:**\n\n*   **Projekt-Feedback:** Die Nutzer mochten im Allgemeinen die Ästhetik und die nostalgischen „Klick“-Geräusche, obwohl einige das Sounddesign kritisierten und anmerkten, dass es eher wie ein synthetisches Klicken als wie das mechanische Rauschen klassischer Solari-Anzeigetafeln klingt. Andere machten Vorschläge zur Optimierung des Layouts, wie etwa das Weglassen der Stimmenanzahl, um die Lesbarkeit der Titel zu verbessern.\n*   **Technische Herausforderungen:** Das Projekt verzeichnete ein hohes Verkehrsaufkommen (30.000 Besuche in einer Stunde), was zu vorübergehenden Ratenbegrenzungsproblemen führte, die der Ersteller anschließend behob.\n*   **Ästhetische Trends:** Die Teilnehmer diskutierten über die derzeitige Allgegenwärtigkeit von „leuchtenden, Dark-Mode, Hacker-Stil“-UI-Ästhetiken, wobei einige dies dem Einfluss von KI-Designtools zuschrieben und andere es als „sinnlos überladen“ bezeichneten (Komplexität aus Gründen des visuellen Eindrucks hinzugefügt).\n*   **Interesse an Fallblattanzeigen:** Der Thread löste ein Nebengespräch über reale Fallblattanzeigen aus, wobei Nutzer Links zu kommerziellen Produkten (wie Vestaboard), DIY-Anleitungen und historische Beispiele künstlerischer Installationen mit recycelten Anzeigetafel-Komponenten teilten.\n*   **Remixbarkeit:** Der Ersteller betonte den Zweck des Projekts als Demonstration der Benutzerfreundlichkeit seiner Plattform und ermutigte die Nutzer, den Quellcode herunterzuladen, das Board zu remixen und ihre eigenen Versionen zu hosten."
+  },
+  {
+    "item_id": 48702104,
+    "date": "2026-06-27",
+    "title": "Show HN: Starglyphs – Ein Sternbild-Puzzlespiel basierend auf Eulerwegen",
+    "project_url": "https://starglyphs.com",
+    "hn_url": "https://news.ycombinator.com/item?id=48702104",
+    "content": "Der Thread diskutiert die Veröffentlichung von **Starglyphs**, einem webbasierten Puzzlespiel, das von den \"Astvarium\"-Sternbildrätseln aus *Dragon Age: Inquisition* inspiriert wurde. Der Entwickler erklärt, dass das Spiel auf prozeduraler Generierung basierend auf Eulerwegen beruht, um lösbare Rätsel zu erstellen.\n\n**Wichtige Punkte:**\n* **Entwicklung:** Das Spiel wurde mit dem Phaser-Framework erstellt, wobei randomisierte, farbenfrohe Ästhetiken durch benutzerdefinierte Photoshop-Texturen erzeugt wurden.\n* **Rezeption:** Das erste Feedback ist positiv; Nutzer loben die \"ruhige und friedliche\" Atmosphäre des Spiels.\n* **Technische Probleme:** Mindestens ein Nutzer berichtete von einem Problem mit einem leeren Bildschirm, das der Entwickler derzeit untersucht.\n* **Zukunftspläne:** Der Entwickler plant, das Webspiel auf Steam und mobile Plattformen zu portieren."
+  },
+  {
+    "item_id": 48701771,
+    "date": "2026-06-27",
+    "title": "Show HN: Kiso, eine Open-Source-Publishing-Engine für das Open Knowledge Format",
+    "project_url": "https://oak-invest.github.io/kiso/",
+    "hn_url": "https://news.ycombinator.com/item?id=48701771",
+    "content": "Dieser Thread stellt **Kiso** vor, eine Open-Source-Publishing-Engine, die zur Unterstützung des **Open Knowledge Format (OKF)** entwickelt wurde. Kiso dient als Werkzeug zum Strukturieren, Verwalten und Veröffentlichen von wissensbasierten Inhalten auf standardisierte und zugängliche Weise."
+  }
+]
