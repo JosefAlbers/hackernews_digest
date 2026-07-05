@@ -1,0 +1,10 @@
+[
+  {
+    "item_id": 48777144,
+    "date": "2026-07-03",
+    "title": "Show HN: Mcpsnoop \u2013 Wireshark for MCP (transparent proxy and live TUI)",
+    "project_url": "https://github.com/kerlenton/mcpsnoop",
+    "hn_url": "https://news.ycombinator.com/item?id=48777144",
+    "content": "The thread discusses the release of **Mcpsnoop**, a tool described as \"Wireshark for MCP\" that provides a transparent proxy and live terminal UI (TUI) for monitoring traffic between MCP (Model Context Protocol) clients and servers.\n\n**Key takeaways from the discussion:**\n\n*   **Positive Reception:** Users praised the tool for providing much-needed visibility into MCP interactions, which are often opaque in standard development environments. One user noted it could be valuable for building benchmarks for AI agents.\n*   **Technical Implementation & Security:**\n    *   **Data Handling:** The author clarified that the proxy intercepts JSON-RPC messages but does not log HTTP headers (like Authorization bearer tokens). While traces are stored locally, users can opt for a `--no-trace` mode to prevent disk writes.\n    *   **Redaction:** There was interest in adding features to redact secret keys or specific patterns from message payloads before they are logged.\n*   **Ecosystem Context:**\n    *   Participants discussed related tools, such as existing MCPs for Wireshark and broader \"auditable AI\" frameworks like Aegis and LiteLLM.\n    *   Some users suggested that while building a custom proxy is relatively straightforward, a dedicated tool like Mcpsnoop offers a more convenient and structured approach.\n    *   There was a brief debate regarding the user interface, with a request for a web-based dashboard, though the author expressed a preference for maintaining the current TUI-focused design.\n*   **Community Meta-Discussion:** Some users expressed skepticism about the quality of the thread, speculating that several comments might be from bots or users attempting to farm karma. Several branches were flagged or marked as dead."
+  }
+]
