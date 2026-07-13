@@ -1,0 +1,66 @@
+[
+  {
+    "item_id": 48875377,
+    "date": "2026-07-11",
+    "title": "Show HN: Ant – A JavaScript runtime and ecosystem",
+    "project_url": "https://antjs.org",
+    "hn_url": "https://news.ycombinator.com/item?id=48875377",
+    "content": "The thread discusses **Ant**, a new JavaScript ecosystem that includes a runtime, package manager, and a desktop app framework. The author presents it as a lightweight, sandboxed alternative to existing stacks.\n\n### Key Points of Discussion:\n*   **Trust and \"Hand-built\" Claims:** Much of the conversation centers on skepticism regarding the author's claims that the project is \"hand-built.\" Critics point to early versions of the code being heavily influenced by or derived from an existing AGPL project (*elk*), as well as concerns about the heavy use of LLMs in the development process.\n*   **The LLM/AI Debate:** A significant debate emerged over whether code generated via AI assistance—even when reviewed and steered by a human—qualifies as \"hand-built.\" Skeptics argue that the term implies manual craftsmanship, while others see it as part of a modern development spectrum.\n*   **Naming Controversy:** Many users expressed confusion and concern regarding the name \"Ant,\" noting that it conflicts with well-established projects like **Apache Ant** and **Ant Design**. Critics argued that using a pre-existing, well-known name in the developer ecosystem suggests either a lack of research or a lack of seriousness.\n*   **Technical Merit:** Proponents and the author highlight the runtime’s small binary size (using KVM/Hypervisor for sandboxing) and its suitability for embedding. Skeptics, however, demand better performance benchmarks to prove it is a viable alternative to mature engines like V8.\n*   **Ecosystem Scope:** Some users questioned the \"all-in-one\" approach, wondering why the project is building its own registry and package manager rather than leveraging existing standards (like JSR). \n\n**Overall Sentiment:** While some developers are excited about the potential for a lightweight, sandboxed JS runtime, the project faces significant scrutiny regarding its branding, its history of code provenance, and the transparency of its development process in the age of AI-assisted coding."
+  },
+  {
+    "item_id": 48871973,
+    "date": "2026-07-11",
+    "title": "Show HN: Redis、Git、データベースをゼロから作り直して学ぶ",
+    "project_url": "https://shipthatcode.com",
+    "hn_url": "https://news.ycombinator.com/item?id=48871973",
+    "content": "このスレッドでは、Redis、Git、コンパイラなどをゼロから構築するような、プロジェクトベースの無料プログラミングコースを提供するプラットフォーム「**shipthatcode.com**」の立ち上げについて議論されています。このプラットフォームでは、ユーザーは自動テストを実行するコードを記述して学習します。\n\n### 議論の主なポイント:\n*   **CodeCraftersとの比較:** このプラットフォームは頻繁にCodeCrafters.ioと比較されています。作成者は、shipthatcodeが現在無料であり、より多くのコースライブラリを提供している点を強調しています。一方、CodeCraftersはローカル環境での開発が可能であるのに対し、shipthatcodeはWebベースのテスト環境に依存しているという指摘もなされています。\n*   **コンテンツ制作とAI:** 会話の大部分は、コースの内容が「AIによる粗製濫造（AI slop）」なのか、高品質な教材なのかという点に集中しています。作成者は開発にAIを使用していることを認めていますが、品質の重要性を強調し、コミュニティからの貢献を呼びかけています。批判的な意見としては、一部のコースが一般的すぎて、『Crafting Interpreters』や『Building Git』のような著名な書籍に見られる教育的な深みに欠けているという指摘があります。\n*   **技術インフラ:** このプラットフォームは、Judge0を使用した専用サーバー上でテストを実行しており、作成者はこれにかなりのリソース（約20GBのRAM）が必要であると述べています。「永久無料」モデルの長期的な持続可能性について疑問の声が上がり、作成者は企業のスポンサーシップを求める計画があると回答しました。\n*   **コミュニティとの対話:** スレッド内では、作成者のコミュニケーションスタイルに関する論争的な議論が見られました。一部のユーザーは、フィードバックに対する回答において作成者が「bro」のような非専門的な言葉遣いをしたことを批判しました。これが発展し、ネット上での社会的エチケット、権力構造、他人を説教する際の「有害性」についての議論にまで及びました。\n*   **教育哲学:** 作成者は、対象読者を完全な初心者ではなく、すでにプログラミング言語の知識があり、深いアーキテクチャの概念を理解したいと考えている開発者であると説明しています。参加者は、ExercismやNo Starch Pressの技術書など、同様の自習パスのためのリソースを共有しました。"
+  },
+  {
+    "item_id": 48873501,
+    "date": "2026-07-11",
+    "title": "Show HN: Orbit – AR satellite tracker, watch 15k+ objects",
+    "project_url": "https://nagylukas.github.io/orbit.html",
+    "hn_url": "https://news.ycombinator.com/item?id=48873501",
+    "content": "The thread discusses the launch of **Orbit**, a new iOS app designed to track satellites, planets, and constellations using AR, 2D maps, and a 3D globe.\n\n**Key points from the discussion include:**\n\n*   **Functionality & Motivation:** The creator built the app to provide a cleaner, more data-rich experience compared to existing alternatives. It utilizes TLE (Two-Line Element) data from CelesTrack to calculate positions and predict future passes.\n*   **Technical Implementation:** The developer shared that they used AI assistance to write the Swift/SwiftUI code, though they personally designed the underlying logic. The data pipeline involves a GitHub Action that updates information every two hours via a Cloudflare Worker.\n*   **Feedback & Troubleshooting:**\n    *   **User feedback:** Some users reported bugs (e.g., the satellite/debris filter not functioning) and concerns about high battery/heat usage. \n    *   **Legal/Licensing:** A brief discussion occurred regarding the licensing of CelesTrack data, which originated from Space-Track.\n    *   **Clarifications:** The developer clarified that the \"4+\" label on the App Store refers to the age rating, not the app's release date, and addressed questions about how pass calculations are performed.\n*   **Community Reception:** Reactions were generally supportive. Some participants defended the developer’s use of AI as an effective tool for building \"good enough\" software, drawing a parallel to how industrial manufacturing changed clothing production.\n\nThe developer remains open to feedback and plans to investigate the reported bugs and performance issues."
+  },
+  {
+    "item_id": 48871547,
+    "date": "2026-07-11",
+    "title": "Show HN: Clx – LuaをC++20経由でネイティブ実行ファイルにコンパイルする",
+    "project_url": "https://github.com/samyeyo/clx",
+    "hn_url": "https://news.ycombinator.com/item?id=48871547",
+    "content": "このスレッドでは、標準的なLuaコードをC++20に変換し、GCC、Clang、MSVCなどの標準的なツールチェーンを使用してスタンドアロンのネイティブ実行ファイルにコンパイルする、事前（AOT）コンパイラ **clx** を紹介します。\n\n**主なハイライト:**\n* **動機:** このプロジェクトは、LLVMや手動による機械語生成に頼るのではなく、ポータブルなコンパイラバックエンドとしてモダンC++を活用する実験的な試みです。\n* **最近のアップデート:** 最新バージョンでは、新しい「シャドウ型（shadow-types）」実装（従来のNaNタギングを置き換え）、完全な64ビット整数サポート、算術コード生成の改善、ARM64 macOSでのコルーチンサポートが導入されました。\n* **パフォーマンス:** 開発者によると、clxは標準的なLuaインタープリタよりも大幅に高速であり、特定の計算負荷の高いシナリオではLuaJITを上回る可能性があるとのことです。\n* **有用性:** このプロジェクトには、clx C++ APIとSokolモジュールを活用したグラフィカルなアプリケーション（Pongやマンデルブロ集合など）の例が含まれており、実開発における可能性を示しています。"
+  },
+  {
+    "item_id": 48870472,
+    "date": "2026-07-11",
+    "title": "Show HN: 所有権ではなく富の創造に基づいた世界長者番付",
+    "project_url": "https://anti-forbes-list.vercel.app",
+    "hn_url": "https://news.ycombinator.com/item?id=48870472",
+    "content": "このスレッドでは、**「Anti-Forbes List（アンチ・フォーブス・リスト）」**と題された「Show HN」プロジェクトについて議論されています。このリストは、創業者が自身のために保持した富を差し引き、彼らの企業が他者（年金基金、インデックスファンド、従業員など）のために生み出した富に基づいて億万長者をランク付けしようとするものです。\n\n議論は二分されており、批判は主に以下の3つの領域に集中しています。\n\n*   **手法:** 多くのユーザーは、この指標が狭義であり、恣意的で、欠陥がある可能性があると主張しています。批判者は、この指標がIPO後の市場パフォーマンスのみを測定しており、非金融的な「富」（科学的ブレークスルーやLinuxのようなオープンソースソフトウェアなど）を無視しているほか、インフレや競合企業における価値の「破壊」を考慮していないと指摘しています。\n*   **「富の創造」の定義:** 真の価値とは何かについて、大きな議論が交わされています。一部の参加者は、（農業分野の）ノーマン・ボーローグや公衆衛生のパイオニア、オープンスタンダードの作成者といった人物によって推進された社会の進歩こそが、富の創造の真の尺度であるべきだと主張しています。一方で、このリストは従来の「長者番付」に対する限定的かつ特定の回答として、一般投資家のために生み出された経済的富に光を当てるためのものだと擁護する声もあります。\n*   **資本主義/市場の価値:** スレッドは、市場システムの有効性に関するより広範な議論へと発展しています。市場が貧困削減やイノベーションにおいて果たす役割を擁護するコメントがある一方で、市場は近視眼的で富の破壊を招きやすく、リスト上で評価されることの少ない従業員やエンジニアの労働に依存していると批判する声もあります。\n\n繰り返し見られるテーマとして、**読解力**に対する不満があります。サイト上のプロジェクトページで手法が明確に定義されていると指摘して手法を擁護するユーザーがいる一方で、定義された手法を用いたとしても、結果として得られるランキングは誤解を招くものであり、本来の目的を達成できていないと主張するユーザーもいます。"
+  },
+  {
+    "item_id": 48873417,
+    "date": "2026-07-11",
+    "title": "Show HN: Reame – a CPU inference server that gets faster as it runs",
+    "project_url": "https://github.com/swellweb/reame",
+    "hn_url": "https://news.ycombinator.com/item?id=48873417",
+    "content": "The thread discusses the release of **Reame**, a CPU inference server designed to improve in performance over time. The discussion covers several key points:\n\n*   **AI-Generated Content:** Users expressed skepticism regarding the project's documentation being entirely AI-generated, with some noting that the prose felt like stereotypical, buzzword-heavy marketing copy. The solo developer acknowledged this, explaining that they use AI for efficiency but verified all performance benchmarks personally. In response to feedback, the dev removed some of the more hyperbolic marketing language.\n*   **Infrastructure and Performance:** There was a side discussion regarding the viability of using Oracle Cloud’s free ARM tier for hosting. While some users praised the resources available, others warned about the difficulty of obtaining them due to limited availability and potential changes to the free tier's limits.\n*   **Technical Queries:** Users raised questions about the model selection process and why Qwen 2.5 is prioritized in the project's recommendations (suggesting it is a result of model training data biases). One user encountered configuration errors while attempting to load local models.\n*   **Reception:** While some found the project \"really interesting,\" the overall tone of the thread was cautious, balancing interest in the performance claims against concerns regarding AI-assisted project transparency and documentation quality."
+  },
+  {
+    "item_id": 48873486,
+    "date": "2026-07-11",
+    "title": "Show HN: Earth Game – An offline CLI for turning life goals into quests",
+    "project_url": "https://github.com/skorotkiewicz/earth-game",
+    "hn_url": "https://news.ycombinator.com/item?id=48873486",
+    "content": "This thread discusses \"Earth Game,\" a CLI tool designed to gamify life goals and TODO lists. The conversation covers several key areas:\n\n*   **Feedback on the Project:** Some users find the tool interesting and encourage the developer, while others suggest the project needs more examples or visual documentation (like screenshots) to better demonstrate its utility.\n*   **Terminology:** There is a discussion regarding the term \"loop,\" which contributors clarify refers to \"open loops\" from David Allen’s *Getting Things Done* (GTD) methodology.\n*   **The Merits of Gamification:** A debate arises over whether gamifying productivity is effective or \"infantilizing.\" Proponents argue it is a helpful \"hack\" to motivate people to complete necessary but mundane tasks, while skeptics question its value.\n*   **Technical Queries:** The thread includes brief interactions regarding the CLI development process and a question about whether the tool is exclusive to Arch Linux."
+  },
+  {
+    "item_id": 48875342,
+    "date": "2026-07-11",
+    "title": "Show HN: Sqlsure – deterministic semantic checks for AI-generated SQL",
+    "project_url": "https://github.com/sqlsure/sqlsure",
+    "hn_url": "https://news.ycombinator.com/item?id=48875342",
+    "content": "The thread discusses the launch of **Sqlsure**, a tool designed to perform semantic checks on SQL queries to prevent \"fan-out\" errors (where joins cause measures like `SUM` to double-count data).\n\nKey points from the discussion include:\n\n*   **Core Functionality:** The author explains that Sqlsure validates queries against schema metadata (such as primary/foreign keys and grain definitions) to catch silent errors in aggregation before execution. The tool proved effective during testing, identifying 45 errors—including one in the official \"BIRD\" text-to-SQL benchmark—without producing false positives.\n*   **Criticism of the Example:** One commenter questioned whether the \"fan-out\" issue is worth a dedicated library, arguing that such errors are usually symptoms of poor database design that should be fixed at the architectural level rather than with a configuration layer. They also noted that existing tools like dbt and Looker already address these semantic problems.\n*   **AI-Generated Content:** Participants expressed frustration with the project's documentation, noting that it felt like typical, unintelligible AI-generated \"slop.\" The author acknowledged this, explaining that the project was a weekend POC that heavily leveraged AI, and expressed an intention to rewrite the documentation to be more human-readable.\n*   **Use Cases:** The author highlighted three ways to integrate Sqlsure: as a CLI tool for CI/CD gates, as an MCP server for AI agents, or as a Python library for existing SQL generators."
+  }
+]
