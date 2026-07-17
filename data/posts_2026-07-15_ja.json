@@ -1,0 +1,26 @@
+[
+  {
+    "item_id": 48926939,
+    "date": "2026-07-15",
+    "title": "Show HN: Firefox in WebAssembly",
+    "project_url": "https://developer.puter.com/labs/firefox-wasm/",
+    "hn_url": "https://news.ycombinator.com/item?id=48926939",
+    "content": "This Hacker News thread discusses the launch of **Firefox-WASM**, a project that runs the entire Firefox browser (Gecko, UI, and SpiderMonkey) inside a web browser using WebAssembly.\n\n### Key Highlights:\n*   **The Project:** The browser renders to a `<canvas>` element. It uses the WISP protocol for TCP-over-WebSockets, allowing the inner browser to perform network operations that standard browsers usually restrict.\n*   **Performance & Compatibility:** While users found it \"surprisingly performant\" on desktop, it faces significant stability issues, rendering artifacts, and high memory usage. It currently struggles on mobile devices and requires specific browser flags (like `wasm_js_promise_integration`) to function.\n*   **Development Costs:** The creator clarified that the \"$25k\" mentioned in the post referred to the cost of API-billed tokens used for debugging and JIT research, rather than a $25,000 cash investment.\n*   **Technical Debates:**\n    *   **Security:** Users debated whether this is truly \"end-to-end encrypted.\" While the connection to the destination site is TLS-encrypted, the project creator—who provides the WASM binary and relay—is technically in a position to intercept traffic, leading to concerns about trust.\n    *   **\"Browser-in-a-browser\":** Many users joked about the \"Yo Dawg\" meme regarding recursive browsers. Practical use cases include bypassing restrictive environments (like TVs or locked-down OSs) that prevent installing standard browsers or ad-blockers.\n    *   **Prior Art:** Discussion mentioned earlier experiments like `webkit.js` and `WebkitWasm` as alternative approaches to porting rendering engines to the web.\n*   **Puter's Reputation:** The thread included some friction regarding the project creator’s (Puter) presence on HN, with some users questioning whether the frequent promotion of their projects violates community guidelines.\n\n**Overall Sentiment:** The community is largely impressed by the technical achievement of porting a full browser engine to WASM, while acknowledging it is currently an experimental \"fun project\" rather than a tool for daily use."
+  },
+  {
+    "item_id": 48922838,
+    "date": "2026-07-15",
+    "title": "Show HN: misa77 - LZ4より2倍高速にデコードできるコーデック（圧縮率も向上）",
+    "project_url": "https://github.com/welcome-to-the-sunny-side/misa77",
+    "hn_url": "https://news.ycombinator.com/item?id=48922838",
+    "content": "このスレッドでは、分岐の削減とアウトオブオーダー実行の効率化を優先することで、LZ4よりも大幅に高いデコードスループットを実現するように設計された新しい圧縮コーデック「**misa77**」のリリースについて議論されています。\n\n### **主要な技術的洞察**\n*   **パフォーマンスのトレードオフ:** 著者は、misa77が圧縮速度を犠牲にすることで「SOTA（最先端）」のデコード速度を実現していると述べています。このフォーマットはトークンストリームとリテラルストリームを分離しており、これによりCPUはリテラルデータに先んじてトークンバイトを投機的にパースすることが可能です。\n*   **設計思想:** 速度を最大化するため、著者はデコンプレッサーのホットループを簡素化し、一致長と距離に厳格な制約を設け、圧縮中に「コスト」関数を利用して最終的な出力における分岐を最小限に抑えています。\n*   **現在の制限:** プロジェクトは開発初期段階（v0.x.y）です。著者は、フォーマットがまだ安定しておらず、現在の実装は悪意のある入力や破損した入力に対する堅牢性（未定義動作を引き起こす可能性がある）を備えていないと明言しています。著者は今後のバージョンでセキュリティと堅牢性に対処する意向です。\n\n### **コミュニティのフィードバックと比較**\n*   **統合:** ユーザーからは、ゲームエンジンやファームウェアへの統合を容易にするためのコードサンプルを提供するよう提案がありました。ゲームアセット（テクスチャやマップ）でテストしたところ、misa77は競合するパフォーマンスを示しましたが、テキストデータの場合ほど劇的な向上ではありませんでした。\n*   **ベンチマーク:** LZ4、Selkie、LZOといった競合製品とのパフォーマンス比較が示されました。misa77はデコード速度でリードしていますが、AArch64アーキテクチャにおけるパフォーマンスはまだ最適化の余地があるとの指摘がありました。\n*   **専門家からの意見:** Googleのエンジニア（Snappyの開発者）がコンパイラの最適化（Clang）やARM固有の命令使用に関するヒントを提供しました。また、「ストリームの分離」という設計は、AV1などのビデオコーデックですでに検討されている実績のある手法であるという指摘もありました。\n\n### **センチメントのまとめ**\n開発者コミュニティからの反応は概ね肯定的で、好奇心に満ちています。多くのコメント投稿者がこの実験的で高性能なアプローチを評価していますが、フォーマットが安定し、デコーダーがセキュリティリスクに対して堅牢になるまでは、本番環境での利用には適さないという見解で一致しています。"
+  },
+  {
+    "item_id": 48928402,
+    "date": "2026-07-15",
+    "title": "Show HN: One More Letter",
+    "project_url": "https://playonemoreletter.com/",
+    "hn_url": "https://news.ycombinator.com/item?id=48928402",
+    "content": "このスレッドでは、1文字ずつ追加して単語を構築していくデイリーワードゲーム**「One More Letter」**について議論されています。全体として、ユーザーからは洗練されたUI、心地よいタイピング体験、そして魅力的なコンセプトが高く評価されており、Wordleや類似の単語パズルと比較しても好意的に受け止められています。\n\n**主なフィードバックと一般的な不満点は以下の通りです：**\n\n*   **有効な単語の判定:** 多くのユーザーが、「正解」ではない有効なアナグラムや正当な単語が拒否されることに不満を抱いています。プレイヤーは、単一の正解に依存するのではなく、すべての有効な単語を受け入れるか、それらを見つけた場合にボーナスを付与すべきだと提案しています。\n*   **タイマーとUXの問題:** ページを開いた瞬間にタイマーが作動し、ルールを理解する前にゲームオーバーになることが多い「サドンデス」形式のタイマーが批判されています。「禅（Zen）」モードや一時停止ボタン、正式な「スタート」ボタンの追加を求める声が目立ちました。\n*   **明確さと説明:** 初心者からは、前のターンの文字や単語のパターンを再利用できるかどうかなど、ルールが不明確であるという指摘がありました。\n*   **エンゲージメント:** デイリー制限や失敗による終了モデルを残念に思う声がある一方で、その挑戦しがいを評価するユーザーもいました。一部のユーザーからは、「過去のパズル」リンクを見つけることで、デイリーチャレンジに失敗した後もプレイを続けられたという報告もありました。\n\n**開発者の回答:**\n開発者はフィードバックを認め、以下の改善を計画していると述べています：\n*   有効な単語が拒否される問題の修正。\n*   キーボードショートカット（シャッフル用のスペースキーなど）の追加。\n*   タイマーなしの「禅モード」の導入。"
+  }
+]
