@@ -1,0 +1,10 @@
+[
+  {
+    "item_id": 49039868,
+    "date": "2026-07-24",
+    "title": "Show HN: I made some transistor animations",
+    "project_url": "https://brandonli.net/semisim/animations",
+    "hn_url": "https://news.ycombinator.com/item?id=49039868",
+    "content": "The thread features positive reception for Brandon Li\u2019s new semiconductor animations, which visualize charge carriers in transistors using the developer's custom simulation software.\n\n**Key highlights from the discussion:**\n\n*   **Educational Value:** Multiple users\u2014including engineering students and professionals\u2014remarked that these visualizations would have made learning transistor physics significantly easier, as they clarify concepts often obscured by abstract formulas.\n*   **Licensing:** Following a request from a Canadian ham radio educator, the author updated the site to release the animations under a **CC-BY license**, allowing them to be used for teaching purposes.\n*   **Technical Details:** The author clarified that the simulations calculate field behavior (density of electrons and holes) rather than tracking individual point-like particles, though the motion is mathematically derived from diffusion-drift equations to provide a realistic visual representation.\n*   **Future Development:** The author confirmed that a 3D version of the simulation is in development.\n*   **Resource Recommendations:** Users discussed ways to bridge the gap from software to hardware, recommending resources like \"Nand to Tetris\" and textbooks on digital design for those interested in learning how transistors scale into functional computers."
+  }
+]

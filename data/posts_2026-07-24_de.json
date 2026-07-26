@@ -1,0 +1,10 @@
+[
+  {
+    "item_id": 49039868,
+    "date": "2026-07-24",
+    "title": "Show HN: Ich habe ein paar Transistor-Animationen erstellt",
+    "project_url": "https://brandonli.net/semisim/animations",
+    "hn_url": "https://news.ycombinator.com/item?id=49039868",
+    "content": "Der Thread zeigt eine positive Resonanz auf Brandon Lis neue Halbleiter-Animationen, die Ladungsträger in Transistoren mithilfe der vom Entwickler maßgeschneiderten Simulationssoftware visualisieren.\n\n**Wichtige Punkte aus der Diskussion:**\n\n*   **Bildungswert:** Mehrere Nutzer – darunter Ingenieurstudenten und Fachleute – merkten an, dass diese Visualisierungen das Erlernen der Transistorphysik erheblich erleichtert hätten, da sie Konzepte verdeutlichen, die oft durch abstrakte Formeln verschleiert werden.\n*   **Lizenzierung:** Auf eine Anfrage eines kanadischen Funkamateur-Lehrers hin aktualisierte der Autor die Website und veröffentlichte die Animationen unter einer **CC-BY-Lizenz**, wodurch sie für Lehrzwecke verwendet werden können.\n*   **Technische Details:** Der Autor stellte klar, dass die Simulationen das Feldverhalten (Dichte von Elektronen und Löchern) berechnen, anstatt einzelne punktförmige Teilchen zu verfolgen, obwohl die Bewegung mathematisch aus Diffusions-Drift-Gleichungen abgeleitet wird, um eine realistische visuelle Darstellung zu gewährleisten.\n*   **Zukünftige Entwicklung:** Der Autor bestätigte, dass sich eine 3D-Version der Simulation in der Entwicklung befindet.\n*   **Ressourcenempfehlungen:** Die Nutzer diskutierten Wege, die Lücke von der Software zur Hardware zu schließen, und empfahlen Ressourcen wie „Nand to Tetris“ sowie Lehrbücher zum digitalen Entwurf für diejenigen, die lernen möchten, wie Transistoren zu funktionalen Computern skalieren."
+  }
+]
