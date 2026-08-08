@@ -1,0 +1,50 @@
+[
+  {
+    "item_id": 49197137,
+    "date": "2026-08-06",
+    "title": "Show HN: Apple Magic Keyboardの代替を目指し、2年かけてメカニカルキーボードを設計しました",
+    "project_url": "https://electronicmaterialsoffice.com/",
+    "hn_url": "https://news.ycombinator.com/item?id=49197137",
+    "content": "このスレッドでは、Apple Magic Keyboardのハイエンドな代替品として設計された、超薄型（4.75mm）メカニカルキーボード「**Altar II**」を紹介します。2年以上の歳月をかけて開発されたこの製品は、メカニカルスイッチ、磁石で着脱可能なダイヤル、ハプティックフィードバック、赤色バックライト、そしてmacOS専用のコンパニオンアプリを備えています。\n\n### 主な議論のポイント:\n*   **デザインと美学:** ユーザーからは、そのインダストリアルデザインと完成度の高いウェブサイトに対し、Teenage Engineeringの美学に通じるものがあるとして強い称賛の声が上がりました。一方で、数字キーの「風変わりな」大きなフォントデザインは議論の的となり、多くの潜在的な購入者が、もっと洗練された控えめな外観を望んでいるという意見が目立ちました。\n*   **「Touch ID」のジレンマ:** 大きなトピックとなったのは、指紋センサーが搭載されていない点です。開発者は、AppleのSecure Enclaveとの通信を必要とするネイティブで完全に機能するTouch IDをサードパーティ製品で実装することは技術的に不可能であると説明しました。一部のユーザーからはApple製キーボードの部品を流用して自作する提案もありましたが、開発者はそれを行うと断片化され劣悪なユーザー体験になってしまうと強調しました。\n*   **スイッチと人間工学:** このキーボードには、MシリーズMacBookに近いタクタイル感とキビキビとした操作性を持ちつつ、ストロークをわずかに深く（1.8mm）した独自の「メカニカルシザー」スイッチが採用されています。薄型である点は好評でしたが、人間工学を重視する愛好家からは、分割型やオルソリニア（格子配列）、あるいは傾斜（チルト）デザインではない点を惜しむ声も聞かれました。\n*   **互換性とソフトウェア:** 本製品はZMKファームウェアをベースに構築されており、LinuxおよびmacOSと互換性があります。設定はデバイス内に保存されるため、ポータビリティが確保されています。開発者は、前作「Altar I」に倣い、ファームウェアをオープンソース化することを約束しました。\n*   **ビジネスと価格設定:** このキーボードは高級品として位置づけられており（先行予約価格249ドル、小売価格349ドル）、ブティック型ハードウェア製造の課題や、ISOレイアウトやテンキーといったニッチな機能への要望と、統一感のある製品作りというジレンマについても議論が行われました。\n\n**全体的な評価:** エンジニアリングの努力、プレミアムな作り、そして従来のメカニカルキーボードの「かさばる」性質を解消しようとする試みに対しては、圧倒的に好意的な反応が寄せられています。数字のフォント、傾斜や足の欠如、Touch ID非搭載といった特定の設計上の選択に対する批判はあるものの、多くのユーザーが独立したハードウェアのイノベーションを支援するために予約購入することに期待を寄せています。"
+  },
+  {
+    "item_id": 49198583,
+    "date": "2026-08-06",
+    "title": "Show HN: The Channels SDK – あらゆるエージェントをあらゆるチャネル（Slack、MS Teams）へ",
+    "project_url": "https://github.com/CopilotKit/channels-sdk",
+    "hn_url": "https://news.ycombinator.com/item?id=49198583",
+    "content": "この議論は、AIエージェントをSlackやMicrosoft Teamsなどのコミュニケーションプラットフォームに統合するために設計されたツールである**CopilotKitのChannels SDK**のローンチを中心に展開されています。\n\n**スレッドの主なポイントは以下の通りです：**\n\n*   **コア機能:** このSDKを使用すると、開発者はあらゆるエージェントフレームワーク（Claude Agent SDK、Mastraなど）をさまざまなチャットチャネルに導入できます。SDKは「AG-UI」（Agent UI）を使用して、異なるプラットフォームのWebフックを統一されたイベント形式に標準化します。これにより、プロセスの再起動後も永続する、インタラクティブな生成UI（カードやボタンなど）を実現できます。\n*   **オープンソース対ホスト型:** ライセンスに関する議論が大きな焦点となりました。SDKコンポーネントはオープンソースですが、クローズドソースのバックエンドが必要かどうかについて、当初ユーザーの間で混乱や懸念がありました。開発者は、エージェントロジックはユーザー自身のインフラ上で実行され、オープンソースのSDKは提供されているホスト型の「Intelligence」バックエンドとは独立して機能することを明確にしました。\n*   **競合他社との比較:** ユーザーは本SDKをVercel Chat SDKと比較しました。両フレームワークともJSXベースのUIコンポーネントを提供しているという指摘もありましたが、CopilotKitチームは、永続性、マルチプラットフォームのエージェントトランスポート、そしてAG-UIエコシステムへの特化した取り組みを強調しました。\n*   **コミュニティの反応:**\n    *   **肯定的:** チャットをLLMの「第3のフォームファクタ」にするというアプローチや、スムーズなオンボーディング体験を評価する声が多く寄せられました。\n    *   **懐疑的:** 「Copilot」というブランディング（Microsoft製品との混同）、ボットの「冗長な」発言による職場環境へのノイズ、およびホスト型サービスの価格体系に対する懸念が示されました。\n    *   **機能要望/代替案:** Mastodonなどの追加プラットフォームへの要望が挙がったほか、サンドボックス化されたセルフホスト型のエージェント管理に注力する*eve.dev*などの代替ツールが言及されました。\n\n全体として、このプロジェクトはチャットベースのエージェント対話の複雑さを抽象化するための、開発者重視の堅牢な取り組みと見なされています。ただし、オープンソース化の道筋の明確さやブランディングに関しては、引き続きチームへのフィードバックが寄せられています。"
+  },
+  {
+    "item_id": 49203059,
+    "date": "2026-08-06",
+    "title": "Show HN: Raspberry Pi Pico 2に移植された『ポケットモンスター エメラルド』",
+    "project_url": "https://github.com/mattdeeds/pokeemerald-rp2350",
+    "hn_url": "https://news.ycombinator.com/item?id=49203059",
+    "content": "Raspberry Pi Pico 2への『ポケットモンスター エメラルド』移植をめぐる議論は、技術的な実装とAI支援開発（いわゆる「バイブコーディング（vibecoding）」）に関する論争という2つの主要なテーマに集約されています。\n\n**技術的な側面:**\n* このプロジェクトは、GBAエミュレーションの代わりにネイティブ移植を行うことで、Picoの第2コアでビデオハードウェアをソフトウェアとして再実装し、60 FPSでのHDMI出力を実現しています。\n* DVI/HDMIオーディオエンコーディングの最適化されたアセンブリコードについて、支援を申し出るユーザーもいました。\n* このプロジェクトの合法性については大きな議論が巻き起こっています。その理由は、リポジトリがユーザーに自身のROMを提供させるのではなく、著作権で保護されたアセットをそのまま含んでいるためです。\n\n**AIと「バイブコーディング」に関する論争:**\n* スレッドの大部分は、AI支援プロジェクトへの批判に割かれています。批判派は、コードやREADMEがClaudeのようなモデル特有の「痛々しい（cringe）」文体や慣用句を反映していると指摘し、人間による努力の欠如や、「肥大化した」コードの可能性に対する不満を表明しています。\n* プロジェクトの擁護派は、探求的なAIの利用は有効な学習ツールであり、LLMの使用を理由に他人の成果物を批判するのは冷笑的であると主張しています。\n* 会話はさらに、AIによる執筆スタイルの批判（特にダッシュの多用について）、業界における「コード行数（LOC）」指標への固執、そしてAI支援に過度に依存する開発者と協力することへのフラストレーションといった話題にまで発展しています。"
+  },
+  {
+    "item_id": 49194772,
+    "date": "2026-08-06",
+    "title": "Show HN: A terminal glued to the macOS dock",
+    "project_url": "https://github.com/palamim/starboard",
+    "hn_url": "https://news.ycombinator.com/item?id=49194772",
+    "content": "The thread discusses **Starboard**, a new macOS utility that attaches a persistent, always-visible terminal window to the macOS dock. \n\n**Key points include:**\n\n*   **Motivation:** The creator, @palamim, developed Starboard to eliminate the inefficiency of opening a full-featured terminal (like Ghostty) just to run simple, one-off commands (like opening project directories) while managing multiple virtual desktops.\n*   **Functionality:** Starboard sits next to the dock and stays visible across all desktops without stealing focus. Based on community feedback, it now includes a `Cmd+E` shortcut to expand the terminal to full height for longer-running tasks, such as background agents.\n*   **Compatibility & Iteration:** While initially designed for a bottom-dock setup, the creator has quickly iterated to support left/right dock placements, auto-hide, and multiple monitors. \n*   **Reception:** The community received the project positively, drawing comparisons to \"Quake-style\" drop-down consoles, though the creator distinguishes Starboard by its \"glued-to-dock\" nature and non-intrusive design. \n\nThe developer is actively soliciting feedback on specific use cases and hardware setups to continue refining the app."
+  },
+  {
+    "item_id": 49195297,
+    "date": "2026-08-06",
+    "title": "Show HN: Skyline Co-op is like SimTower, but built around democratic socialism",
+    "project_url": "https://intergalacticrobots.app/skyline-coop/",
+    "hn_url": "https://news.ycombinator.com/item?id=49195297",
+    "content": "This thread discusses **Skyline Co-op**, a simulation game inspired by *SimTower* where players manage a building under a democratic socialist economic model rather than a traditional capitalist one.\n\n### **Game Mechanics & Feedback**\n*   **Concept:** Players act as elected stewards responsible to an Assembly. Success involves managing waitlists for housing, setting sliding-scale dues, and balancing needs (food, health, entertainment) to secure grants and prevent being voted out.\n*   **Technical Feedback:** Users reported issues with CPU usage (especially on Firefox/Linux), mobile drag-and-drop controls, and sound settings. Suggestions for improvement included adding save/export functionality, making the game a Progressive Web App (PWA), and refining UI elements like building construction and elevator logistics.\n*   **Comparisons:** One commenter suggested *Workers & Resources: Soviet Republic* as an existing example of a non-capitalist management sim.\n\n### **Discussion & Debate**\n*   **Development:** The creator noted they are building the game using Claude. The discussion touched on the rise of \"AI slop\" on Hacker News, with users debating whether AI-generated content should be judged by its quality rather than its origin.\n*   **Political/Philosophical Tensions:** The thread experienced significant moderation activity (multiple comments were flagged). The discussion veered into political debates regarding the definition of \"democratic socialism\" vs. \"social democracy,\" the role of money in US elections, and the perceived irony of using capitalistic tools to develop a game critical of capitalism. \n*   **Community Reception:** Despite the flagged political disagreements, many users found the game \"adorable,\" \"cute,\" and a faithful homage to the *SimTower* vibe."
+  },
+  {
+    "item_id": 49195251,
+    "date": "2026-08-06",
+    "title": "Show HN: demake – one source project compiles to any retro game console ROM",
+    "project_url": "https://geosona.com/demake/",
+    "hn_url": "https://news.ycombinator.com/item?id=49195251",
+    "content": "The thread introduces **demake**, a tool and declarative language (\"Demotic\") designed to compile a single codebase into ROMs for various retro gaming consoles. The creator developed it to overcome the difficulty of getting generative AI to adhere to strict hardware constraints like pixel and color limitations.\n\nKey points from the discussion include:\n\n*   **Capabilities & Scaling:** Users are interested in whether the language can handle complex genres like platformers. The developer is exploring ways to manage platform-specific differences (e.g., using \"Demakefiles\" or dynamic constraints for more powerful hardware) while keeping the source code unified.\n*   **Technical Feedback:** A user pointed out a bug in the input handling (sticking movement) which the developer plans to fix. Another user suggested leveraging Lisp macros to simplify the syntax and language implementation.\n*   **Challenges & Ideas:**\n    *   **Art Conversion:** Participants discussed the difficulties of converting upscaled AI pixel art back to native hardware standards, mentioning \"edge-aware pixelation\" as a potential technique.\n    *   **Design & Math:** A user questioned how the project handles rounding errors when translating relative units across different screen sizes.\n    *   **Creative Proposals:** There is community interest in using the tool to create \"demakes\" of modern games (e.g., *Alan Wake*) using classic PS1-style fixed-camera engines."
+  }
+]
