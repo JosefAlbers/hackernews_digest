@@ -1,0 +1,18 @@
+[
+  {
+    "item_id": 49230891,
+    "date": "2026-08-09",
+    "title": "Show HN: Eine Version des Project Oberon Systems, die auf RISC-V statt auf RISC-5 läuft",
+    "project_url": "https://github.com/rochus-keller/OberonSystem/tree/op2-rv32",
+    "hn_url": "https://news.ycombinator.com/item?id=49230891",
+    "content": "Der Thread diskutiert ein Projekt von Rochus Keller, das das **Project Oberon System** von der ursprünglichen RISC-5-Architektur auf **RISC-V** portiert.\n\n**Wichtige Highlights sind:**\n\n*   **Projektziele:** Der Autor nutzt diese Portierung als Zwischenschritt, um das „Oberon System 3“ auf moderner, zugänglicher Hardware auszuführen, wobei der Fokus insbesondere auf dem ESP32-P4-Mikrocontroller liegt.\n*   **Technischer Kontext:** Die Teilnehmer stellen klar, dass RISC-5 die von Niklaus Wirth entworfene, maßgeschneiderte ISA für das ursprüngliche Oberon-System war, während RISC-V ein moderner, weit verbreiteter Standard ist.\n*   **Hardware-Verfügbarkeit:** Die Diskussion befasst sich mit der historischen Schwierigkeit, Boards für das ursprüngliche Oberon-System zu finden (da dieses auf mittlerweile veralteten Xilinx-FPGAs basierte). Nutzer schlagen moderne Alternativen wie das MiSTer FPGA oder verschiedene Einplatinencomputer (OrangePi, ClockworkPi) vor und merken an, dass die Portierung auf Mikrocontroller wie den ESP32 die Realisierbarkeit des Projekts erheblich verbessert.\n*   **Entwicklungsphilosophie:** Es gibt viel Anerkennung für die Einfachheit und Effizienz von Wirths Oberon-Design; der Autor merkt an, dass sich das System hervorragend für Experimente und die Migration auf neue Toolchains eignet.\n\nFür diejenigen, die neu in diesem Thema sind, empfiehlt der Thread die [Project Oberon-Website](https://projectoberon.net/), um mehr über die zugrunde liegende Philosophie zu erfahren."
+  },
+  {
+    "item_id": 49229848,
+    "date": "2026-08-09",
+    "title": "Show HN: Airy – Kostenlose, schnelle und einfache Erstellung von Sprachinhalten",
+    "project_url": "https://airy.so",
+    "hn_url": "https://news.ycombinator.com/item?id=49229848",
+    "content": "Der Thread diskutiert **Airy**, ein neues KI-Tool zur Erstellung von Sprachinhalten. Die Resonanz war gemischt, wobei sich das Feedback auf folgende Bereiche konzentrierte:\n\n*   **Stimmqualität und Stil:** Mehrere Nutzer kritisierten die Stimmen als \"blechern\", \"kindisch\" oder zu sehr \"anime-artig\" und merkten an, dass ihnen die professionelle Rundfunkqualität fehle, die sie erwartet hatten. Es gab eine umfassendere Diskussion darüber, warum synchronisierte Animes oft unnatürliche Intonation und Kadenz aufweisen.\n*   **Technische Leistung:** Die Nutzer stellten fest, dass das Timing zwar gut ist, die KI jedoch mit der Prosodie – dem natürlichen Rhythmus und der Nuancierung der Sprache – zu kämpfen hat, was zu einer fehlenden emotionalen Ausdruckskraft führt.\n*   **Entwicklung:** Der Ersteller bestätigte, dass Airy ein proprietäres, hausinternes TTS-Modell verwendet, was einige Nutzer trotz ihrer Kritik an der Ausgabequalität beeindruckend fanden.\n*   **Allgemeine Stimmung:** Während einige Nutzer die Geschwindigkeit und die beeindruckende Art der Entwicklung eines eigenen Modells anerkannten, waren andere der Meinung, dass die KI-Audiogenerierung immer noch hinter der menschlichen Leistung zurückbleibt, insbesondere bei komplexer Sprache wie Selbstgesprächen."
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "item_id": 49230891,
+    "date": "2026-08-09",
+    "title": "Show HN: A Project Oberon System version running on RISC-V instead of RISC-5",
+    "project_url": "https://github.com/rochus-keller/OberonSystem/tree/op2-rv32",
+    "hn_url": "https://news.ycombinator.com/item?id=49230891",
+    "content": "The thread discusses a project by Rochus Keller that ports the **Project Oberon System** from the original RISC-5 architecture to **RISC-V**. \n\n**Key highlights include:**\n\n*   **Project Goals:** The author is using this port as an intermediate step toward running the \"Oberon System 3\" on modern, accessible hardware, specifically targeting the ESP32-P4 microcontroller.\n*   **Technical Context:** Participants clarify that RISC-5 was Niklaus Wirth\u2019s custom ISA for the original Oberon system, while RISC-V is a modern, widely adopted standard.\n*   **Hardware Accessibility:** The conversation addresses the historical difficulty of finding boards to run the original Oberon system (which used now-obsolete Xilinx FPGAs). Users suggest modern alternatives like the MiSTer FPGA or various single-board computers (OrangePi, ClockworkPi), noting that porting to microcontrollers like the ESP32 significantly improves the project's viability.\n*   **Development Philosophy:** There is appreciation for the simplicity and efficiency of Wirth\u2019s Oberon design, with the author noting that the system is excellent for experimentation and migration to new toolchains. \n\nFor those new to the topic, the thread recommends the [Project Oberon website](https://projectoberon.net/) for learning about the underlying philosophy."
+  },
+  {
+    "item_id": 49229848,
+    "date": "2026-08-09",
+    "title": "Show HN: Airy \u2013 Free, fast, and simple voice content creation",
+    "project_url": "https://airy.so",
+    "hn_url": "https://news.ycombinator.com/item?id=49229848",
+    "content": "The thread discusses **Airy**, a new AI voice content creation tool. The reception was mixed, with feedback focusing on the following areas:\n\n*   **Voice Quality and Style:** Several users criticized the voices as \"tinny,\" \"childish,\" or overly \"anime-like,\" noting that they lack the professional, broadcast-style quality they expected. There was a broader side discussion about why dubbed anime often features unnatural intonation and cadence.\n*   **Technical Performance:** Users noted that while the timing is good, the AI struggles with prosody\u2014the natural rhythm and nuance of speech\u2014resulting in a lack of emotional delivery.\n*   **Development:** The creator confirmed that Airy uses a proprietary, in-house TTS model, which some users found impressive despite their critiques of the output quality. \n*   **General Sentiment:** While some users acknowledged the speed and impressive nature of building an in-house model, others felt that AI audio generation still falls short of human-level performance, particularly for complex speech like soliloquies."
+  }
+]
