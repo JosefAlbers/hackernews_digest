@@ -1,0 +1,18 @@
+[
+  {
+    "item_id": 49292584,
+    "date": "2026-08-13",
+    "title": "Show HN: MCP-stama – Ein ultraschneller Rust-MCP-Server ohne Abhängigkeiten",
+    "project_url": "https://github.com/StamManif/mcp-stama",
+    "hn_url": "https://news.ycombinator.com/item?id=49292584",
+    "content": "Der Thread besteht aus einem „Show HN“-Beitrag, der **MCP-stama** vorstellt, einen ultraschnellen Model Context Protocol (MCP)-Server, der in Rust geschrieben wurde und keine externen Abhängigkeiten hat. Die Diskussion enthält derzeit keine aktiven Kommentare, da die einzige Antwort als „dead“ markiert wurde."
+  },
+  {
+    "item_id": 49286073,
+    "date": "2026-08-13",
+    "title": "Show HN: MCP Memory – Schneller Agenten-Speicher mittels Googles OKF und SQLite FTS5",
+    "project_url": "https://github.com/fellowgeek/mcp-memory",
+    "hn_url": "https://news.ycombinator.com/item?id=49286073",
+    "content": "Dieser Thread diskutiert die Veröffentlichung von **MCP Memory**, einem Tool, das das Open Knowledge Format (OKF) und SQLite FTS5 für die agentenbasierte Wissensabfrage nutzt. Die Diskussion dreht sich um den Nutzen strukturierter Speichersysteme im Vergleich zu einfachen lokalen Markdown-Dateien.\n\n### Kernpunkte der Diskussion:\n\n*   **Leistung vs. Einfachheit:** Kritiker argumentieren, dass einfache `grep`-basierte Suchen in Markdown-Dateien für die meisten Anwendungsfälle ausreichen und spezialisierte Speicherebenen unnötigen Overhead erzeugen. Befürworter entgegnen, dass die FTS5-Indizierung eine schnellere und skalierbarere Abfrage ermöglicht, insbesondere wenn die Anzahl der Notizen wächst und einfache sequentielle Scans ineffizient werden.\n*   **Anwendungsfälle:** Die Teilnehmer sind sich einig, dass diese Systeme am besten für „dauerhafte Fakten“ (z. B. Projektinfrastruktur, Skill-Bibliotheken oder Präferenzen) geeignet sind, anstatt für kurzlebige Informationen wie sich schnell ändernde Codebasen.\n*   **Mensch-Agent-Interaktion:** Mehrere Benutzer teilen ihre persönlichen Arbeitsabläufe – etwa das Pflegen einer `AGENT.md`- oder `MEMORY.md`-Datei, die der Agent aktuell halten soll. Dieser Ansatz bietet eine für Menschen lesbare, portable und versionskontrollierbare Quelle der Wahrheit.\n*   **Portabilität:** Ein wesentlicher Vorteil ist, dass MCP-Server (Model Context Protocol) einen plattformübergreifenden Speicherzugriff ermöglichen. Dadurch können Agenten den Kontext über verschiedene Umgebungen hinweg beibehalten (z. B. Weboberfläche vs. lokale IDEs), in denen der Dateisystemzugriff ansonsten eingeschränkt oder fragmentiert sein könnte.\n*   **Herausforderungen:** \n    *   **Tool-Nutzung:** Einige Benutzer merkten an, dass es durch aktuelle Modell-Updates (wie bei Claude) schwieriger geworden ist, Agenten zur Nutzung benutzerdefinierter Speicher-Tools anstelle ihrer nativen, fest kodierten Speichersysteme zu zwingen.\n    *   **Synchronisation:** Das Speichern von Speicherinhalten in Git-basierten Systemen kann zu Merge-Konflikten führen, was alternative Ansätze wie die ETag-basierte Validierung erforderlich macht.\n*   **Vorhandene Alternativen:** Das Gespräch hebt ein überfülltes Ökosystem ähnlicher Tools hervor (z. B. Memento, Markbase, Mem0) und unterstreicht die Ansicht, dass es zwar viele Lösungen gibt, der Aufbau einer eigenen Speicherarchitektur jedoch weiterhin ein beliebtes und lehrreiches Projekt für Entwickler bleibt."
+  }
+]

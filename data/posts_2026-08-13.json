@@ -1,0 +1,18 @@
+[
+  {
+    "item_id": 49292584,
+    "date": "2026-08-13",
+    "title": "Show HN: MCP-stama \u2013 An ultra-fast Rust MCP server with no dependencies",
+    "project_url": "https://github.com/StamManif/mcp-stama",
+    "hn_url": "https://news.ycombinator.com/item?id=49292584",
+    "content": "The thread consists of a \"Show HN\" post introducing **MCP-stama**, an ultra-fast Model Context Protocol (MCP) server written in Rust with no external dependencies. The discussion currently contains no active comments, as the only reply has been marked as dead."
+  },
+  {
+    "item_id": 49286073,
+    "date": "2026-08-13",
+    "title": "Show HN: MCP Memory \u2013 Fast Agent Memory Using Google's OKF and SQLite FTS5",
+    "project_url": "https://github.com/fellowgeek/mcp-memory",
+    "hn_url": "https://news.ycombinator.com/item?id=49286073",
+    "content": "This thread discusses the release of **MCP Memory**, a tool that uses the Open Knowledge Format (OKF) and SQLite FTS5 for agent-based knowledge retrieval. The discussion centers on the utility of structured memory systems versus simple local markdown files.\n\n### Key Points of Discussion:\n\n*   **Performance vs. Simplicity:** Critics argue that simple `grep`-based searches of markdown files are sufficient for most use cases and that specialized memory layers add unnecessary overhead. Proponents counter that FTS5 indexing provides faster, more scalable retrieval, especially as the number of notes grows and simple sequential scans become inefficient.\n*   **Use Cases:** Participants agree that these systems are best suited for \"durable facts\" (e.g., project infrastructure, skill libraries, or preferences) rather than ephemeral information like rapidly changing code bases.\n*   **Human-Agent Interaction:** Several users share their personal workflows\u2014such as maintaining an `AGENT.md` or `MEMORY.md` file that the agent is instructed to keep updated. This approach provides a human-readable, portable, and version-controllable source of truth.\n*   **Portability:** A key advantage noted is that MCP (Model Context Protocol) servers allow for cross-platform memory access, enabling agents to retain context across different environments (e.g., the web interface vs. local IDEs) where filesystem access might otherwise be restricted or fragmented.\n*   **Challenges:** \n    *   **Tool Usage:** Some users noted that recent updates to models (like Claude) have made it more difficult to force agents to use custom memory tools instead of their native, hardcoded memory systems.\n    *   **Synchronization:** Storing memory in Git-backed systems can lead to merge conflicts, necessitating alternative approaches like ETag-based validation.\n*   **Existing Alternatives:** The conversation highlights a crowded ecosystem of similar tools (e.g., Memento, Markbase, Mem0) and reinforces the sentiment that while many solutions exist, building custom memory architecture remains a popular and educational project for developers."
+  }
+]
