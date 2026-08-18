@@ -1,0 +1,42 @@
+[
+  {
+    "item_id": 49315742,
+    "date": "2026-08-16",
+    "title": "Show HN: Mic Drop, 실시간 멀티플레이어 노래방 게임",
+    "project_url": "https://www.micdrop.gg/",
+    "hn_url": "https://news.ycombinator.com/item?id=49315742",
+    "content": "이 스레드에서는 특정 단어가 포함된 노래를 불러 경쟁하는 실시간 멀티플레이어 브라우저 게임인 \"Mic Drop\"에 대해 논의합니다. 개발자는 이 게임이 실제로 오디오를 스트리밍하거나 가사 동기화를 요구하지 않으며, 플레이어들은 보통 외부 음성 채팅(예: Discord)이나 대면을 통해 참여한다고 확인했습니다.\n\n논의의 주요 내용은 다음과 같습니다:\n\n*   **게임 메커니즘 및 피드백:** 사용자들은 이 개념에 대해 기대감을 표했으며, 일부는 테스트를 위한 싱글 플레이어 모드 추가를 제안했습니다. 개발자는 현재 이 기능을 활발히 작업 중이며, 이미 여러 브라우저 세션을 이용해 사용자들에 의해 검증되었습니다.\n*   **유사 게임 및 전통:** 참가자들은 이 게임을 기존 경험들과 비교했습니다:\n    *   **안탁샤리(Antakshari):** 이전 노래의 마지막 글자(또는 음)로 시작하는 노래를 불러야 하는 인도의 게임입니다.\n    *   **코미디 나이트(Comedy Night):** 가상 공간에서 스탠드업 코미디나 노래를 부를 수 있는 Steam 게임으로, 개발사의 AI 에셋 사용에 관한 부차적인 논쟁을 불러일으켰습니다.\n    *   **스뮬(Smule):** 지연 시간 문제를 피하기 위해 사용자가 비동기식으로 각자의 파트를 녹음하여 원격 듀엣을 가능하게 하는 장수 노래방 앱입니다.\n    *   **커스텀 프로젝트:** 한 사용자는 제한 시간 내에 특정 단어가 포함된 노래를 찾는 자신의 브라우저 기반 게임을 공유했습니다.\n*   **명확한 정의:** 일부 사용자는 이 게임이 반주 트랙과 스크롤되는 가사가 있는 전통적인 노래방 플랫폼이라기보다 프롬프트 기반의 노래 챌린지에 가깝기 때문에 \"노래방(karaoke)\"이라는 용어가 부적절할 수 있다고 지적했습니다."
+  },
+  {
+    "item_id": 49319814,
+    "date": "2026-08-16",
+    "title": "Show HN: A public AI whose memory is shared across all users",
+    "project_url": "https://wildstatic.com/",
+    "hn_url": "https://news.ycombinator.com/item?id=49319814",
+    "content": "The thread discusses the potential and challenges of using a public AI with a shared, persistent memory across all users.\n\n### The \"Wildstatic\" Experiment\nThe original poster (OP) shared a project (wildstatic.com) where an AI agent maintains a shared memory across every user interaction. The project quickly drew comparisons to **Cleverbot** and Microsoft’s **Tay.ai**, highlighting the risks of exposing an AI to adversarial internet traffic. The agent demonstrated \"personality\" changes, such as expressing weariness after repetitive questions, and reportedly began filtering out low-effort prompts.\n\n### Shared AI in Professional Contexts\nThe discussion shifted toward a practical, successful use case for shared AI, proposed by one participant:\n*   **The \"Common Terminal\" Model:** Instead of individual AI sessions, a 12-person senior development team uses a single, air-gapped terminal as a shared laboratory resource.\n*   **Benefits:** This creates a shared team ontology, provides a \"historiography\" of project decisions, and ensures that the AI learns from the entire team’s collective experience. It also prevents redundancy in prompts and helps standardize terminology.\n*   **Constraints:** The team maintains strict quality standards by pair-programming, mandating code reviews for all AI-assisted work, and ensuring the LLM is treated as a sandboxed tool rather than an autonomous coder.\n*   **Philosophy:** Contributors emphasized that this approach requires high team maturity and trust. Some participants engaged in broader philosophical debates about whether these shared systems are a precursor to collective intelligence or \"digital godheads.\"\n\n### Key Takeaways\n*   **Shared Context:** While a public, open-memory system is chaotic and prone to adversarial interaction, the concept is highly effective in controlled environments (like professional engineering teams) where it serves as a \"collective brain.\"\n*   **The Evolution of AI Interaction:** Participants noted that the current \"AI as a disposable chatbot\" model may soon seem quaint, replaced by systems that specialize through persistent, environment-tuned memory.\n*   **The \"Human-in-the-Loop\":** The most successful professional application remains firmly human-controlled, with the AI functioning as an intern or specialized tool that must be carefully managed through rigorous git workflows and human oversight."
+  },
+  {
+    "item_id": 49317546,
+    "date": "2026-08-16",
+    "title": "Show HN: Laptop is the last place your secrets are still in plaintext",
+    "project_url": "https://github.com/jitpass/jit",
+    "hn_url": "https://news.ycombinator.com/item?id=49317546",
+    "content": "The thread discusses the release of **Jit**, an open-source tool designed to protect secrets on local developer machines by moving them from plaintext files to an encrypted, process-gated state.\n\n### **Core Arguments and Themes:**\n\n*   **The Problem:** The author and supporters argue that developer environments are vulnerable to rogue processes, AI agents, or supply-chain attacks that can easily scrape plaintext configuration files (like `~/.aws` or `.env` files).\n*   **The Solution:** Jit acts as a local secret manager that provides an encrypted interface, preventing unauthorized processes from accessing secrets even if they have filesystem access.\n*   **Criticism & Skepticism:**\n    *   **\"Security Theater\":** Several users argue that if a malicious process gains code execution on a machine, \"making it slightly harder\" to access secrets is performative and doesn't fundamentally solve the security risk.\n    *   **Trust & Implementation:** Critics expressed concern over \"AI-generated\" code, the installation method (which some initially mistook for `curl | sh`), and the potential for a new tool to introduce its own vulnerabilities or \"snake oil\" risks.\n    *   **Existing Alternatives:** Many participants suggested that better practices already exist, such as:\n        *   **Containerization/VMs:** Isolating untrusted processes via Docker or VMs.\n        *   **Standard Infrastructure:** Leveraging built-in tools like `systemd-credentials` (with TPM backing) on Linux or using established CLI tools like 1Password or `age`.\n*   **Author’s Response:** The author (a security professional) defended the project, emphasizing that it aims to provide a free, accessible \"defense-in-depth\" layer for developers who don't have the budget or desire for enterprise-grade secret management tools. They acknowledged feedback regarding installation practices and committed to improving documentation and security transparency.\n\n### **Key Technical Takeaways:**\n*   **Mechanism:** Jit uses a \"live mount\" (named pipe) approach to maintain compatibility with existing scripts while keeping the underlying storage encrypted.\n*   **Distinction:** Clarifications were made that the recommended installation is via `brew` (which includes Apple-notarized signatures), rather than the manual curl-to-tar method, which was criticized for being opaque.\n*   **Platform Support:** While currently focused on macOS, the community expressed a high degree of interest in future Linux support, with some users pointing out that Linux already has robust native solutions like `systemd-creds` that are often overlooked."
+  },
+  {
+    "item_id": 49315709,
+    "date": "2026-08-16",
+    "title": "Show HN: Rust와 GPUI로 코딩 에이전트용 네이티브 앱을 만들었습니다",
+    "project_url": "https://waku.sh",
+    "hn_url": "https://news.ycombinator.com/item?id=49315709",
+    "content": "이 스레드에서는 Rust와 GPUI 프레임워크로 구축된 네이티브 GUI 애플리케이션인 **Waku**의 출시를 다룹니다. 이 앱은 기존의 Electron 기반 코딩 에이전트 앱(공식 ChatGPT 또는 Claude 클라이언트 등)을 대체할 고성능 대안으로 설계되었습니다.\n\n**토론의 주요 내용은 다음과 같습니다:**\n\n*   **동기:** 개발자는 Electron 기반 앱의 성능에 대한 불만과 여러 코딩 에이전트를 관리하기 위한 통합 인터페이스의 필요성 때문에 Waku를 만들었습니다.\n*   **기술:** 사용자들은 **GPUI** 선택에 큰 관심을 보였으며, 한 댓글 작성자는 이를 \"Rust 생태계의 React\"가 되어가고 있다고 언급했습니다. 이 앱은 CLI 기반 코딩 에이전트를 위한 GUI 래퍼 역할을 합니다.\n*   **사용자 피드백 및 제안:**\n    *   일부 사용자는 Expo로 에이전트 인터페이스를 구축하거나 Zedra를 사용하는 것과 같은 대안을 공유했습니다.\n    *   다양한 에이전트의 도구 호출, 변경 사항(diff), 승인 내역을 한곳에서 볼 수 있는 \"통합 타임라인\" 기능에 대한 관심이 높았으나, 이를 위해서는 데이터 모델의 상당한 변화가 필요하다는 점이 언급되었습니다.\n*   **추가 설명:** 개발자는 이 앱이 성능 문제와 파편화를 해결하는 것을 목표로 한다고 설명했으며, GPUI가 매우 뛰어난 성능을 제공함과 동시에 스캐폴딩 단계에서 코딩 에이전트의 도움을 받아 앱 구축이 더 수월했다고 덧붙였습니다."
+  },
+  {
+    "item_id": 49318128,
+    "date": "2026-08-16",
+    "title": "Show HN: Grafana agent observability for Hermes Agent",
+    "project_url": "https://github.com/alexander-akhmetov/grafana-agento11y-hermes",
+    "hn_url": "https://news.ycombinator.com/item?id=49318128",
+    "content": "The thread consists of a \"Show HN\" post announcing **Grafana agent observability for the Hermes Agent**, an open-source project hosted on GitHub by user alexander-akhmetov. The post received no substantive discussion, as the only reply was flagged as \"dead.\""
+  }
+]
