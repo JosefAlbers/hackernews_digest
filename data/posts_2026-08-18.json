@@ -1,0 +1,26 @@
+[
+  {
+    "item_id": 49354664,
+    "date": "2026-08-18",
+    "title": "Show HN: Interactive, animated architecture of any HuggingFace models",
+    "project_url": "https://modelmap.cc",
+    "hn_url": "https://news.ycombinator.com/item?id=49354664",
+    "content": "The thread discusses the launch of **ModelMap (modelmap.cc)**, an interactive tool for visualizing the architecture of HuggingFace models.\n\n**Key highlights from the discussion:**\n\n*   **How it works:** The developer explains that instead of relying solely on model configs, they load models using PyTorch\u2019s \"meta device\" to generate a real `nn.Module` tree. They then perform a \"fake forward pass\" to trace execution order, capture tensor shapes, and calculate compute/KV cache metrics.\n*   **Comparison:** A user pointed out a similar tool, [HFViewer](https://hfviewer.com/). The creator of ModelMap noted that while HFViewer offers features like Chrome extensions and embedding, ModelMap\u2019s advantage lies in its dynamic tracing of execution and shape transformations via the meta device.\n*   **Features:** Users expressed appreciation for the tool's ability to estimate serving costs, visualize parameter counts, and inspect layer-level details.\n*   **Use Cases:** One user shared an interest in using such visualizations to debug LoRA fine-tuning and isolate problematic layers in LLMs (e.g., addressing sycophancy). \n*   **Feedback:** While generally positive, some users noted minor issues with search functionality and expressed a desire for more advanced interactivity."
+  },
+  {
+    "item_id": 49347178,
+    "date": "2026-08-18",
+    "title": "Show HN: Openleetcode \u2013 Local LeetCode runner where tests live in the repo",
+    "project_url": "https://github.com/therepanic/openleetcode",
+    "hn_url": "https://news.ycombinator.com/item?id=49347178",
+    "content": "The thread discusses **Openleetcode**, an open-source, Haskell-built CLI tool that allows users to run LeetCode-style programming problems locally against an open repository of test cases.\n\n**Key points from the discussion include:**\n\n*   **Motivation:** The creator built the project to provide an open, offline-capable alternative to proprietary competitive programming platforms. By keeping test cases open, the community can collaborate to improve test coverage and build integrations (e.g., Vim plugins).\n*   **Technical Implementation:** The tool currently supports ~1.4k problems and multiple programming languages. Users expressed interest in the project's architecture, including its use of Piston as a backend for code execution. \n*   **Maintenance:** The author noted that while they strive to match LeetCode\u2019s standards, they maintain their own test cases. They welcome community contributions to add edge cases or missing problem sets.\n*   **Community Feedback:**\n    *   **Praise:** Users appreciated the choice of Haskell and the potential for team-based training or local automation.\n    *   **Feature Suggestions:** Some requested a TUI for browsing problems, though the author argued that metadata management is outside the project's scope.\n    *   **Philosophical Debate:** The thread touched on the relevance of LeetCode in the AI era. Some commenters argue that AI has replaced the need for manual algorithm practice, while others maintain that these exercises remain valuable for skill-building and personal enjoyment."
+  },
+  {
+    "item_id": 49346135,
+    "date": "2026-08-18",
+    "title": "Show HN: Shoehorn \u2013 Quantize any model down to run on your machine",
+    "project_url": "https://notactuallytreyanastasio.github.io/shoehorn/",
+    "hn_url": "https://news.ycombinator.com/item?id=49346135",
+    "content": "The thread discusses the launch of **Shoehorn**, a tool designed to quantize and run large language models on consumer hardware (Mac, Linux, and Windows) via a simple GUI.\n\n**Key points from the discussion include:**\n*   **Functionality:** Shoehorn enables users to run models that might otherwise exceed their system memory, similar to *AirLLM*. The developer has also integrated search features to help users identify which models are compatible with their hardware, similar to *LLMFit*.\n*   **Technical Queries:** Users asked how the tool handles extremely large models (e.g., 2.4T parameters) on consumer hardware with limited RAM (e.g., 24GB or 48GB Mac memory).\n*   **Integration Potential:** One user suggested potential compatibility with *Colibri*.\n*   **Technical Issues:** A user reported an \"insufficient memory\" error after attempting to run a model based on the tool's sizing recommendations; the developer requested that they open a GitHub issue to investigate the bug."
+  }
+]
