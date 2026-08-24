@@ -1,0 +1,18 @@
+[
+  {
+    "item_id": 49402521,
+    "date": "2026-08-22",
+    "title": "Show HN: Sorge für ein extra helles Logo auf HDR-Bildschirmen",
+    "project_url": "https://www.soverybright.com/",
+    "hn_url": "https://news.ycombinator.com/item?id=49402521",
+    "content": "Der Thread diskutiert ein „Show HN“-Projekt, das es Nutzern ermöglicht, HDR-optimierte Logos (unter Verwendung von Gain-Maps) zu erstellen, die auf unterstützten Displays, wie neueren MacBooks oder iPhones, deutlich heller erscheinen.\n\n**Die wichtigsten Erkenntnisse aus der Diskussion sind:**\n\n*   **Der Mechanismus:** Die Technik verwendet JPEG-Gain-Maps, um HDR-Displays zu signalisieren, die Helligkeit spezifischer Elemente über das Standard-SDR-Weißniveau hinaus zu erhöhen.\n*   **Stimmung der Nutzer:** Die überwältigende Mehrheit der Community reagierte negativ und beschrieb den Trend als „abstoßend“, „blendend“ und als einen „geistigen Nachfolger des `<blink>`-Tags“. Viele Nutzer äußerten Bedenken hinsichtlich der visuellen Ablenkung und des Potenzials für einen „Helligkeitskrieg“, ähnlich dem „Loudness War“ in der Musikindustrie.\n*   **Technische Beschwerden:** Nutzer auf Plattformen wie macOS berichteten, dass die Einbindung von HDR-Inhalten oft dazu führt, dass das Betriebssystem den Rest des Bildschirms automatisch abdunkelt, um das HDR-Element zu unterstützen, was zu einem schlechteren Gesamterlebnis führt.\n*   **Gegenmaßnahmen:** \n    *   Einige Nutzer teilten **benutzerdefinierte uBlock Origin-Filter**, um diese Stile zu entfernen und einen Standard-Dynamikumfang zu erzwingen.\n    *   Vorschläge für browserseitige Kontrollen (wie „Nach Erlaubnis für HDR fragen“) wurden unterbreitet, um zu verhindern, dass Websites einseitig die Displayhelligkeit manipulieren.\n    *   Andere merkten an, dass das Aktivieren des „Stromsparmodus“ oder das Anpassen der Systemeinstellung „Weißpunkt reduzieren“ den Effekt manchmal deaktivieren kann, obwohl dies als umständliche Umgehungslösung für ein Problem auf Plattformebene angesehen wird.\n*   **Ethik/Design:** Während einige argumentierten, es sei ein kreatives Werkzeug, um Aufmerksamkeit zu erregen, vertraten die meisten Kommentatoren die Ansicht, dass Marken, die diese Technik verwenden, unter negativen Reaktionen der Nutzer leiden werden, wobei einige darauf hinwiesen, dass dieses Verhalten ein „Signal“ dafür sei, dass eine Website oder Marke nicht vertrauenswürdig ist."
+  },
+  {
+    "item_id": 49401216,
+    "date": "2026-08-22",
+    "title": "Show HN: Strukturelle Code-Suche in öffentlichen GitHub-Repositories",
+    "project_url": "https://grep.codemod.com/",
+    "hn_url": "https://news.ycombinator.com/item?id=49401216",
+    "content": "Der Thread stellt **Codemod grep** vor, ein Werkzeug, das es Entwicklern ermöglicht, öffentliche GitHub-Repositories anhand von strukturellen Codemustern statt durch herkömmlichen Text oder reguläre Ausdrücke zu durchsuchen. Durch den Einsatz von `ast-grep` ermöglicht das Tool Benutzern, Code basierend auf seiner Syntax und Struktur abzufragen."
+  }
+]

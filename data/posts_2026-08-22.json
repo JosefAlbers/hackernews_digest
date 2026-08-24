@@ -1,0 +1,18 @@
+[
+  {
+    "item_id": 49402521,
+    "date": "2026-08-22",
+    "title": "Show HN: Make your logo extra bright on HDR screens",
+    "project_url": "https://www.soverybright.com/",
+    "hn_url": "https://news.ycombinator.com/item?id=49402521",
+    "content": "The thread discusses a \"Show HN\" project that allows users to create HDR-enhanced logos (using gain-maps) that appear significantly brighter on supported displays, such as newer MacBooks or iPhones.\n\n**Key takeaways from the discussion include:**\n\n*   **The Mechanism:** The technique uses JPEG gain-maps to signal HDR displays to increase the brightness of specific elements beyond standard SDR white levels.\n*   **User Sentiment:** The overwhelming majority of the community reacted negatively, describing the trend as \"obnoxious,\" \"blinding,\" and a \"spiritual successor to the `<blink>` tag.\" Many users expressed concerns about the visual distraction and the potential for a \"brightness war\" similar to the music industry's \"loudness war.\"\n*   **Technical Complaints:** Users on platforms like macOS reported that the inclusion of HDR content often causes the OS to automatically dim the rest of the screen to accommodate the HDR element, leading to a poorer overall viewing experience. \n*   **Mitigation:** \n    *   Some users shared **uBlock Origin custom filters** to strip these styles and force standard dynamic range.\n    *   Suggestions for browser-side controls (like \"ask to allow HDR\") were proposed to prevent websites from unilaterally hijacking display brightness.\n    *   Others noted that toggling \"Low Power Mode\" or adjusting system \"Reduce White Point\" settings can sometimes disable the effect, though these are seen as cumbersome workarounds for a platform-level issue.\n*   **Ethics/Design:** While some argued it is a creative tool to draw focus, most commenters argued that brands using this technique will suffer from user backlash, with some suggesting that the behavior serves as a \"signal\" that a site or brand is untrustworthy."
+  },
+  {
+    "item_id": 49401216,
+    "date": "2026-08-22",
+    "title": "Show HN: Structural code grep across public GitHub repositories",
+    "project_url": "https://grep.codemod.com/",
+    "hn_url": "https://news.ycombinator.com/item?id=49401216",
+    "content": "The thread introduces **Codemod grep**, a tool that allows developers to search public GitHub repositories using structural code patterns rather than traditional text or regular expressions. By leveraging `ast-grep`, the tool enables users to query code based on its syntax and shape."
+  }
+]
