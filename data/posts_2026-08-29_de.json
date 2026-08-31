@@ -1,0 +1,10 @@
+[
+  {
+    "item_id": 49493881,
+    "date": "2026-08-29",
+    "title": "Show HN: Löschen Sie sich ohne Abonnement aus Datenbroker-Listen",
+    "project_url": "https://github.com/k7cfo/remove-your-data",
+    "hn_url": "https://news.ycombinator.com/item?id=49493881",
+    "content": "Der Thread diskutiert die Einführung von **\"remove-your-data\"**, einem Open-Source-Tool, das der Entwickler erstellt hat, nachdem kostenpflichtige Dienste zur Datenlöschung ihre persönlichen Informationen nicht angemessen schützen konnten.\n\n**Wichtige Punkte sind:**\n\n*   **Motivation:** Der Ersteller entwickelte das Tool, um eine transparente, benutzergesteuerte Alternative zu abonnementbasierten Diensten anzubieten, mit Funktionen wie detaillierter Protokollierung, benutzerdefinierten Löschungen und einem Dashboard.\n*   **Datenschutzbedenken:** Nutzer hinterfragten die Ironie, persönliche Informationen an Datenbroker weitergeben zu müssen, um Löschungsanfragen zu erleichtern, und merkten an, dass dieser Prozess unbeabsichtigt Daten an weitere Parteien weitergeben könnte.\n*   **Nutzen & Ausführung:** Der Entwickler argumentiert, dass Open-Source-Workflows eine bessere Transparenz und Sicherheit bieten, da Benutzer den Code selbst hosten und prüfen können.\n*   **Technische Einschränkungen:** Einige Teilnehmer fragten, wie das Tool mit Informationen umgeht, die bereits von Suchmaschinen wie Google indexiert wurden, was die anhaltende Herausforderung unterstreicht, Daten zu löschen, die sich bereits im Web verbreitet haben."
+  }
+]

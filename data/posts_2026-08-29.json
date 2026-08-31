@@ -1,0 +1,10 @@
+[
+  {
+    "item_id": 49493881,
+    "date": "2026-08-29",
+    "title": "Show HN: Delete yourself from data brokers without a subscription",
+    "project_url": "https://github.com/k7cfo/remove-your-data",
+    "hn_url": "https://news.ycombinator.com/item?id=49493881",
+    "content": "The thread discusses the launch of **\"remove-your-data,\"** an open-source tool created by the developer after paid data-removal services failed to adequately protect their personal information.\n\n**Key points include:**\n\n*   **Motivation:** The creator built the tool to provide a transparent, user-controlled alternative to subscription-based services, offering features like verbose logging, custom removals, and a dashboard.\n*   **Privacy Concerns:** Users questioned the irony of having to provide personal information to data brokers to facilitate removal requests, noting that this process might inadvertently expose data to additional parties.\n*   **Utility & Execution:** The developer argues that open-source workflows offer better transparency and security because users can self-host and audit the code.\n*   **Technical Limitations:** Some participants queried how the tool addresses information already indexed by search engines like Google, highlighting the persistent challenge of removing data that has already propagated across the web."
+  }
+]
