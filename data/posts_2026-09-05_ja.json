@@ -1,0 +1,10 @@
+[
+  {
+    "item_id": 49578727,
+    "date": "2026-09-05",
+    "title": "Show HN: MLPerfで記録更新：KVオフロードとLLM学習のためのモダンストレージ",
+    "project_url": "https://www.theopenlake.com/blog/openlake-leads-mlperf-storage-v3-0",
+    "hn_url": "https://news.ycombinator.com/item?id=49578727",
+    "content": "このスレッドでは、LLM学習におけるストレージ性能を最適化するために設計された新しいKVオフロードソリューション、**OpenLake**を紹介します。\n\n主なハイライトは以下の通りです：\n* **パフォーマンス:** 96ノードのクラスター上で1ms未満のレイテンシで1M+ IOPSを達成し、MLPerf Storage v3.0ベンチマークのS3提出カテゴリにおいて、読み取り/書き込み帯域幅で1位を獲得しました（書き込み6.72 GiB/s、読み取り11.55 GiB/s）。\n* **技術的アプローチ:** Rustの*compio*クレートを使用した「スレッド・パー・コア」設計と、GPU上での圧縮を組み合わせることでこの性能を実現しています。\n* **オープンソース:** 本プロジェクトはGitHubで公開されており、コミュニティからのフィードバックやコラボレーションを歓迎しています。"
+  }
+]

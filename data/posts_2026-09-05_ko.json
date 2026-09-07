@@ -1,0 +1,10 @@
+[
+  {
+    "item_id": 49578727,
+    "date": "2026-09-05",
+    "title": "Show HN: MLPerf 기록을 경신하다: KV 오프로드 및 LLM 학습을 위한 최신 스토리지",
+    "project_url": "https://www.theopenlake.com/blog/openlake-leads-mlperf-storage-v3-0",
+    "hn_url": "https://news.ycombinator.com/item?id=49578727",
+    "content": "이 스레드에서는 스토리지 성능 최적화를 위해 설계된 LLM 학습용 새로운 KV 오프로딩 솔루션인 **OpenLake**를 소개합니다.\n\n주요 특징은 다음과 같습니다:\n* **성능:** 96개 노드 클러스터에서 1ms 미만의 지연 시간으로 100만 이상의 IOPS를 달성했으며, MLPerf Storage v3.0 벤치마크의 유사 S3 제출물 중 읽기/쓰기 대역폭 부문 1위를 차지했습니다(쓰기 6.72 GiB/s, 읽기 11.55 GiB/s).\n* **기술적 접근:** Rust의 *compio* 크레이트를 사용한 \"코어당 스레드(thread-per-core)\" 설계와 GPU 기반 압축 기술을 결합하여 뛰어난 성능을 구현했습니다.\n* **오픈 소스:** 이 프로젝트는 GitHub에서 제공되며, 커뮤니티의 피드백과 협업을 기다리고 있습니다."
+  }
+]

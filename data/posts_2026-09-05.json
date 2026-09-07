@@ -1,0 +1,10 @@
+[
+  {
+    "item_id": 49578727,
+    "date": "2026-09-05",
+    "title": "Show HN: We Beat MLPerf: Modern Storage for KV Offload and LLM Training",
+    "project_url": "https://www.theopenlake.com/blog/openlake-leads-mlperf-storage-v3-0",
+    "hn_url": "https://news.ycombinator.com/item?id=49578727",
+    "content": "The thread introduces **OpenLake**, a new KV offloading solution for LLM training designed to optimize storage performance. \n\nKey highlights include:\n* **Performance:** The project achieved 1M+ IOPS with 1ms latency on a 96-node cluster and ranked #1 in read/write bandwidth among comparable S3 submissions in the MLPerf Storage v3.0 benchmark (6.72 GiB/s writes, 11.55 GiB/s reads).\n* **Technical Approach:** The performance is attributed to a \"thread-per-core\" design using Rust\u2019s *compio* crate, combined with on-GPU compression.\n* **Open Source:** The project is available on GitHub for community feedback and collaboration."
+  }
+]
