@@ -1,0 +1,26 @@
+[
+  {
+    "item_id": 49590738,
+    "date": "2026-09-06",
+    "title": "Show HN: Mador – 80줄짜리 초소형 Proxy 상태 튜플로 모든 DOM을 반응형으로 만들기",
+    "project_url": "https://github.com/marsbos/mador",
+    "hn_url": "https://news.ycombinator.com/item?id=49590738",
+    "content": "이 스레드에서는 빌드 단계나 무거운 의존성 없이 JavaScript `Proxy` 객체를 사용하여 DOM에 반응형 상태 관리를 추가하는 최소형(~80줄) 라이브러리인 **Mador**에 대해 논의합니다.\n\n**주요 논의 사항:**\n\n*   **설계 및 사용성:** 작성자는 Mador를 대형 프레임워크를 대체할 수 있는 간단하고 의존성 없는 라이브러리로 의도했습니다. 일부 사용자는 가독성을 높이기 위해 `read`/`write` 튜플 대신 단일 `bind` 함수를 사용하는 등의 API 개선을 제안했습니다.\n*   **기존 도구와의 비교:** 댓글 작성자들은 이미 \"독립형\" 반응형 프리미티브(예: `preact/signals-core` 또는 `@vue/reactivity`)가 존재함을 지적하며, 전체 프레임워크를 도입하지 않으면 그러한 도구를 사용할 수 없다는 주장에 의문을 제기했습니다. 작성자는 이를 인정하면서도 Mador가 신호(signal) 기반 라이브러리와 비교했을 때 중첩 객체 처리와 DOM 바인딩에 있어 다른 접근 방식을 제공한다고 언급했습니다.\n*   **기술적 구현:**\n    *   **Proxies:** 원시 값과 프록시 간의 혼동 가능성 등 `Proxy` 객체의 성능 및 함정에 대한 논의가 있었습니다.\n    *   **ES Modules:** 일부 사용자는 ES 모듈 배포가 로컬 개발 시 번거로울 수 있다고 지적했으나, 다른 사용자들은 최신 브라우저가 인라인 모듈 스크립트를 잘 지원한다는 점을 분명히 했습니다.\n    *   **대안 패턴:** 다른 개발자들은 비슷한 결과를 얻기 위한 대안으로 커스텀 웹 컴포넌트나 간단한 이벤트 기반 리렌더링 등 자신만의 \"초소형\" 반응형 패턴을 공유했습니다.\n*   **프로젝트 철학:** 프로젝트의 표현 방식에 관해 우호적인 토론이 있었습니다. 일부는 README가 \"거대 프레임워크\"와 \"직접 만들기\" 사이의 이분법적 선택을 강요하는 것처럼 느껴진다고 지적한 반면, 다른 이들은 이 도구의 실험적이고 미니멀한 정신을 높이 평가했습니다.\n\n작성자는 피드백을 수용하며 라이브러리의 가독성을 개선하고 웹 컴포넌트와의 통합 가능성을 높이는 데 관심을 표했습니다."
+  },
+  {
+    "item_id": 49586902,
+    "date": "2026-09-06",
+    "title": "Show HN: Kadō – open-source habit tracker, with non-binary habit score, for iOS",
+    "project_url": "https://github.com/scastiel/kado",
+    "hn_url": "https://news.ycombinator.com/item?id=49586902",
+    "content": "The thread discusses the release of **Kadō**, an open-source iOS habit tracker with a non-binary scoring system, inspired by the popular Android app *Loop Habit Tracker*.\n\n**Key themes and discussions include:**\n\n*   **Habit Tracking Philosophy:** Several users debate the utility of rigid habit tracking. Some argue that high-effort tracking leads to stress and self-sabotage, advocating instead for \"low-effort\" methods like un-timed lists or generous \"show up\" metrics. Others express a desire for more \"evidence-based\" or automated accountability, potentially through AI or integration with health data, to prevent self-deception in the \"gray zones\" of goal completion.\n*   **App Quality and AI:** A point of contention arose regarding the project's documentation. Some users criticized the use of AI-generated README files, arguing it signals low effort and a lack of clear vision. Defenders argued that the quality of the software itself matters more than how the documentation was produced.\n*   **Feature Feedback & Suggestions:**\n    *   Users requested features such as time-stamped notes (to track emotions or CBT-style logs), integration with task managers, and rewards systems (similar to *Habitica*).\n    *   The developer clarified that in-app purchases are optional tips and do not gate any features.\n*   **Alternative Recommendations:** Participants exchanged recommendations for other tools, including *Loop Habit Tracker* (noted for being the gold standard for many), *Obsidian* (for low-pressure journaling), and upcoming projects leveraging Apple Health data."
+  },
+  {
+    "item_id": 49590354,
+    "date": "2026-09-06",
+    "title": "Show HN: VODForge – YouTube 동영상/재생목록 다운로드를 위한 무료 로컬 데스크톱 UI",
+    "project_url": "https://getvodforge.com/",
+    "hn_url": "https://news.ycombinator.com/item?id=49590354",
+    "content": "이 스레드에서는 `yt-dlp` 및 `ffmpeg`를 위한 사용자 친화적인 GUI 래퍼로서 YouTube 동영상 및 재생목록 다운로드를 간편하게 만들어주는 무료 로컬 데스크톱 애플리케이션인 **VODForge**를 소개합니다.\n\n**토론의 주요 내용은 다음과 같습니다:**\n\n*   **개발 동기:** 개발자는 연결된 TV(CTV) 회사의 내부 워크플로우 문제를 해결하기 위해 이 도구를 만들었습니다. 특히 신뢰할 수 없는 \"변환기\" 웹사이트를 피하고 CLI 명령어를 수동으로 관리하는 번거로움을 없애고자 했습니다.\n*   **핵심 기능:** 기본적인 다운로드 외에도 VODForge는 자동 정리(채널/재생목록별), 검색 가능한 라이브러리, 앱 내 플레이어, 소스 품질에 따라 조정되는 스마트 출력 설정 기능을 제공합니다.\n*   **엔지니어링 중심:** 개발자는 전용 \"엔지니어링 품질\" 테스트 하네스를 통해 품질에 대한 헌신을 강조합니다. 이는 표준 단위 테스트를 넘어 통합 테스트를 수행하며, 실제 발생 가능한 장애(예: 연결 중단)를 시뮬레이션하고 메모리 누수를 모니터링합니다.\n*   **커뮤니티 피드백:**\n    *   **오디오 품질:** 한 사용자가 YouTube 소스 오디오를 MP3로 재인코딩하면 불필요한 손실 압축이 발생한다고 지적했습니다. 개발자는 이에 동의하며 원본 Opus/AAC 품질을 유지할 수 있는 직접 스트림 옵션을 제공할 계획입니다.\n    *   **속도 제한(Throttling):** 한 사용자가 잠재적인 속도 제한을 피하기 위해 다운로드 사이에 무작위 지연을 추가해 달라고 요청했습니다. 개발자는 이를 좋은 기능 요청으로 확인했으며 향후 업데이트에 추가할 예정입니다.\n*   **명확한 설명:** 개발자는 \"CTV\"가 \"Connected Television\"(Roku와 같은 기기의 스트리밍 앱)을 의미한다고 설명했으며, 기술적 지식이 없는 사용자도 \"그냥 작동하는\" 편리함을 누릴 수 있도록 하면서도 강력한 백엔드 도구의 기능을 유지하는 것을 프로젝트의 우선순위로 삼고 있다고 확인했습니다."
+  }
+]
