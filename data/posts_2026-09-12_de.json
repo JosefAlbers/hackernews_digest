@@ -1,0 +1,10 @@
+[
+  {
+    "item_id": 49667188,
+    "date": "2026-09-12",
+    "title": "Show HN: Graphify C# – Compiler-genaue „Find Usages“-Funktionalität für Coding-Agents",
+    "project_url": "https://github.com/zachsaw/graphify-csharp",
+    "hn_url": "https://news.ycombinator.com/item?id=49667188",
+    "content": "Dieser Thread behandelt die Veröffentlichung von **Graphify C#**, einem Tool, das KI-Coding-Agents eine compiler-genaue „Find Usages“-Funktionalität bietet. Dabei wird die Roslyn-API genutzt, um strukturierte Metadaten (JSON) über die Symbolbeziehungen eines C#-Projekts zu generieren.\n\n**Wichtige Punkte aus der Diskussion:**\n\n*   **Nutzen & Alleinstellungsmerkmal:** Benutzer lobten die Flexibilität des Tools, da die generierte JSON-Ausgabe portabel ist und von jedem Agenten, CLI-Tool oder CI-Pipeline verwendet werden kann – im Gegensatz zum MCP-basierten Ansatz von JetBrains, der eine laufende IDE erfordert.\n*   **Leistung & Skalierbarkeit:** Kommentatoren äußerten Bedenken hinsichtlich der Skalierbarkeit, da JSON-Outputs bei großen Codebasen Hunderte von Megabytes erreichen können. Es wurde vorgeschlagen, dass eine SQLite-Datenbank eine effizientere Alternative sein könnte.\n*   **Agenten-Integration:** Entwickler experimentieren mit dem Tool für spezifische Workflows, darunter die Unity-Paketentwicklung. Der Autor ist offen für Beiträge aus der Community, um den Nutzen des Projekts zu verbessern.\n*   **Verbesserungen der Dokumentation:** Eine Kritik an der Verwechslung zwischen „Entwicklung des Tools“ und „Verwendung des Tools“ in der Dokumentation führte dazu, dass der Autor versprach, die Anleitungen zu den Fähigkeiten bzw. zum Prompting zu präzisieren.\n*   **Das C#-Ökosystem:** Die Teilnehmer lobten die Leistungsfähigkeit von Roslyn und .NET für die KI-gestützte Entwicklung. Sie merkten an, dass zwar Microsofts eigener GitHub Copilot über eine native Indexierung verfügt, Tools wie Graphify jedoch eine Lücke für Benutzer schließen, die eine zugänglichere oder spezialisiertere Methode benötigen, um semantische Code-Informationen abzurufen."
+  }
+]

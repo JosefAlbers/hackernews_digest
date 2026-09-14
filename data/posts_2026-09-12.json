@@ -1,0 +1,10 @@
+[
+  {
+    "item_id": 49667188,
+    "date": "2026-09-12",
+    "title": "Show HN: Graphify C# \u2013 Compiler-accurate Find Usages for coding agents",
+    "project_url": "https://github.com/zachsaw/graphify-csharp",
+    "hn_url": "https://news.ycombinator.com/item?id=49667188",
+    "content": "This thread discusses the release of **Graphify C#**, a tool that provides compiler-accurate \"Find Usages\" functionality for AI coding agents by leveraging the Roslyn API to generate structured metadata (JSON) about a C# project's symbol relationships.\n\n**Key points from the discussion include:**\n\n*   **Utility & Differentiation:** Users noted the tool's flexibility, as the generated JSON output is portable and can be used by any agent, CLI tool, or CI pipeline\u2014unlike JetBrains' MCP-based approach, which requires the IDE to be running.\n*   **Performance & Scalability:** Commenters raised concerns about performance at scale, noting that JSON outputs can reach hundreds of megabytes in large codebases, leading to suggestions that a SQLite database might be a more efficient alternative.\n*   **Agent Integration:** Developers are experimenting with the tool for specific workflows, including Unity package development. The author is open to community contributions to improve the project's utility.\n*   **Documentation Improvements:** A critique regarding the confusion between \"developing the tool\" versus \"using the tool\" in the documentation led the author to commit to clarifying the skill/prompting instructions.\n*   **The C# Ecosystem:** Participants praised the power of Roslyn and .NET for AI-assisted development, noting that while Microsoft's own GitHub Copilot has native indexing, tools like Graphify fill a gap for users needing a more accessible or specialized way to surface semantic code information."
+  }
+]
