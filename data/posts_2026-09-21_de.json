@@ -1,0 +1,18 @@
+[
+  {
+    "item_id": 49783133,
+    "date": "2026-09-21",
+    "title": "Show HN: Mini-AGI – Dynamisches, kontinuierliches Lernmodell, trainiert auf 8 GB VRAM",
+    "project_url": "https://github.com/volotat/mini-AGI/",
+    "hn_url": "https://news.ycombinator.com/item?id=49783133",
+    "content": ""
+  },
+  {
+    "item_id": 49786419,
+    "date": "2026-09-21",
+    "title": "Show HN: Lossless-memory – ein persönliches KI-Gedächtnis, das niemals zusammenfasst",
+    "project_url": "https://github.com/aru-labs/lossless-memory",
+    "hn_url": "https://news.ycombinator.com/item?id=49786419",
+    "content": "Der Thread diskutiert **\"Lossless-memory,\"** ein Projekt, das eine Alternative zu traditionellen KI-Gedächtnissystemen vorschlägt, indem es Rohdaten speichert, anstatt KI-generierte Zusammenfassungen zu verwenden.\n\nZu den Kernthemen der Diskussion gehören:\n\n*   **Die Bedeutung der Chronologie:** Die Teilnehmer debattieren darüber, ob zeitliche Daten für das KI-Gedächtnis notwendig sind. Befürworter argumentieren, dass Zeitstempel wesentlich sind, um eine geordnete Abfolge von Aktualisierungen aufrechtzuerhalten, wodurch das System widersprüchliche Anweisungen auflösen kann (z. B. die Unterscheidung zwischen einer alten Regel und einer neueren, vorrangigen Regel).\n*   **Agentische Initiative:** Benutzer diskutieren den Wunsch, dass die KI proaktiv handelt, anstatt nur auf eine Benutzeraufforderung zu warten. Zu den Vorschlägen gehörten die Verwendung persistenter Hintergrund-Timer oder \"proaktives Messaging\", damit Agenten auf der Grundlage früherer Anweisungen unabhängig handeln können.\n*   **Implementierung & technische Kompromisse:** \n    *   **Leistung/Kosten:** Es wurden Bedenken geäußert, dass der Verzicht auf Zusammenfassungen Cache-Mechanismen stören und Kosten oder Latenz erhöhen könnte. Einige schlugen jedoch vor, dass eine effiziente Abfrage (wie `grep` oder spezifische Prompt-Injection-Methoden) diese Probleme mildern könnte.\n    *   **Zuverlässigkeit:** Es gibt Skepsis darüber, ob LLMs ihre eigene Gedächtnisabfrage zuverlässig verwalten können, ohne \"faul\" oder inkonsistent zu werden.\n    *   **Komplexität:** Einige Mitwirkende warnten, dass ein \"verlustfreier\" Ansatz nur ein Teil des Puzzles ist und dass ein effektives KI-Gedächtnis letztendlich eine komplexe, mehrschichtige Architektur erfordert, um unterschiedliche Arten von Informationsbedürfnissen zu handhaben.\n*   **Vergleich mit anderen Projekten:** Benutzer teilten Links zu ähnlichen Projekten wie *Breadcrumb* (ein auf Bildschirmaufzeichnungen basierendes Gedächtnistool) und *Episodic Memory*, was ein breiteres Brancheninteresse an der Entwicklung dauerhafterer, zustandsbewusster KI-Gedächtnissysteme verdeutlicht."
+  }
+]

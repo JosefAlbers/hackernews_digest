@@ -1,0 +1,18 @@
+[
+  {
+    "item_id": 49783133,
+    "date": "2026-09-21",
+    "title": "Show HN: Mini-AGI \u2013 Dynamic continual learning model trained on 8GB VRAM",
+    "project_url": "https://github.com/volotat/mini-AGI/",
+    "hn_url": "https://news.ycombinator.com/item?id=49783133",
+    "content": ""
+  },
+  {
+    "item_id": 49786419,
+    "date": "2026-09-21",
+    "title": "Show HN: Lossless-memory \u2013 a personal AI memory that never summarizes",
+    "project_url": "https://github.com/aru-labs/lossless-memory",
+    "hn_url": "https://news.ycombinator.com/item?id=49786419",
+    "content": "The thread discusses **\"Lossless-memory,\"** a project that proposes an alternative to traditional AI memory systems by storing raw data instead of using AI-generated summaries. \n\nKey themes from the discussion include:\n\n*   **The Importance of Chronology:** Participants debate whether temporal data is necessary for AI memory. Proponents argue that timestamps are essential for maintaining an orderly sequence of updates, allowing the system to resolve contradictory instructions (e.g., distinguishing between an old rule and a more recent, overriding rule).\n*   **Agentic Initiative:** Users discuss the desire for AI to take proactive initiative rather than simply waiting for a user prompt. Suggestions included using persistent background timers or \"proactive messaging\" to allow agents to act independently based on previous instructions.\n*   **Implementation & Technical Trade-offs:** \n    *   **Performance/Cost:** Concerns were raised that bypassing summarization could break cache mechanisms and increase costs or latency. However, some suggested that efficient retrieval (like `grep` or specific prompt injection methods) could mitigate these issues.\n    *   **Reliability:** There is skepticism regarding whether LLMs can reliably manage their own memory retrieval without becoming \"lazy\" or inconsistent. \n    *   **Complexity:** Some contributors warned that a \"lossless\" approach is only one piece of the puzzle and that effective AI memory will eventually require a complex, multi-layered architecture to handle different types of information needs.\n*   **Comparison to Other Projects:** Users shared links to similar projects, such as *Breadcrumb* (a screen-recording based memory tool) and *Episodic Memory*, illustrating a broader industry interest in developing more durable, state-aware AI memory systems."
+  }
+]
