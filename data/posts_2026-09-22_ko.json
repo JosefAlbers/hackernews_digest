@@ -1,0 +1,34 @@
+[
+  {
+    "item_id": 49801329,
+    "date": "2026-09-22",
+    "title": "Show HN: Drop – A rootless Linux sandbox with gVisor support",
+    "project_url": "https://droprun.sh/",
+    "hn_url": "https://news.ycombinator.com/item?id=49801329",
+    "content": "The thread discusses **Drop**, a rootless Linux sandbox designed to provide secure, isolated environments for local development and running untrusted code (like AI agents or dependencies). \n\n**Key Takeaways:**\n\n*   **The Problem:** Users are increasingly concerned about giving LLM-based agents or third-party dependencies full read/write access to their systems. Existing solutions like VMs or full containers are often too heavy or require complex configuration, while manual tools like `bwrap` are \"low-level building blocks\" that require significant boilerplate.\n*   **Drop’s Approach:** It aims to be a high-level, easy-to-use tool inspired by Python’s `virtualenv`. It leverages Linux namespaces and supports **gVisor** (to virtualize syscalls and protect against kernel exploits) to provide a \"disposable\" home directory with fine-grained access to host files.\n*   **The \"Tarpit\" Phenomenon:** Multiple commenters shared that they have built or are building similar custom sandboxing tools for their own workflows. The discussion reflects a broader trend of developers seeking a \"middle ground\" between standard containers and full virtualization to keep development fast while ensuring safety.\n*   **Security vs. Convenience:** A major point of contention is the threat model. Some users argue that simple namespace isolation is insufficient against sophisticated attacks (e.g., prompt injection or malware accessing local SSH keys), suggesting that a \"bulletproof\" approach requires physical isolation or non-persistent, credential-free environments (like microVMs). \n*   **Limitations:**\n    *   Currently Linux-only (no macOS support).\n    *   Challenges with nested virtualization (difficulty running Docker/Podman inside the sandbox).\n    *   Future plans include potential support for VMs as a third runtime to solve nested container issues and GUI hardware acceleration.\n\n**Community Sentiment:** The project is well-received as a \"well-thought-out\" attempt to formalize common, ad-hoc security practices, though some users remain skeptical of how effectively it handles sophisticated supply-chain attacks compared to air-gapped or dedicated VM environments."
+  },
+  {
+    "item_id": 49800574,
+    "date": "2026-09-22",
+    "title": "Show HN: JevBench, 타입 지정 의사결정 모델을 위한 재현 가능한 벤치마크",
+    "project_url": "https://benchmarkheaven.com/jev-models",
+    "hn_url": "https://news.ycombinator.com/item?id=49800574",
+    "content": ""
+  },
+  {
+    "item_id": 49800566,
+    "date": "2026-09-22",
+    "title": "Show HN: 구조만으로 AI 웹 콘텐츠를 식별하는 모델 학습",
+    "project_url": "https://arxiv.org/abs/2609.15369",
+    "hn_url": "https://news.ycombinator.com/item?id=49800566",
+    "content": "이 스레드는 **Sitefire** 팀의 연구 및 도구에 대해 논의합니다. 이 도구는 텍스트의 특정 표현이 아닌 **구조적 패턴**을 분석하여 \"AI 슬롭(AI가 생성한 저품질 웹 콘텐츠)\"을 감지하는 것을 목표로 합니다.\n\n### 연구 주요 내용:\n*   **방법론:** 연구진은 AI 등장 이전의 블로그 게시물 2,250개와 5개의 최신 LLM이 생성한 버전을 분석했습니다. AI 모델이 구조적 특징(예: 출처 인용, 논지 반복 등)을 평가하도록 하여, AI 콘텐츠와 인간이 작성한 콘텐츠를 98%의 정확도로 구분하는 분류기를 학습시켰습니다.\n*   **\"AI의 특징\":** AI 콘텐츠의 주요 식별 요소는 반복적인 구조, 특히 제목, 서론, 결론에서 핵심 내용을 반복하는 \"깔끔하고 자기 과시적인\" 형식입니다.\n*   **견고성:** 저자들은 AI 콘텐츠가 다시 쓰이거나 의역되더라도 이 분류기는 여전히 효과적이라고 주장하며, 이는 LLM의 근본적인 구조적 \"억양\"을 제거하기 어렵다는 것을 시사합니다.\n\n### 커뮤니티 반응 및 비판:\n*   **방법론적 회의론:** 일부 댓글 작성자들은 탐지기 학습에 LLM을 사용하는 것의 타당성에 의문을 제기했습니다. 이 도구가 학습된 특정 모델에 편향되어 있으며, 인간이 쓴 글을 오탐지할 가능성을 우려했습니다.\n*   **\"슬롭(Slop)\"의 정의:** 토론의 상당 부분은 \"AI 슬롭\"이 독자적인 범주인지, 아니면 수년간 마케팅 및 관료주의 분야에 존재해 온 저품질의 판에 박힌 \"인간 슬롭\"의 연장선상에 있는 것인지에 집중되었습니다. 비평가들은 이 연구가 AI와 수준 높은 인간의 글을 구분할 수 있는지, 아니면 단순히 영감 없고 지루한 콘텐츠를 걸러내는 것인지에 초점을 맞춰야 한다고 주장합니다.\n*   **구현 우려:** 사용자들은 이 도구가 가끔 인간의 글을 AI 생성물로 잘못 분류한다는 점을 지적하며, 판정 기준이 되는 지표에 대한 더 많은 투명성을 요구했습니다.\n*   **아이러니와 메타 토론:** 스레드에서는 일부 참가자들이 AI가 생성한 것으로 표시된 댓글을 지적하거나, 개발자들의 글에 도구를 직접 테스트해보는 등 메타적인 아이러니가 발생하기도 했습니다.\n\n전반적으로 커뮤니티는 구조 기반의 탐지 접근 방식 자체는 흥미롭다고 평가하지만, 그 정확성, \"슬롭\"의 정의, 그리고 LLM 출력을 감시하기 위해 다시 LLM에 의존한다는 점에 대해서는 상당한 논쟁이 있습니다."
+  },
+  {
+    "item_id": 49800513,
+    "date": "2026-09-22",
+    "title": "Show HN: Npunlock – 인텔 NPU용 커스텀 C 커널 실행",
+    "project_url": "https://github.com/hsfzxjy/npunlock",
+    "hn_url": "https://news.ycombinator.com/item?id=49800513",
+    "content": ""
+  }
+]
