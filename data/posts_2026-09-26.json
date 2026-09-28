@@ -1,0 +1,18 @@
+[
+  {
+    "item_id": 49858513,
+    "date": "2026-09-26",
+    "title": "Show HN: Reladraw \u2013 A diagram language where you decide where to place things",
+    "project_url": "https://github.com/reladraw/reladraw",
+    "hn_url": "https://news.ycombinator.com/item?id=49858513",
+    "content": "The thread discusses **Reladraw**, a new diagramming language designed to bridge the gap between \"auto-placement\" tools (like Mermaid or Graphviz, which lack manual control) and \"manual\" tools (like Draw.io, which are time-consuming and difficult for AI agents to manipulate).\n\n### Key Takeaways:\n*   **The Problem:** Users find auto-layout engines frustrating because they lack control over specific positioning, while graphical tools are inefficient for text-based editing or agent workflows.\n*   **The Solution:** Reladraw uses a declarative language centered on **relative positioning** (e.g., \"node B is to the right of node A\"). This allows users (and AI agents) to define the structure while letting the tool handle the arithmetic of layout.\n*   **Agent Utility:** Several users highlighted the value of this for AI coding. Because it is text-based and deterministic, agents can generate and refine diagrams more reliably than they can manipulate SVG or binary file formats.\n*   **Comparison to Alternatives:**\n    *   **Mermaid/Graphviz/D2:** These are criticized for being \"black boxes\" that force specific layouts. While D2 has added some manual control (TALA), users feel Reladraw offers a more direct, intuitive approach to placing elements.\n    *   **Pikchr:** Users noted similarities to Pikchr but pointed out that Pikchr is \"turtle graphics\" based (requiring movement commands), whereas Reladraw focuses on relational intent.\n    *   **Draw.io/Schemdraw:** Users appreciated that Reladraw offers a code-based alternative to manual tools like Draw.io and noted that tools like Python\u2019s `schemdraw` have similar explicit-placement goals but come from a different domain (electronics).\n\n### Community Feedback & Future Directions:\n*   **Ergonomics:** Users requested support for multi-line strings, block syntax, and better edge routing (e.g., right-angle paths), which the author is actively incorporating.\n*   **Integration:** Community members have already started creating VSCode extensions and exploring how to integrate this into markdown workflows.\n*   **Compiler Philosophy:** There was a strong debate regarding error handling. The author plans to keep a \"no-silent-wins\" philosophy, where contradictory instructions (e.g., placing a node left *and* right of another) trigger errors to avoid surprising the user, a decision that received significant support.\n*   **Extensibility:** Future plans include adding custom attributes, functions, and variables, as well as potentially allowing users to output intermediate JSON for custom rendering backends."
+  },
+  {
+    "item_id": 49857528,
+    "date": "2026-09-26",
+    "title": "Show HN: A Claude Code skill to analyze your chess games",
+    "project_url": "https://github.com/brumar/chess-postmortem-skills",
+    "hn_url": "https://news.ycombinator.com/item?id=49857528",
+    "content": ""
+  }
+]

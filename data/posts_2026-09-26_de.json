@@ -1,0 +1,18 @@
+[
+  {
+    "item_id": 49858513,
+    "date": "2026-09-26",
+    "title": "Show HN: Reladraw – Eine Diagrammsprache, bei der Sie entscheiden, wo Dinge platziert werden",
+    "project_url": "https://github.com/reladraw/reladraw",
+    "hn_url": "https://news.ycombinator.com/item?id=49858513",
+    "content": "Der Thread diskutiert **Reladraw**, eine neue Diagrammsprache, die die Lücke zwischen „Auto-Placement“-Tools (wie Mermaid oder Graphviz, denen die manuelle Kontrolle fehlt) und „manuellen“ Tools (wie Draw.io, die zeitaufwendig und für KI-Agenten schwer zu bearbeiten sind) schließen soll.\n\n### Wichtige Erkenntnisse:\n*   **Das Problem:** Benutzer empfinden automatische Layout-Engines als frustrierend, da ihnen die Kontrolle über die spezifische Positionierung fehlt, während grafische Tools ineffizient für textbasierte Bearbeitung oder Agenten-Workflows sind.\n*   **Die Lösung:** Reladraw verwendet eine deklarative Sprache, die auf **relativer Positionierung** basiert (z. B. „Knoten B ist rechts von Knoten A“). Dies ermöglicht es Benutzern (und KI-Agenten), die Struktur zu definieren, während das Tool die Arithmetik des Layouts übernimmt.\n*   **Nutzen für Agenten:** Mehrere Benutzer hoben den Wert für die KI-Programmierung hervor. Da es textbasiert und deterministisch ist, können Agenten Diagramme zuverlässiger erstellen und verfeinern, als sie SVG- oder Binärdateiformate manipulieren könnten.\n*   **Vergleich zu Alternativen:**\n    *   **Mermaid/Graphviz/D2:** Diese werden als „Black Boxes“ kritisiert, die bestimmte Layouts erzwingen. Während D2 einige manuelle Kontrollen (TALA) hinzugefügt hat, empfinden Benutzer Reladraw als einen direkteren, intuitiveren Ansatz zur Platzierung von Elementen.\n    *   **Pikchr:** Benutzer bemerkten Ähnlichkeiten zu Pikchr, wiesen aber darauf hin, dass Pikchr auf „Turtle-Grafik“ basiert (die Bewegungsbefehle erfordert), während Reladraw sich auf die relationale Absicht konzentriert.\n    *   **Draw.io/Schemdraw:** Benutzer schätzten, dass Reladraw eine codebasierte Alternative zu manuellen Tools wie Draw.io bietet, und merkten an, dass Tools wie das Python-Paket `schemdraw` ähnliche Ziele der expliziten Platzierung verfolgen, aber aus einem anderen Bereich (Elektronik) stammen.\n\n### Community-Feedback & zukünftige Richtungen:\n*   **Ergonomie:** Benutzer forderten Unterstützung für mehrzeilige Strings, Block-Syntax und besseres Edge-Routing (z. B. rechtwinklige Pfade), was der Autor aktiv umsetzt.\n*   **Integration:** Community-Mitglieder haben bereits begonnen, VSCode-Erweiterungen zu erstellen und zu untersuchen, wie dies in Markdown-Workflows integriert werden kann.\n*   **Compiler-Philosophie:** Es gab eine lebhafte Debatte bezüglich der Fehlerbehandlung. Der Autor plant, eine „No-Silent-Wins“-Philosophie beizubehalten, bei der widersprüchliche Anweisungen (z. B. einen Knoten links *und* rechts von einem anderen zu platzieren) Fehler auslösen, um Überraschungen für den Benutzer zu vermeiden – eine Entscheidung, die auf große Zustimmung stieß.\n*   **Erweiterbarkeit:** Zukünftige Pläne umfassen das Hinzufügen von benutzerdefinierten Attributen, Funktionen und Variablen sowie die Möglichkeit, zwischenzeitlich JSON für benutzerdefinierte Rendering-Backends auszugeben."
+  },
+  {
+    "item_id": 49857528,
+    "date": "2026-09-26",
+    "title": "Show HN: Eine Claude-Code-Fähigkeit zur Analyse deiner Schachpartien",
+    "project_url": "https://github.com/brumar/chess-postmortem-skills",
+    "hn_url": "https://news.ycombinator.com/item?id=49857528",
+    "content": ""
+  }
+]
