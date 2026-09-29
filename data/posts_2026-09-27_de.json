@@ -1,0 +1,42 @@
+[
+  {
+    "item_id": 49869574,
+    "date": "2026-09-27",
+    "title": "Show HN: Lofi Cities – Pixel-Art-Stadtnächte mit im Browser generiertem Lofi",
+    "project_url": "https://loficities.com/",
+    "hn_url": "https://news.ycombinator.com/item?id=49869574",
+    "content": ""
+  },
+  {
+    "item_id": 49867775,
+    "date": "2026-09-27",
+    "title": "Show HN: TinyAIArena beobachte KI-Agenten im Kampf",
+    "project_url": "https://tinyaiarena.com/",
+    "hn_url": "https://news.ycombinator.com/item?id=49867775",
+    "content": ""
+  },
+  {
+    "item_id": 49866597,
+    "date": "2026-09-27",
+    "title": "Show HN: Entwicklung eines Markdown-Editors für Mac, iOS und Web",
+    "project_url": "https://www.markdown.beauty/",
+    "hn_url": "https://news.ycombinator.com/item?id=49866597",
+    "content": ""
+  },
+  {
+    "item_id": 49864105,
+    "date": "2026-09-27",
+    "title": "Show HN: Trail – eine neue Art von Logikspiel",
+    "project_url": "https://trail.franzai.com/",
+    "hn_url": "https://news.ycombinator.com/item?id=49864105",
+    "content": ""
+  },
+  {
+    "item_id": 49870394,
+    "date": "2026-09-27",
+    "title": "Show HN: Cartopolis, eine interaktive 3D-Welt in Globusgröße",
+    "project_url": "https://code.garage44.eu/jeroen/cartopolis",
+    "hn_url": "https://news.ycombinator.com/item?id=49870394",
+    "content": "Der Diskussions-Thread zu **Cartopolis**, einem interaktiven 3D-Weltprojekt, das mit Bevy erstellt wurde, konzentriert sich auf Benutzerfeedback zur technischen Leistung und zur Kernfunktionalität des Projekts.\n\n**Die wichtigsten Punkte sind:**\n\n*   **Technische Probleme:** Benutzer berichteten von erheblichen Stabilitätsproblemen, häufigen Abstürzen und schlechter Leistung auf High-End-Hardware, insbesondere bei der WebGPU/WASM-Implementierung. Der Entwickler erkannte diese als „experimentell“ an und merkte an, dass die Datenpipeline für die Kachelkonstruktion derzeit optimiert werden muss.\n*   **Projektübersicht:** Der Entwickler stellte klar, dass Cartopolis ein auf OpenStreetMap basierender Viewer ist, der öffentliche Datensätze (wie 3DBAG für die Niederlande) integriert, um 3D-Umgebungen zu rendern. Es enthält einen Simulator für die Avatar-Navigation und grundlegende Werkzeuge zum Bauen mittels Lua-Scripting.\n*   **Zukünftige Entwicklung:** Ein Benutzer schlug vor, LLMs zu nutzen, um den 3D-Realismus durch den Abgleich von realen Bildern mit den Kartendaten zu verbessern. Der Entwickler zeigte Interesse an dieser Idee und merkte an, dass sie möglicherweise dazu beitragen könnte, bestehende Herausforderungen beim Rendern komplexer Strukturen wie Brücken und Tunnel zu lösen."
+  }
+]

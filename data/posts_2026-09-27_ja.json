@@ -1,0 +1,42 @@
+[
+  {
+    "item_id": 49869574,
+    "date": "2026-09-27",
+    "title": "Show HN: Lofi Cities – ブラウザ生成のLo-fi音楽が流れるピクセルアートの夜の街",
+    "project_url": "https://loficities.com/",
+    "hn_url": "https://news.ycombinator.com/item?id=49869574",
+    "content": ""
+  },
+  {
+    "item_id": 49867775,
+    "date": "2026-09-27",
+    "title": "Show HN: TinyAIArena AIエージェントのバトルを観戦しよう",
+    "project_url": "https://tinyaiarena.com/",
+    "hn_url": "https://news.ycombinator.com/item?id=49867775",
+    "content": ""
+  },
+  {
+    "item_id": 49866597,
+    "date": "2026-09-27",
+    "title": "Show HN: Building a Markdown editor for Mac, iOS and web",
+    "project_url": "https://www.markdown.beauty/",
+    "hn_url": "https://news.ycombinator.com/item?id=49866597",
+    "content": ""
+  },
+  {
+    "item_id": 49864105,
+    "date": "2026-09-27",
+    "title": "Show HN: Trail – 新しいタイプのロジックゲーム",
+    "project_url": "https://trail.franzai.com/",
+    "hn_url": "https://news.ycombinator.com/item?id=49864105",
+    "content": ""
+  },
+  {
+    "item_id": 49870394,
+    "date": "2026-09-27",
+    "title": "Show HN: Cartopolis、地球規模のインタラクティブな3Dワールド",
+    "project_url": "https://code.garage44.eu/jeroen/cartopolis",
+    "hn_url": "https://news.ycombinator.com/item?id=49870394",
+    "content": "Bevyで構築されたインタラクティブな3Dワールドプロジェクト、**Cartopolis**に関する議論スレッドでは、技術的なパフォーマンスやプロジェクトの中核となる機能についてのユーザーからのフィードバックが中心となっています。\n\n**主なポイントは以下の通りです：**\n\n*   **技術的な問題:** ユーザーから重大な安定性の問題が報告されており、特にWebGPU/WASMの実装において頻繁なクラッシュやハイエンドハードウェアでのパフォーマンス低下が指摘されています。開発者はこれらを「実験的」なものと認めており、タイル構築のためのデータパイプラインに現在最適化が必要であることを指摘しました。\n*   **プロジェクトの概要:** 開発者は、CartopolisがOpenStreetMapベースのビューアであり、3D環境をレンダリングするために（オランダの3DBAGのような）公開データセットを統合していることを明らかにしました。これには、アバターナビゲーションのシミュレーターや、Luaスクリプトを使用した基本的な建物構築ツールが含まれています。\n*   **今後の開発:** あるユーザーは、現実世界の画像と地図データを照合することで3Dのリアリズムを向上させるためにLLM（大規模言語モデル）を使用することを提案しました。開発者はこのアイデアに関心を示しており、橋やトンネルといった複雑な構造物をレンダリングする際の既存の課題を解決する助けになる可能性があると述べています。"
+  }
+]

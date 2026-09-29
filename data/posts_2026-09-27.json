@@ -1,0 +1,42 @@
+[
+  {
+    "item_id": 49869574,
+    "date": "2026-09-27",
+    "title": "Show HN: Lofi Cities \u2013 Pixel-art city nights with browser-generated lofi",
+    "project_url": "https://loficities.com/",
+    "hn_url": "https://news.ycombinator.com/item?id=49869574",
+    "content": ""
+  },
+  {
+    "item_id": 49867775,
+    "date": "2026-09-27",
+    "title": "Show HN: TinyAIArena watch AI agents battle it out",
+    "project_url": "https://tinyaiarena.com/",
+    "hn_url": "https://news.ycombinator.com/item?id=49867775",
+    "content": ""
+  },
+  {
+    "item_id": 49866597,
+    "date": "2026-09-27",
+    "title": "Show HN: Building a Markdown editor for Mac, iOS and web",
+    "project_url": "https://www.markdown.beauty/",
+    "hn_url": "https://news.ycombinator.com/item?id=49866597",
+    "content": ""
+  },
+  {
+    "item_id": 49864105,
+    "date": "2026-09-27",
+    "title": "Show HN: Trail \u2013 new kind of logic game",
+    "project_url": "https://trail.franzai.com/",
+    "hn_url": "https://news.ycombinator.com/item?id=49864105",
+    "content": ""
+  },
+  {
+    "item_id": 49870394,
+    "date": "2026-09-27",
+    "title": "Show HN: Cartopolis, interactive globe-sized 3D world",
+    "project_url": "https://code.garage44.eu/jeroen/cartopolis",
+    "hn_url": "https://news.ycombinator.com/item?id=49870394",
+    "content": "The discussion thread for **Cartopolis**, an interactive 3D world project built with Bevy, centers on user feedback regarding technical performance and the project's core functionality.\n\n**Key takeaways include:**\n\n*   **Technical Issues:** Users reported significant stability issues, noting frequent crashes and poor performance on high-end hardware, particularly with the WebGPU/WASM implementation. The developer acknowledged these as \"experimental\" and noted that the data pipeline for tile construction currently needs optimization.\n*   **Project Overview:** The developer clarified that Cartopolis is an OpenStreetMap-based viewer that integrates public datasets (such as 3DBAG for the Netherlands) to render 3D environments. It includes a simulator for avatar navigation and basic building tools using Lua scripting.\n*   **Future Development:** A user suggested using LLMs to enhance 3D realism by cross-referencing real-world imagery with the map data. The developer expressed interest in this idea, noting that it could potentially help solve existing challenges in rendering complex structures like bridges and tunnels."
+  }
+]
