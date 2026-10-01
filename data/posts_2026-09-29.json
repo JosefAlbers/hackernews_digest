@@ -1,0 +1,58 @@
+[
+  {
+    "item_id": 49898778,
+    "date": "2026-09-29",
+    "title": "Show HN: Real-time Solar System with 526k asteroids and all tracked satellites",
+    "project_url": "https://space.bl2.net/",
+    "hn_url": "https://news.ycombinator.com/item?id=49898778",
+    "content": "This thread discusses a \"Show HN\" project: a real-time, WebGL2-based browser visualization of the Solar System, including 526,000 asteroids and all tracked Earth satellites.\n\n**Key Highlights:**\n*   **Technical Implementation:** The developer built the site using WebGL2, with orbital propagation handled by web workers. Vertex shaders solve Kepler\u2019s equations in real-time, allowing for high performance (60+ FPS) despite the high object count.\n*   **Data Sources:** Satellite data comes from the CelesTrak TLE catalog, while planetary and asteroid data is sourced from JPL SBDB and JPL Horizons.\n*   **User Reception:** The community was highly impressed by the performance and visual clarity. Discussion frequently touched on the density of human-made objects in orbit, particularly the prevalence of Starlink satellites, and the \"rings\" created by geostationary satellites.\n*   **Interaction & Development:** The developer was active in the thread, addressing user feedback, implementing feature requests (such as a pause function, \"interstellar\" search filters, and an ambient mode), and fixing bugs in real-time.\n*   **Comparison:** Some users compared the site to legacy desktop software like Celestia, though they noted the browser-based accessibility and integration of modern web technologies set this project apart.\n\nOverall, the community praised the project as both an educational tool and an impressive demonstration of modern web performance capabilities."
+  },
+  {
+    "item_id": 49894351,
+    "date": "2026-09-29",
+    "title": "Show HN: NSL \u2013 WSL for Linux",
+    "project_url": "https://frostyard.github.io/nsl/",
+    "hn_url": "https://news.ycombinator.com/item?id=49894351",
+    "content": "The thread discusses **NSL (NSL \u2013 WSL for Linux)**, a new project by a developer who wanted to replicate the Windows Subsystem for Linux (WSL2) developer experience\u2014specifically its ease of use, isolation, and host integration\u2014on a Linux host.\n\n### Key Points of the Project:\n*   **Architecture:** Unlike tools like Distrobox (which typically uses `podman` or `docker` and shares the host home directory by default), NSL uses a single lightweight virtual machine (via `systemd-vmspawn`) that hosts multiple `systemd-nspawn` containers.\n*   **Motivation:** The author aims to keep the host operating system \"clean\" by isolating development dependencies inside these containers, preventing the \"dependency hell\" that often requires OS reinstalls.\n*   **UX vs. Existing Tools:** The author argues that while tools like `toolbox`, `distrobox`, or `incus` exist, NSL specifically optimizes for a \"pet\" VM workflow that feels native, including Wayland session sharing and port forwarding, without relying on the host's primary user environment for dependencies.\n\n### Community Reception:\n*   **Positive feedback:** Users interested in clean development environments appreciate the UX of having separate \"machines\" that are easy to manage. Several developers expressed interest in using it to sandbox untrusted code or AI-generated agents.\n*   **Constructive criticism & debates:**\n    *   **\"Reinventing the wheel\":** Many commenters questioned why this is necessary over existing solutions like `distrobox`, `podman`, `toolbox`, or `Nix`. The author clarifies that the specific isolation model (non-shared `$HOME`) and the \"WSL-like\" ergonomics are the core value proposition.\n    *   **Security:** A significant portion of the thread debates the security benefits of this architecture. There is a lively technical discussion regarding the viability of containers vs. VMs as a security boundary, fueled by reports of AI agents successfully escaping virtualized environments.\n    *   **LLM content:** Some users criticized the project's documentation for being heavily written by Claude, which they found \"unbearable\" or \"slop,\" though others defended the technical quality of the code despite the AI-assisted writing.\n    *   **Naming:** The name \"NSL\" was humorously compared to \"WSL,\" with users joking about whether it should be called \"LSL\" or \"WSLL\" given the ironic reversal of the Windows/Linux relationship.\n\nOverall, the project is viewed as a niche but useful tool for developers who appreciate the WSL2 UX and want a highly isolated, low-overhead way to manage project-specific dependencies on a Linux host."
+  },
+  {
+    "item_id": 49902382,
+    "date": "2026-09-29",
+    "title": "Show HN: Ledge.sh \u2013 Runnable Markdown Notes",
+    "project_url": "https://ledge.sh",
+    "hn_url": "https://news.ycombinator.com/item?id=49902382",
+    "content": "This thread discusses the launch of **Ledge**, a free, open-source Markdown notebook application that allows users to run shell commands, code, and SQL directly within their notes.\n\n### **Key Discussion Points:**\n\n*   **The Problem It Solves:** Users express frustration with the \"split brain\" between their documentation and their terminal. Ledge aims to bridge this by turning static documentation into interactive \"runbooks\" that act like a real terminal session (handling `sudo`, `top`, etc., better than standard Jupyter kernels).\n*   **Comparison to Prior Art:**\n    *   **Org-mode/Org-babel:** Many users favorably compare Ledge to Emacs\u2019 Org-mode, describing Ledge as \"Org-mode for muggles\" because it offers similar functionality without the steep Emacs learning curve.\n    *   **Jupyter Notebooks:** Several users noted the similarity to Jupyter. The creator distinguishes Ledge by its emphasis on standard Markdown, better terminal emulation, and a lighter-weight approach.\n    *   **Atuin Desktop & xc:** Users brought up other tools like *xc* (a Go-based runner) and the recently archived *Atuin Desktop*. The discussion highlighted the difficulty of scaling executable documentation in teams, largely due to the challenges of keeping documents up to date.\n*   **Feedback and Suggestions:**\n    *   **Features:** Suggestions included adding Org-babel interop, implementing autocompletion/aliases for the editor, and creating a \"notebook mode\" to execute cells in sequence.\n    *   **Marketing:** A user suggested refining the \"The notebook that runs code\" slogan to avoid sounding like an over-promise and to better differentiate it from Jupyter.\n*   **Community Reception:** The overall reception is positive, with users expressing excitement about using it for local tooling, documentation, and agent-assisted workflows. The project\u2019s cross-platform support (including mobile via SSH) was noted as a strong selling point."
+  },
+  {
+    "item_id": 49890707,
+    "date": "2026-09-29",
+    "title": "Show HN: JBR-001 \u2013 An open-source 3D printable desktop robot",
+    "project_url": "https://projecthub.arduino.cc/syntheticaidata/jbr-001-a-desktop-companion-robot-powered-by-arduino-uno-q-b11c96",
+    "hn_url": "https://news.ycombinator.com/item?id=49890707",
+    "content": ""
+  },
+  {
+    "item_id": 49886535,
+    "date": "2026-09-29",
+    "title": "Show HN: Dental Scope \u2013 Interactive 3D dental anatomy",
+    "project_url": "https://dental-scope.com/",
+    "hn_url": "https://news.ycombinator.com/item?id=49886535",
+    "content": ""
+  },
+  {
+    "item_id": 49896757,
+    "date": "2026-09-29",
+    "title": "Show HN: A working 3D model of an Enigma machine",
+    "project_url": "https://enigma.design",
+    "hn_url": "https://news.ycombinator.com/item?id=49896757",
+    "content": "This thread features positive community reception for a new educational project, [enigma.design](https://enigma.design), which provides an interactive 3D model of an Enigma machine.\n\n**Key points from the discussion include:**\n\n*   **Project Overview:** The creator explains they used AI assistance (Astra) and custom inspection tools to ensure historical accuracy, driven by a desire to understand the machine\u2019s internal rotor and wiring mechanics. They plan to open-source the project soon.\n*   **Performance Feedback:** Several users noted performance issues, particularly on mobile devices. The creator has been actively working to optimize these experiences and address navigation usability, such as adding the ability to step backward through the simulation.\n*   **Educational Community:** Participants shared other notable Enigma resources and simulators, including historical sites and alternative 3D implementations. One user suggested implementing WebXR for VR/AR, which the creator expressed interest in exploring.\n*   **Discussion on \"Show HN\" Guidelines:** A minor side debate occurred regarding the expectations for \"Show HN\" submissions, specifically whether it is standard or required for creators to share source code immediately upon launch.\n*   **Future Goals:** The creator expressed interest in expanding the project to eventually include a functional 3D simulation of a Bombe machine to decrypt Enigma traffic."
+  },
+  {
+    "item_id": 49891769,
+    "date": "2026-09-29",
+    "title": "Show HN: Jevstiller \u2013 Distill Jev into a local model, with a disagreement bound",
+    "project_url": "https://jevstiller.pages.dev/posts/the-guarantee/",
+    "hn_url": "https://news.ycombinator.com/item?id=49891769",
+    "content": "The thread discusses **Jevstiller**, a tool designed to reduce costs and latency for repetitive Jev (AI) classification tasks.\n\n**Key features and technical details shared by the author include:**\n*   **Functionality:** It acts as a proxy that learns from Jev\u2019s API responses. It trains a small, local classification head (multinomial logistic regression using plain NumPy/Adam) on top of frozen sentence embeddings (e.g., `bge-small`).\n*   **The \"Guarantee\":** It implements an exact finite-sample bound to ensure that the local model's output matches Jev\u2019s expected output at least 98% of the time. If the model becomes uncertain or agreement breaks, it falls back to the Jev API and retrains.\n*   **Performance:** It provides responses at ~15ms on a CPU and serves as a drop-in replacement for existing Jev setups.\n*   **Use Case:** It is best suited for applications where the same questions are asked repeatedly, effectively \"caching\" Jev's decision logic locally.\n\n**Community feedback:**\n*   **Comparison:** A user compared it to `model2vec`, though the author clarified they differ in purpose: `model2vec` creates general-purpose encoders, while Jevstiller distills specific decision logic.\n*   **Limitations:** Critics noted that it is currently limited to simple classification tasks and that the model is only as accurate as the Jev teacher (if Jev is wrong, the model is wrong).\n*   **Development:** There was interest in potential features like manual correction of labels and inquiries regarding technical implementation."
+  }
+]
