@@ -1,0 +1,18 @@
+[
+  {
+    "item_id": 49942103,
+    "date": "2026-10-03",
+    "title": "Show HN: Thoreau BASIC – What if BASIC hadn't gone out of fashion?",
+    "project_url": "https://thoreaubasic.com/",
+    "hn_url": "https://news.ycombinator.com/item?id=49942103",
+    "content": ""
+  },
+  {
+    "item_id": 49942434,
+    "date": "2026-10-03",
+    "title": "Show HN: Offrun – manage every coding agent from one workspace",
+    "project_url": "https://offrun.dev/",
+    "hn_url": "https://news.ycombinator.com/item?id=49942434",
+    "content": "This thread centers on the announcement of **Offrun**, a new workspace manager for coding agents, and the broader, rapidly evolving landscape of \"agent orchestrators\" or \"meta-harnesses.\"\n\n### Key Themes:\n*   **The \"Agentic\" Explosion:** Users discuss how the market for AI coding agent management has become saturated with dozens of competing tools (e.g., Goose, Paseo, Herdr, OpenRig). Many participants are \"vibe coding\" their own custom solutions because existing tools often lack specific workflows or become too buggy/complex to maintain.\n*   **Offrun’s Differentiator:** The developers position Offrun as a tool focused on \"human-in-the-loop\" management, aiming to reduce the \"approval fatigue\" associated with managing multiple agents. They mention upcoming features like cross-platform support and integrations with other harnesses like Herdr.\n*   **Design Philosophy & Critique:**\n    *   **Dashboarding:** There is a strong debate over whether these agents should be managed as ongoing chat conversations or as distinct UI-based tasks. Some users find chat-based interfaces distracting and prefer dashboards that surface status, blockers, and \"what's next\" items.\n    *   **DIY vs. Packaged Software:** Many contributors express skepticism about the longevity of these tools, noting that the barrier to entry for building a custom, LLM-generated agent manager is now so low that users often prefer building their own tools rather than relying on an external dependency that might fail or become bloated.\n*   **Community Resources:** One user shared a comprehensive comparison site, [agentmgmt.dev](https://agentmgmt.dev/), which tracks 68 different coding agent tools, reflecting the fragmentation of the current market.\n\n### Sentiment:\nThe overall sentiment is one of \"cautious interest\" mixed with \"developer fatigue.\" While participants appreciate the innovation and the utility of managing parallel agent tasks, there is a clear sentiment that many of these tools feel like transient \"weekend projects\" or \"vibe-coded\" experiments that struggle to replace a developer's specific, personalized terminal/scripting setup."
+  }
+]
