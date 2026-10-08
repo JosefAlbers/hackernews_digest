@@ -1,0 +1,26 @@
+[
+  {
+    "item_id": 49978171,
+    "date": "2026-10-06",
+    "title": "Show HN: Parseable, an open observability datalake, handles 100M time-series/min",
+    "project_url": "https://www.parseable.com",
+    "hn_url": "https://news.ycombinator.com/item?id=49978171",
+    "content": "This thread features a Show HN post from Yash, a founding team member of **Parseable**, an open-source observability data lake built in Rust. \n\n**Key aspects of the discussion include:**\n\n*   **Architecture & Scale:** Parseable uses a columnar design (Apache Arrow/Parquet) on S3-compatible object storage. By storing labels as columns rather than indexing them in a traditional TSDB, it avoids memory bottlenecks associated with high cardinality. Currently, the team has validated performance at 100M\u2013180M active time series with 3M samples/sec ingestion.\n*   **Community Skepticism & Feedback:**\n    *   **Scalability:** Several users noted that established solutions like Mimir or Thanos already handle billions of series, suggesting that 100M is not a particularly high benchmark for modern systems. The developer acknowledged that a \"billion-series\" benchmark is on their roadmap.\n    *   **Novelty:** Critics questioned whether the tool is truly innovative compared to building a custom stack using Apache Iceberg, DataFusion, and Parquet. Some noted that \"99% compression\" is often standard for Parquet and that newer research (like Vortex/Fastlanes) may offer better performance.\n    *   **Use Case:** The developer clarified that Parseable is a full-stack observability tool, not just a storage format like Iceberg.\n*   **Operational Details:**\n    *   **Infrastructure:** A deployment handling 100M series requires a moderate cluster (5 ingestors/5 queriers) with significant headroom.\n    *   **Data Formats:** One user (Simon Willison) highlighted that the open-source version currently supports JSON rather than Protobuf, though he provided a workaround to bridge this gap.\n*   **Positioning:** The developer emphasized that Parseable is aimed at companies where observability costs become a business pain point. They intentionally target large-scale ingestion (starting at 1 TB/day) to provide cost-efficient, self-owned data storage."
+  },
+  {
+    "item_id": 49978595,
+    "date": "2026-10-06",
+    "title": "Show HN: I turned my iPhone and a $20 smart plug into an f-stop timer",
+    "project_url": "https://peterszentkiralyi.eu/darkplug/",
+    "hn_url": "https://news.ycombinator.com/item?id=49978595",
+    "content": "The thread discusses **Darkplug**, an app created by a film photographer that turns an iPhone and a compatible local-network smart plug (specifically Shelly brand) into an advanced darkroom f-stop timer.\n\n**Key takeaways from the discussion:**\n\n*   **Functionality:** The app provides features typically found in expensive commercial enlarger timers, such as f-stop timing, test strips, dodge/burn workflows, and split-grade printing.\n*   **Technical Implementation:** \n    *   The app communicates locally with Shelly smart plugs, avoiding cloud dependency.\n    *   Users discussed the potential for timing jitter (measured by the creator at ~0.1s) and debated whether higher precision via custom ESP32/relay firmware is necessary for black-and-white printing.\n    *   The creator noted that the \"red-on-black\" interface is a functional requirement to prevent fogging light-sensitive photographic paper, rather than just a stylistic choice.\n*   **Community Feedback:**\n    *   **Usability:** Some users found the promo screenshots difficult to read due to the low-contrast red/black color scheme, prompting the developer to agree to improve them for the website.\n    *   **Comparison to Hardware:** Users shared historical anecdotes about DIY darkroom timers (using PIC microcontrollers) and reflected on the evolution from analog/manual timing to modern digital solutions.\n    *   **Value Proposition:** At a $25 price point, the solution is viewed as a highly affordable alternative to boutique darkroom hardware costing $300+.\n    *   **Future Ideas:** Suggestions included potential voice controls for total-darkness operation and using the iPhone camera as an exposure meter, though the developer noted constraints with existing hardware and Apple Watch integration."
+  },
+  {
+    "item_id": 49977385,
+    "date": "2026-10-06",
+    "title": "Show HN: MailAccess \u2013 the true Email OSINT framework",
+    "project_url": "https://mailaccess.pro",
+    "hn_url": "https://news.ycombinator.com/item?id=49977385",
+    "content": "The thread introduces **MailAccess**, an OSINT framework designed to help security engineers and penetration testers identify and verify email addresses associated with a domain. \n\nThe creator, a security engineer, developed the tool to address the lack of structured methodology in existing email intelligence tools. Rather than simply scraping data, MailAccess focuses on \"identity chaining,\" providing context on how and where data was found, and assigning a confidence score to each result. The project is open-source (available on GitHub) and also offers a hosted version for users."
+  }
+]
