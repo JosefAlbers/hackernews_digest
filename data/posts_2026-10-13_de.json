@@ -1,0 +1,66 @@
+[
+  {
+    "item_id": 50077020,
+    "date": "2026-10-13",
+    "title": "Show HN: Guitoro, eine virtuelle Gitarre, die man mit der Tastatur spielt",
+    "project_url": "https://guitoro.com/",
+    "hn_url": "https://news.ycombinator.com/item?id=50077020",
+    "content": ""
+  },
+  {
+    "item_id": 50074909,
+    "date": "2026-10-13",
+    "title": "Show HN: Wie zufällig bist du?",
+    "project_url": "https://lab.specr.net/rigged-draw/",
+    "hn_url": "https://news.ycombinator.com/item?id=50074909",
+    "content": ""
+  },
+  {
+    "item_id": 50069337,
+    "date": "2026-10-13",
+    "title": "Show HN: Use your OpenAI subscription to create audiobooks",
+    "project_url": "https://pdftomp3.com/connect-ai/",
+    "hn_url": "https://news.ycombinator.com/item?id=50069337",
+    "content": ""
+  },
+  {
+    "item_id": 50064840,
+    "date": "2026-10-13",
+    "title": "Show HN: SolidCraft – Open-Source parametrisches CAD in Rust (mit MCP-Unterstützung)",
+    "project_url": "https://github.com/bherbruck/solidcraft",
+    "hn_url": "https://news.ycombinator.com/item?id=50064840",
+    "content": ""
+  },
+  {
+    "item_id": 50080275,
+    "date": "2026-10-13",
+    "title": "Show HN: Pulse Local, eine Mac-Budget-App, deren KI-Modelle lokal auf Ihrem Rechner laufen",
+    "project_url": "https://pulseos.finance",
+    "hn_url": "https://news.ycombinator.com/item?id=50080275",
+    "content": ""
+  },
+  {
+    "item_id": 50070010,
+    "date": "2026-10-13",
+    "title": "Show HN: Spotatui, a Spotify TUI/GUI without web API rate limits",
+    "project_url": "https://github.com/LargeModGames/spotatui",
+    "hn_url": "https://news.ycombinator.com/item?id=50070010",
+    "content": ""
+  },
+  {
+    "item_id": 50075665,
+    "date": "2026-10-13",
+    "title": "Show HN: XY Music Notation",
+    "project_url": "https://music.xy.dev/",
+    "hn_url": "https://news.ycombinator.com/item?id=50075665",
+    "content": ""
+  },
+  {
+    "item_id": 50077619,
+    "date": "2026-10-13",
+    "title": "Show HN: Parsimony – ein Open-Source-Benchmark dafür, wie viel Code KI-Modelle hinzufügen",
+    "project_url": "https://parsimony.lasu.dev/",
+    "hn_url": "https://news.ycombinator.com/item?id=50077619",
+    "content": ""
+  }
+]
