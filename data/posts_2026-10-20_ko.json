@@ -1,0 +1,42 @@
+[
+  {
+    "item_id": 50170593,
+    "date": "2026-10-20",
+    "title": "Show HN: SimCity, but with Permits",
+    "project_url": "https://permit.petercai.com/",
+    "hn_url": "https://news.ycombinator.com/item?id=50170593",
+    "content": ""
+  },
+  {
+    "item_id": 50167286,
+    "date": "2026-10-20",
+    "title": "Show HN: VoidAccess – 오픈소스 다크웹 OSINT, 쿼리에서 그래프까지",
+    "project_url": "https://github.com/KatrielMoses/voidaccess",
+    "hn_url": "https://news.ycombinator.com/item?id=50167286",
+    "content": "이 스레드는 Katriel Moses가 다크웹 데이터의 수집 및 분석을 자동화하기 위해 설계한 오픈소스 OSINT 도구인 **VoidAccess**의 릴리스에 대해 다룹니다.\n\n**주요 내용은 다음과 같습니다:**\n\n*   **도구 기능:** 개발자는 VoidAccess를 다크웹을 탐색하고 노이즈 및 NSFW(후방 주의) 콘텐츠를 걸러내며, 보안 분석가를 돕기 위해 조사 결과를 그래프로 구성하는 자동화된 파이프라인이라고 설명합니다. 제작자는 핵심 엔진은 AI 없이 작동하며, 의사 결정 및 데이터 피벗을 위한 선택적 구성 요소로만 AI가 사용된다고 강조합니다.\n*   **회의론 및 비판:** 일부 사용자들은 이 프로젝트가 \"vibe-coded\"(AI로 생성된 저품질 작업)인지, 혹은 가짜 댓글을 통해 홍보되는지 의문을 제기하며 상당한 불신을 표합니다. 비평가들은 다크웹 조사에서 NSFW 콘텐츠를 필터링하는 것은 해당 콘텐츠가 종종 중요한 정보원이라는 점에서 위험하다고 지적합니다.\n*   **방법론에 대한 방어:** 개발자는 자신이 시스템을 직접 설계했으며 AI는 개발 지원용으로만 사용한다고 해명하며 프로젝트를 옹호합니다. 또한 NSFW 필터링은 주로 모든 미디어를 차단하는 방식으로 이루어지며, 이 도구는 윤리적인 분석가의 작업을 대체하는 것이 아니라 워크플로우를 가속화하기 위한 목적이라고 설명합니다.\n*   **기술적 질문:** 한 사용자는 이 도구의 데이터 연결 방법론에 대해 의문을 제기하며, 특히 공유 PGP 키, 암호화폐 주소, 중복 닉네임과 같이 겹치는 식별자를 어떻게 처리하는지 구체적으로 질문했습니다."
+  },
+  {
+    "item_id": 50161408,
+    "date": "2026-10-20",
+    "title": "Show HN: Death Plan Switch, 1인 개발자를 위한 자가 호스팅 데드맨 스위치",
+    "project_url": "https://deathplanswitch.com/",
+    "hn_url": "https://news.ycombinator.com/item?id=50161408",
+    "content": "Peter Bishop은 1인 개발자가 비즈니스 연속성을 보장할 수 있도록 설계된 MIT 라이선스의 자가 호스팅 데드맨 스위치인 \"Death Plan Switch\"를 소개했습니다. AI(Claude Code)의 도움을 받아 제작된 이 도구는 사용자가 매주 버튼을 눌러 체크인하지 않을 경우, 신뢰할 수 있는 연락처로 일련의 알림을 보내도록 설계되었습니다.\n\n**스레드에서 언급된 주요 테마와 피드백은 다음과 같습니다:**\n\n*   **실용적인 사용 사례:** 개발자는 과거 의료 비상 상황으로 인해 비즈니스가 중단되었던 개인적인 경험을 해결하기 위해 이 도구를 만들었습니다. 그는 이 도구가 호스팅 서비스의 장기적인 보안과 관련하여 고객의 신뢰를 구축하는 \"영업 기능\"으로 활용될 수 있다고 제안합니다.\n*   **설계 및 구현:** \n    *   이 도구는 의도적으로 단순하게 설계되었으며, 현재 월간 청구 주기와 맞추기 위해 주간 체크인 방식으로 설정되어 있습니다.\n    *   사용자들은 구성 가능한 시간 설정, 수동 버튼 클릭을 피하기 위한 수동적 \"킵얼라이브(keep-alive)\" 트리거, 그리고 보호 대상인 비즈니스와 동일한 인프라에 스위치를 의존할 때의 위험성에 대해 건설적인 피드백을 제공했습니다.\n*   **비판 및 회의론:**\n    *   **\"AI 슬롭(AI Slop)\":** 여러 사용자가 랜딩 페이지의 문구가 누가 봐도 AI가 작성한 것 같다고 비판하며, 이것이 제품의 신뢰도를 떨어뜨린다고 조언했습니다.\n    *   **보증 수준:** 일부 댓글 작성자들은 (AI가 생성한) \"42개의 단위 테스트\"에만 의존하는 것이 중요한 상황에서 사용해야 할 시스템의 지표로는 불충분하다고 지적했습니다.\n    *   **전문적 범위:** 일부는 승계 계획 맥락에서 \"고객\"에 지나치게 집착하는 것이 불안하게 느껴진다고 했으나, 옹호자들은 이것이 프리랜서의 전문적 책임 중 필수적인 부분이라고 주장했습니다.\n*   **모범 사례:** 숙련된 기여자들은 기술적 도구가 광범위한 \"비즈니스 연속성 계획(BCP)\"의 일부일 뿐이며, 여기에는 인간 중심의 절차, 법적 준비, 정기적인 \"모의 훈련\"이 포함되어야 한다고 강조했습니다.\n\n결론적으로, 이 스레드는 이 도구를 1인 종사자를 위한 유용하고 실행 가능한 솔루션으로 보는 시각과, 이를 미션 크리티컬한 안전장치가 아닌 가벼운 유틸리티로 취급해야 한다는 시각 사이의 균형을 잘 보여줍니다."
+  },
+  {
+    "item_id": 50167617,
+    "date": "2026-10-20",
+    "title": "Show HN: Jev Cards, Can you beat a vision model at a picture quiz?",
+    "project_url": "https://jevcards.com",
+    "hn_url": "https://news.ycombinator.com/item?id=50167617",
+    "content": "The thread discusses **Jev Cards** (jevcards.com), a web-based quiz game where users compete against \"Jev,\" a vision-capable AI model developed by TypeSafe. The game presents visual questions that the AI answers in ~250ms, allowing users to test their knowledge and speed against the model.\n\n**Key points from the discussion include:**\n\n*   **Game Mechanics & Purpose:** The creator intended the site as a fun, open-source demonstration of the AI's speed and its limitations (e.g., occasional inaccuracies). Players can compete in modes like \"Sprint,\" \"Versus,\" and \"Streak.\"\n*   **User Feedback & Experience:** \n    *   **Performance:** Many users were surprised by the AI’s speed but noted that it remains beatable due to occasional errors, which the developer notes hover around a 20–30% failure rate depending on the category.\n    *   **Scoring:** There is healthy debate regarding how points are calculated. Some users feel that accuracy should be weighted more heavily than speed, while others argue that the AI's speed is the primary factor that makes the game challenging.\n    *   **Content:** Users requested filters for specific categories (like music theory) and noted a bias toward US-centric knowledge. The developer addressed some of these requests quickly, adding hundreds of cards and refining gameplay based on feedback.\n*   **Technical Reception:** The project—built using Opper’s vision models and Claude Code—was generally well-received as a \"tasteful\" and performant demo. Some users expressed frustration with specific UI interactions (such as the chess board puzzles), while others appreciated the \"humbling\" experience of playing against an AI that excels at recognizing objects but can struggle with niche or subjective topics. \n\nOverall, the community views the app as a fun, interactive way to visualize the current capabilities and constraints of vision-based AI models."
+  },
+  {
+    "item_id": 50167604,
+    "date": "2026-10-20",
+    "title": "Show HN: Penmentor – 선생님처럼 손글씨 수학 문제를 채점해 주는 Claude",
+    "project_url": "https://github.com/AbdullahAlhariri/penmentor",
+    "hn_url": "https://news.ycombinator.com/item?id=50167604",
+    "content": "이 스레드에서는 Claude를 활용하여 손글씨 수학 문제에 대한 피드백과 채점을 제공하는 도구인 **Penmentor**에 대해 논의합니다.\n\n주요 내용은 다음과 같습니다:\n* **기능:** 사용자들은 특히 그래프 작성 기능을 높게 평가하며, 홈스쿨링에 활용하고 싶다는 관심을 보였습니다.\n* **호환성:** 개발자는 현재 이 도구가 특정 하니스(Claude, Codex, AGY)와 호환되는 모델만 지원한다고 밝혔으나, 다른 LLM 제공업체 API 지원 추가에는 열려 있다고 언급했습니다.\n* **기술적 제약:** 개발자는 현재 빌드가 Linux(특히 Arch/i3wm)에 최적화되어 있다고 밝혔으며, 이에 따라 관심 있는 사용자를 위한 잠재적인 크로스 플랫폼 호환성에 대한 논의가 이루어졌습니다."
+  }
+]
