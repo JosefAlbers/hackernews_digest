@@ -1,0 +1,26 @@
+[
+  {
+    "item_id": 50195488,
+    "date": "2026-10-22",
+    "title": "Show HN: OnKey \u2013 I'm a bad singer, so I built an app to show where I'm off-key",
+    "project_url": "https://github.com/dsmurrell/onkey",
+    "hn_url": "https://news.ycombinator.com/item?id=50195488",
+    "content": ""
+  },
+  {
+    "item_id": 50199290,
+    "date": "2026-10-22",
+    "title": "Show HN: UI micro interactions prompts for AI",
+    "project_url": "https://www.typeui.sh/micro-interactions",
+    "hn_url": "https://news.ycombinator.com/item?id=50199290",
+    "content": "The thread discusses a \"Show HN\" post for **TypeUI**, a library of UI micro-interaction prompts intended for use with AI. The project met with significant skepticism and critical feedback from the Hacker News community.\n\n**Key points of criticism included:**\n\n*   **Paywall/Signup Friction:** Users expressed frustration that the site hides its \"prompts\" behind a mandatory signup/paywall, which contradicts the expectation of an open-source or easily accessible resource. Some felt the call-to-action buttons were deceptive.\n*   **The \"Commodity\" Problem:** Many developers argued that the value of such a library is low because modern LLMs (like Claude) can easily replicate these UI interactions simply by being shown an example or provided with a basic natural language description. Critics labeled the product \"AI slop\" and \"snake oil.\"\n*   **Lack of Polish:** Users who analyzed the examples found them inconsistent and technically flawed (e.g., buggy spring animations, poor accessibility, and layout issues). Several commenters provided specific technical critiques of the components.\n*   **Pricing:** The $30/month subscription model was widely criticized as being too expensive for what is essentially a collection of prompts, especially given the availability of free alternatives and the declining marginal cost of generating code with AI.\n*   **Ethical/UX Concerns:** Commenters pointed out predatory design practices, such as forced \"essential\" cookies and unclear disclosures regarding what exactly a user is paying for (prompts vs. code).\n\n**The Creator's Response:**\nThe project creator defended the service by noting their experience in the UI/UX field (having previously built Flowbite) and arguing that their prompts offer a superior, specialized structure for AI agents compared to generic user requests. They acknowledged the feedback regarding bugs and expressed a willingness to implement fixes. \n\n**Community Sentiment:**\nWhile a few users appreciated the visual concepts, the consensus was overwhelmingly negative, focusing on the lack of sustainable value in \"selling prompts\" in the age of advanced LLMs and the perceived poor execution of the product\u2019s business model."
+  },
+  {
+    "item_id": 50202746,
+    "date": "2026-10-22",
+    "title": "Show HN: Impossible Machines: declaratively program the physical world",
+    "project_url": "https://www.impossiblemachines.xyz",
+    "hn_url": "https://news.ycombinator.com/item?id=50202746",
+    "content": ""
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "item_id": 50195488,
+    "date": "2026-10-22",
+    "title": "Show HN: OnKey – Ich bin ein schlechter Sänger, also habe ich eine App entwickelt, die anzeigt, wann ich den Ton verfehle",
+    "project_url": "https://github.com/dsmurrell/onkey",
+    "hn_url": "https://news.ycombinator.com/item?id=50195488",
+    "content": ""
+  },
+  {
+    "item_id": 50199290,
+    "date": "2026-10-22",
+    "title": "Show HN: UI-Mikrointeraktions-Prompts für KI",
+    "project_url": "https://www.typeui.sh/micro-interactions",
+    "hn_url": "https://news.ycombinator.com/item?id=50199290",
+    "content": "Der Thread diskutiert einen \"Show HN\"-Beitrag für **TypeUI**, eine Bibliothek von UI-Mikrointeraktions-Prompts, die für die Verwendung mit KI gedacht sind. Das Projekt stieß bei der Hacker News-Community auf erhebliche Skepsis und kritische Rückmeldungen.\n\n**Wichtige Kritikpunkte waren:**\n\n*   **Paywall/Registrierungshürden:** Nutzer äußerten sich frustriert darüber, dass die Website ihre \"Prompts\" hinter einer obligatorischen Registrierung/Paywall verbirgt, was der Erwartung an eine Open-Source- oder leicht zugängliche Ressource widerspricht. Einige empfanden die Call-to-Action-Buttons als täuschend.\n*   **Das \"Commodity\"-Problem:** Viele Entwickler argumentierten, dass der Wert einer solchen Bibliothek gering sei, da moderne LLMs (wie Claude) diese UI-Interaktionen leicht replizieren können, indem sie einfach ein Beispiel sehen oder eine grundlegende Beschreibung in natürlicher Sprache erhalten. Kritiker bezeichneten das Produkt als \"KI-Müll\" und \"Schlangenöl\".\n*   **Mangelnde Sorgfalt:** Nutzer, die die Beispiele analysierten, fanden sie inkonsistent und technisch fehlerhaft (z. B. fehlerhafte Spring-Animationen, schlechte Barrierefreiheit und Layout-Probleme). Mehrere Kommentatoren gaben spezifische technische Kritiken zu den Komponenten ab.\n*   **Preisgestaltung:** Das Abonnementmodell für 30 $/Monat wurde weithin als zu teuer für das kritisiert, was im Wesentlichen eine Sammlung von Prompts ist – insbesondere angesichts der Verfügbarkeit kostenloser Alternativen und der sinkenden Grenzkosten für die Generierung von Code mit KI.\n*   **Ethische/UX-Bedenken:** Kommentatoren wiesen auf räuberische Designpraktiken hin, wie z. B. erzwungene \"essentielle\" Cookies und unklare Angaben darüber, wofür ein Nutzer genau bezahlt (Prompts vs. Code).\n\n**Die Antwort des Erstellers:**\nDer Ersteller des Projekts verteidigte den Dienst mit dem Hinweis auf seine Erfahrung im UI/UX-Bereich (da er zuvor Flowbite aufgebaut hatte) und argumentierte, dass seine Prompts eine überlegene, spezialisierte Struktur für KI-Agenten im Vergleich zu generischen Nutzeranfragen bieten. Er erkannte das Feedback bezüglich der Fehler an und zeigte sich bereit, Korrekturen umzusetzen.\n\n**Stimmung in der Community:**\nObwohl einige Nutzer die visuellen Konzepte schätzten, war der Konsens überwiegend negativ. Er konzentrierte sich auf den fehlenden nachhaltigen Wert des \"Verkaufs von Prompts\" im Zeitalter fortschrittlicher LLMs und die als mangelhaft empfundene Umsetzung des Geschäftsmodells des Produkts."
+  },
+  {
+    "item_id": 50202746,
+    "date": "2026-10-22",
+    "title": "Show HN: Impossible Machines: declaratively program the physical world",
+    "project_url": "https://www.impossiblemachines.xyz",
+    "hn_url": "https://news.ycombinator.com/item?id=50202746",
+    "content": ""
+  }
+]
