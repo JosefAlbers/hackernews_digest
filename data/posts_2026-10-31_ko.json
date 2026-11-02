@@ -1,0 +1,34 @@
+[
+  {
+    "item_id": 50315782,
+    "date": "2026-10-31",
+    "title": "Show HN: A language model that lives in a boot sector",
+    "project_url": "https://github.com/kerlenton/bootgpt",
+    "hn_url": "https://news.ycombinator.com/item?id=50315782",
+    "content": "The thread discusses a \"Show HN\" project called **bootgpt**, where the creator implemented a character-level neural network that fits into a 512-byte MBR (Master Boot Record) to generate infinite Linux boot logs.\n\n**Key takeaways from the discussion:**\n\n*   **Technical Implementation:** The project was inspired by the boot sector demo scene. The creator detailed the challenges of fitting the inference engine into one sector, specifically overcoming bugs related to x86 register usage (specifically `edx` and `bx`) during assembly execution.\n*   **Purpose:** The creator and commenters celebrated the project as a piece of \"silly engineering.\" The conversation highlights the value of building things purely for fun and curiosity rather than economic utility, noting that this spirit of sharing unconventional projects is what makes the community special.\n*   **Community & Learning:** When asked for advice on how to learn this kind of low-level programming, the creator emphasized that it is a long, patient process driven by personal interest and exposure to other enthusiasts—noting that being surrounded by people doing similar \"wizardry\" (like reverse engineering hardware) serves as a major motivator."
+  },
+  {
+    "item_id": 50314508,
+    "date": "2026-10-31",
+    "title": "Show HN: 예전 캔버스 3D 라이브러리를 가벼운 WebGL 2 라이브러리로 다시 만들었습니다 – phoria2",
+    "project_url": "https://kevs3d.co.uk/phoria2/",
+    "hn_url": "https://news.ycombinator.com/item?id=50314508",
+    "content": "이 스레드는 가벼운 WebGL 2 3D 라이브러리인 **phoria2**의 출시를 다룹니다. 사용자들의 반응은 대체로 긍정적이며, 특히 모바일 기기에서도 부드러운 프레임 속도를 유지하는 높은 성능에 대해 큰 호평을 보내고 있습니다.\n\n주요 논의 내용은 다음과 같습니다:\n\n*   **주요 기능:** 사용자들은 차트 기본 요소(시계열, 열 지도 표면)가 포함된 점을 칭찬했으며, 데이터 업데이트가 없을 때 불필요한 GPU 사용을 방지하는 라이브러리의 \"온디맨드(on-demand)\" 렌더링 방식을 높게 평가했습니다.\n*   **기술적 질문:** 라이브 데이터를 위한 실시간 지오메트리 업데이트(트위닝) 처리 방식과 3D 투영에 사용되는 좌표계에 대한 기술적 관심이 있었습니다.\n*   **WebGL 2 vs WebGPU:** WebGPU 대신 WebGL 2를 선택한 것에 대한 토론이 있었습니다. WebGL 2 지지자들은 Linux나 구형 브라우저에서 여전히 지원 문제가 있는 WebGPU보다 WebGL 2가 가장 안정적이고 호환성이 높은 선택이라고 주장했습니다.\n*   **AI와 라이브러리:** 일부 댓글 작성자들은 최신 AI(Claude 등)가 맞춤형 3D 코드를 생성할 수 있으므로 전문 라이브러리가 불필요해질 수 있다고 주장했습니다. 이에 대해 최적화 및 유지보수 측면에서 라이브러리가 갖는 지속적인 가치에 대한 반론이 제기되었습니다.\n*   **건설적인 피드백:** 사용자들은 모바일 기기에서의 터치/호버 상호작용과 관련된 몇 가지 사소한 UX 문제를 지적했으며, Three.js나 Babylon.js와 같은 업계 표준과 phoria2를 비교하는 더 명확한 문서가 있다면 도움이 될 것이라는 의견을 제시했습니다."
+  },
+  {
+    "item_id": 50319169,
+    "date": "2026-10-31",
+    "title": "Show HN: NES 콘트라(1987) 포팅 (ASM -> C, 그리고 C -> WebAssembly)",
+    "project_url": "https://epoyraz.github.io/nes-contra-us/",
+    "hn_url": "https://news.ycombinator.com/item?id=50319169",
+    "content": "이 스레드는 GitHub 사용자 `epoyraz`가 1987년 NES 게임 *콘트라(Contra)*를 C 언어로, 이후 WebAssembly로 포팅하여 브라우저에서 플레이할 수 있게 만든 프로젝트를 다룹니다.\n\n### 주요 기술적 세부 사항\n*   **방법론:** 개발자는 주석이 달린 6502 어셈블리 디스어셈블리 코드를 기반으로 루틴을 C로 변환했으며, Mesen 에뮬레이터를 사용하여 원본 게임과 프레임 단위로 검증했습니다.\n*   **멀티플레이어:** 이 프로젝트는 WebRTC 데이터 채널을 통한 결정론적 락스텝(deterministic lockstep) 아키텍처를 사용하여 온라인 협동 플레이를 지원하며, 입력 지연 및 해시 기반 RAM 비교를 통해 비동기화를 방지합니다.\n*   **AI 통합:** 개발자는 포팅 과정을 돕기 위해 AI(Claude/Codex)를 활용했습니다. 에뮬레이터 내에서 원격 측정(telemetry) 수집 장치를 만들고, AI를 사용하여 변환된 C 코드가 관찰된 게임 상태와 일치하는지 확인하는 방식으로 진행되었습니다.\n*   **저작권/안전:** 오디오 관련 피드백을 수용한 후 사운드 지원을 추가했으나, 코나미로부터의 잠재적인 DMCA 조치를 피하기 위해 사용자가 직접 자신의 ROM을 제공하도록 했습니다.\n\n### 커뮤니티 반응\n*   **인상적인 기술적 성과:** 많은 댓글 작성자가 수천 줄의 어셈블리 코드를 번역하고 검증하는 데 들어간 노력에 대해 개발자를 칭찬했습니다.\n*   **\"AI 코딩\" 논쟁:** 이 스레드는 소프트웨어 프로젝트에서의 AI 사용에 관한 격렬한 토론을 촉발했습니다. 일부 사용자는 AI가 힘든 작업을 수행했기 때문에 \"노력이 부족하다\"거나 \"새롭지 않다\"고 비판한 반면, 다른 사용자들은 시간 제약 속에서도 복잡한 프로젝트를 실현할 수 있게 해주는 합법적이고 현대적인 리버스 엔지니어링 접근 방식이라며 옹호했습니다.\n*   **NES 보존 및 에뮬레이션:** 토론은 *콘트라*의 역사(예: *프로보텍터(Probotector)*와 같은 지역적 차이), 레트로 그래픽을 개선하기 위한 텍스처 팩 사용 가능성, 키보드 제어 표준의 진화(예: 화살표 키 vs WASD 논쟁) 등으로 이어졌습니다.\n\n### 비판\n*   **플랫폼 충실도:** 일부 기술 중심적인 사용자들은 이 포팅이 플랫폼 독립적인 재작성이 아니라 에뮬레이터의 외피(facade)처럼 작동한다는 점에 실망하며, 여전히 80년대 하드웨어 아키텍처의 제약에 불필요하게 갇혀 있다고 주장했습니다.\n*   **사용 편의성(QoL) 문제:** 사용자들은 키 매핑 불가 및 초기 브라우저 호환성 부족 등 편의 기능이 누락된 점을 지적했으며, 이는 개발자의 \"게이머\" 자질에 대한 논쟁으로 이어지기도 했습니다."
+  },
+  {
+    "item_id": 50317331,
+    "date": "2026-10-31",
+    "title": "Show HN: 컴퓨터에 전화 회선을 제공하는 USB-C LTE 모뎀",
+    "project_url": "https://github.com/Koppar-AI/koppar-lte-modem",
+    "hn_url": "https://news.ycombinator.com/item?id=50317331",
+    "content": "이 스레드는 컴퓨터에 음성 및 SMS를 위한 물리적 전화 회선을 제공하는 USB-C LTE 모뎀 오픈 소스 프로젝트를 다룹니다.\n\n### **프로젝트**\n*   **목적:** 제작자(OP)는 VoIP 및 스마트폰-PC 테더링의 한계를 우회하여 데스크톱 기반의 통화 및 문자 메시지 솔루션을 원했습니다.\n*   **설계:** 이 보드는 Quectel EC25-EUX 모듈과 오디오 브리지 역할을 하는 USB 사운드 카드로 RP2040 칩을 사용합니다. 설계는 AI 지원 PCB 설계 도구인 \"Koppar\"를 사용하여 생성되었습니다.\n*   **현황:** 하드웨어는 현재 프로토타입 주문 단계에 있습니다. OP는 보드가 아직 제작되지 않았음을 인정하며, AI가 생성한 회로도의 오류(안테나 임피던스, 전원 트레이스 폭, 커넥터 방향 등)를 공개적으로 검토했습니다.\n\n### **주요 기술 논의**\n*   **VoLTE/호환성:** 통신사가 2G/3G 네트워크를 종료함에 따라 장치의 수명에 대한 사용자들의 우려가 제기되었습니다. OP는 모뎀이 VoLTE를 기본적으로 지원하지만, 실제 성능은 통신사별 MBN 프로필과 화이트리스트 여부에 따라 다르다고 언급했습니다.\n*   **PCB 설계 품질:** 보드의 미학적으로 \"기괴한(fever dream)\" 라우팅 방식에 대해 일부 비판이 있었으나, OP는 설계가 기능적이며 미적 완벽함보다는 테스트를 목적으로 한다고 설명했습니다.\n*   **하드웨어 분야의 AI:** 이 프로젝트는 AI로 생성된 하드웨어 설계의 실효성에 대한 논쟁을 불러일으켰으며, 일부 참가자들은 조립 후 장치가 실제로 작동할지에 대해 회의적인 반응을 보였습니다.\n*   **LTE 수명:** 6G가 등장하기 시작하면서 LTE가 여전히 실행 가능한 프로토콜로 남을 것인지에 대한 하위 토론이 있었습니다. 참가자들은 4G/LTE가 현재는 견고하며 IoT에 필수적이지만, 통신사들이 5G/6G \"독립형(Standalone)\" 아키텍처를 선호하여 결국 이를 폐기할 수도 있다고 지적했습니다.\n\n### **기타 주목할 점**\n*   **Apple과의 통합:** 참가자들은 Apple이 왜 맥북에 셀룰러 모뎀을 통합하지 않는지에 대해 논의했으며, 아이폰 테더링 시너지 효과 장려부터 Qualcomm 모뎀 기술 라이선스 비용 문제에 이르기까지 다양한 이유를 꼽았습니다.\n*   **셀룰러 데스크폰:** 이 스레드에서는 유선 전화 인프라가 부족한 지역에서 주로 사용되는 SIM 기반 데스크폰의 존재에 대해서도 다루었습니다."
+  }
+]
