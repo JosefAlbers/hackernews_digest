@@ -1,0 +1,50 @@
+[
+  {
+    "item_id": 50406292,
+    "date": "2026-11-07",
+    "title": "Show HN: Coldframe, 슈퍼마켓 냉장고 컨트롤러를 가장하는 허니팟",
+    "project_url": "https://github.com/hedgerow-dev/coldframe",
+    "hn_url": "https://news.ycombinator.com/item?id=50406292",
+    "content": "이 스레드에서는 취약한 슈퍼마켓 냉동 제어기(Danfoss AK-SM 800A 및 Dixell XWEB)를 모방하도록 설계된 새로운 오픈 소스 허니팟인 **Coldframe**에 대해 논의합니다.\n\n### 프로젝트 개요\n*   **목적:** 개발자는 슈퍼마켓과 혈액 은행을 포함하여 여러 대규모 해킹 사건의 표적이 되었던 슈퍼마켓 냉각 인프라에 대한 실제 공격 시도를 연구하기 위해 Coldframe을 구축했습니다.\n*   **기술적 접근 방식:** 이 허니팟은 표준 파이썬 라이브러리를 사용하여 헤더 응답, TLS 버전, 가짜 대시보드를 정확하게 복제함으로써 공격자가 \"두 번째 이동\"(예: 제상 주기 작동 시도)을 하도록 유인합니다.\n*   **목표:** 작성자는 공격자 행동에 관한 데이터, 특히 알려진 CVE(Danfoss의 \"오늘의 코드\" 우회 등)와 관련된 데이터를 수집하고 그 결과를 보안 커뮤니티에 환원하는 것을 목표로 합니다.\n\n### 주요 커뮤니티 토론 포인트\n*   **OT/IoT 보안:** 댓글 작성자들은 왜 이러한 장치들이 인터넷에 연결되어 있는지에 대해 토론합니다. 많은 이들은 슈퍼마켓이 기술 부채와 패치를 관리할 내부 사이버 보안 자원이 부족하다는 점을 지적하며, 냉장고와 같은 중요 인프라는 격리되어야 한다고 주장합니다.\n*   **보험/규제의 역할:** 일부는 사이버 보험이 더 나은 표준을 강제할 수 있다고 제안하지만, 보험사가 실제 보안 개선을 주도하기보다는 \"규정 준수 체크리스트\"를 만드는 수준에 그칠 것이라며 회의적인 반응을 보이는 이들도 있습니다.\n*   **공격의 진위:** 최근 일련의 \"냉장고 해킹\"이 국가 차원의 정교한 공격이었는지, 아니면 단순히 알려진 취약점을 악용하는 기회주의적 행위자에 의한 \"모방 범죄\"였는지에 대한 논의가 있습니다.\n*   **비판:** 스레드의 상당 부분은 작성자가 게시물을 작성하는 데 AI를 사용한 것에 대한 커뮤니티의 반발에 할애되었습니다. 여러 사용자가 AI 생성 텍스트에 대한 불만을 표출하며, 이를 \"오그라든다\"고 표현하고, 작성자가 자신의 게시물을 직접 쓸 생각이 없다면 독자들도 참여할 필요가 없다고 주장했습니다.\n*   **허니팟의 효용성:** 숙련된 사용자들은 틈새 산업용 하드웨어를 위한 허니팟은 공격을 방지하기보다는 위협 인텔리전스를 수집하는 데 주로 유용하며, 진정한 해결책은 이러한 장치를 공용 인터넷에서 제거하는 것이라고 강조했습니다.\n\n작성자는 피드백에 긍정적으로 반응하며, \"실제\" 스캔 트래픽을 더 잘 포착하기 위해 허니팟을 클라우드 호스팅에서 일반 가정용 IP 대역으로 이전할 계획임을 밝혔습니다."
+  },
+  {
+    "item_id": 50405263,
+    "date": "2026-11-07",
+    "title": "Show HN: We compressed a 31B video+audio diffusion model to 14B, 6 steps, INT8",
+    "project_url": "https://github.com/Video-Rebirth/hyperflow-h3-flash",
+    "hn_url": "https://news.ycombinator.com/item?id=50405263",
+    "content": "This thread discusses the release of **HyperFlow H3 Flash**, a compressed version of the 31B parameter MiniMax-H3 video+audio diffusion model, reduced to 13.7B parameters. \n\n**Key takeaways from the discussion include:**\n\n*   **Technical Achievements:** The authors achieved this through pruning, low-rank factorization, a novel two-time conditioning method (allowing 4–8 step sampling without CFG), and W8A8 INT8 quantization. \n*   **Performance:** The model is significantly more accessible for local hardware, with benchmark times provided for various NVIDIA GPUs (e.g., 92 seconds on an RTX 5090 for a 5.2s clip).\n*   **Community Interest & Concerns:** \n    *   Users expressed a strong desire for head-to-head quality comparisons between the original and compressed models to verify how much performance is lost during quantization.\n    *   There is interest in moving away from ComfyUI toward a simpler, CLI-based workflow similar to `llama.cpp` (though references to `stable-diffusion.cpp` were noted as a potential alternative).\n*   **Licensing:** An important caveat is that the model weights are governed by the MiniMax-H3 Community License, which currently excludes users in the US, EU, UK, and South Korea without specific authorization. \n\nThe author (Jian) participated in the thread to provide technical specs, confirm hardware requirements (noting it runs in ComfyUI on 24GB VRAM cards), and clarify the distinction between their model and the base MiniMax-H3."
+  },
+  {
+    "item_id": 50408082,
+    "date": "2026-11-07",
+    "title": "Show HN: Where Were We",
+    "project_url": "https://wherewerewe.app/",
+    "hn_url": "https://news.ycombinator.com/item?id=50408082",
+    "content": "The thread discusses **\"Where Were We,\"** a web game created by a developer to turn vacation photos into a geography-based guessing game using EXIF data.\n\n**Key points include:**\n\n*   **Positive Reception:** Many users praised the concept as \"brilliant,\" \"beautiful,\" and a fun way to engage with personal memories. Users also shared similar alternatives like *Wheretaken*, *Timeguessr*, and *Whichyr*.\n*   **Privacy Debate:** A significant portion of the discussion centered on the risks of uploading personal photos to a site without a clear privacy or data usage policy. While some argued that such \"Show HN\" projects should be supported in the spirit of fun and creativity without being burdened by bureaucratic requirements, others insisted that in the current era of data scraping and AI training, user caution and transparency regarding data handling are essential.\n*   **Technical/Feedback:** Users offered constructive feedback on UI improvements (specifically mobile responsiveness) and sought clarification on game mechanics (e.g., how proximity scoring works).\n*   **Tangents:** The thread briefly veered into a discussion about the historical availability of Berlin Wall chunks in US grocery stores (Fred Meyer) during the late 1980s."
+  },
+  {
+    "item_id": 50408350,
+    "date": "2026-11-07",
+    "title": "Show HN: 건강한 눈 깜빡임 습관을 돕는 오프라인 데스크톱 도우미",
+    "project_url": "https://eyesrhythm.com/",
+    "hn_url": "https://news.ycombinator.com/item?id=50408350",
+    "content": "이 스레드에서는 웹캠을 통해 눈 깜빡임 빈도와 리듬을 모니터링하고 부드러운 시청각 알림을 제공하여 안구 건조증을 예방하도록 설계된 오프라인 데스크톱 애플리케이션 **EyeRhythm**의 출시를 다룹니다.\n\n**토론의 주요 내용은 다음과 같습니다:**\n\n*   **개인정보 보호 및 오픈 소스:** 사용자들은 웹캠 기반 앱에 대한 초기 개인정보 우려를 제기했습니다. 개발자는 저장소를 *PolyForm Noncommercial License*로 공개하여 사용자가 코드를 직접 검토할 수 있도록 했습니다.\n*   **사용자 피드백 및 제안:**\n    *   일부 사용자는 사용자가 눈 깜빡임을 잊었을 때 화면을 잠시 검게 만들거나 흐리게 처리하는 등 더 적극적인 기능을 제안했습니다.\n    *   Linux 버전에 대한 관심이 있었으며, 개발자는 향후 업데이트에서 이를 우선순위에 두겠다고 밝혔습니다.\n    *   한 사용자는 콘택트렌즈를 '자연스러운' 깜빡임 알림으로 사용하는 경험을 공유했으며, 다른 사용자는 화면 캡처 소프트웨어를 통해 강제로 눈을 깜빡이게 했던 과거의 경험을 언급했습니다.\n*   **제품 개선:** 개발자는 피드백을 적극적으로 수용했습니다. 랜딩 페이지에서 실수로 포함된 '환불' 페이지를 삭제하겠다는 즉각적인 응답과 사용자 유입을 늘리기 위해 데모 영상을 제작하라는 제안 등이 포함되었습니다.\n*   **경쟁 제품:** 또 다른 사용자는 일정 시간 동안 활동이 없으면 화면을 흐리게 처리하는 유사한 도구를 개발했다고 밝혔으며, 커뮤니티의 관심에 힘입어 이를 오픈 소스로 공개하겠다고 제안했습니다."
+  },
+  {
+    "item_id": 50401451,
+    "date": "2026-11-07",
+    "title": "Show HN: Did prediction markets do any predicting this midterms?",
+    "project_url": "https://app.artifactbin.dev/@vivek/AQTt2H-did-prediction-markets-predict-the-midterms",
+    "hn_url": "https://news.ycombinator.com/item?id=50401451",
+    "content": "This thread discusses a \"Show HN\" post questioning the value and accuracy of prediction markets in forecasting election results compared to traditional polling and models like Nate Silver’s.\n\nThe discussion splits into two main areas:\n\n*   **The Utility of Prediction Markets:** Critics argue that \"prediction markets\" are merely \"betting markets\" rebranded to sound tech-forward, offering little societal value and functioning as gambling. Others defend them, noting that even if they only perform \"as well as\" expensive polling models, that efficiency is impressive. There is also debate over whether these markets act as \"information laundries\" that exploit retail traders.\n*   **Website Design Complaints:** A significant portion of the conversation is dedicated to technical frustration with the site itself. Users heavily criticized the use of real-time \"guest\" mouse cursors, which many found distracting and unreadable. The author of the site eventually acknowledged the feedback and removed the feature after high traffic caused performance issues."
+  },
+  {
+    "item_id": 50401844,
+    "date": "2026-11-07",
+    "title": "Show HN: JavaScript web apps with WASM layout and GPU rendering in 280 KB",
+    "project_url": "https://github.com/rkaehn/uniform",
+    "hn_url": "https://news.ycombinator.com/item?id=50401844",
+    "content": "The thread discusses \"Uniform,\" a project by rkaehn that aims to simplify cross-platform app development by using a WASM-based layout and rendering engine written in C, coupled with a JavaScript API. The goal is to provide a lightweight, high-performance alternative to browser-based frameworks or platform-specific native UI kits.\n\n**Key points of discussion include:**\n\n*   **The Technical Concept:** Supporters appreciate the goal of decoupling UI development from browser engines and platform-specific constraints, noting that a <2 MB runtime could be a significant improvement over existing solutions like Tauri.\n*   **Accessibility and Usability Concerns:** Many commenters strongly criticized the demo, pointing out that by bypassing the browser’s native rendering engine (the DOM), the app loses critical user-agent features. Common complaints included the inability to select text, lack of support for password managers or input method editors (IME), broken native scrolling behaviors (like pinch-to-zoom and over-scroll rebound), and poor accessibility support.\n*   **Platform Support:** Several users noted limited support for the demo, specifically mentioning that it does not work in Firefox (on desktop or Android), which hinders testing and adoption.\n*   **Ethical/Design Objections:** Critics argued that this approach creates \"truly closed-source websites\" that cannot be inspected, modified, or ad-blocked by users. Others suggested that the project's current demonstration (a recreation of Hacker News) is a poor use case because it highlights the framework's lack of native browser features rather than showcasing where WASM/WebGPU excels over HTML/CSS.\n*   **Naming and Branding:** A user noted that the name \"Uniform\" is difficult to search due to pre-existing projects with the same name.\n\nOverall, while the community finds the technical experiment interesting as a proof-of-concept for cross-platform WASM architecture, there is significant skepticism regarding its viability for end-user applications due to the loss of fundamental platform-integrated behaviors."
+  }
+]
