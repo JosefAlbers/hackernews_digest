@@ -1,0 +1,10 @@
+[
+  {
+    "item_id": 50413970,
+    "date": "2026-11-08",
+    "title": "Show HN: Recalc – Eine Tabellenkalkulation, in der Zellen Claude Code- oder Codex-Terminals sein können",
+    "project_url": "https://github.com/sshah03/recalc",
+    "hn_url": "https://news.ycombinator.com/item?id=50413970",
+    "content": "Der Thread diskutiert **Recalc**, ein Open-Source-Projekt, das LLM-basierte Terminalsitzungen (Claude Code/Codex) in eine Tabellenkalkulations-Oberfläche integriert. Der Entwickler hat es konzipiert, um bei der Verwaltung von Kontext über zusammenhängende KI-Aufgaben hinweg zu helfen, wie etwa beim Ausführen von Benchmarks oder beim Organisieren von Daten, mit der Möglichkeit, tabellenbasierte Workflows mit echten Terminalfenstern zu verknüpfen.\n\n**Wichtige Punkte aus der Diskussion:**\n\n*   **Funktionalität:** Das Tool ermöglicht es Zellen, als Terminalsitzungen zu fungieren, die über ein Raster, benannte Zellen und einen gemeinsamen MCP-Server (Model Context Protocol) kommunizieren.\n*   **Technische Herausforderungen:** Ein Nutzer äußerte Bedenken, wie LLM-„Zellenzeiger“ mit strukturellen Änderungen der Tabelle (z. B. Einfügen oder Löschen von Zeilen) umgehen. Der Entwickler unterbindet derzeit strukturelle Änderungen, während Agenten aktiv sind, und setzt auf das standardmäßige Umschreiben von Tabellenreferenzen.\n*   **Vorgeschlagene Lösungen:** Teilnehmer schlugen die Verwendung von internen „benannten Zellen“ oder eindeutigen Identifikatoren für jede Zelle vor, um die Referenzstabilität bei Zeilenverschiebungen zu gewährleisten – eine Idee, die der Entwickler untersuchen möchte.\n*   **Verwandte Projekte:** Der Thread erwähnt weitere Bemühungen im Bereich Agent-Tabellenkalkulation, wie etwa TrueCalc, das darauf abzielt, ähnliche Funktionen für andere Anwendungsfälle wie unabhängige Audits bereitzustellen."
+  }
+]

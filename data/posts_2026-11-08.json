@@ -1,0 +1,10 @@
+[
+  {
+    "item_id": 50413970,
+    "date": "2026-11-08",
+    "title": "Show HN: Recalc \u2013 Spreadsheet where cells can be Claude Code or Codex terminals",
+    "project_url": "https://github.com/sshah03/recalc",
+    "hn_url": "https://news.ycombinator.com/item?id=50413970",
+    "content": "The thread discusses **Recalc**, an open-source project that integrates LLM-based terminal sessions (Claude Code/Codex) into a spreadsheet interface. The creator designed it to help manage context across related AI tasks, such as running benchmarks or organizing data, with the ability to bridge cell-based workflows with actual terminal windows.\n\n**Key points from the discussion include:**\n\n*   **Functionality:** The tool allows cells to act as terminal sessions that communicate via a grid, named cells, and a shared MCP (Model Context Protocol) server.\n*   **Technical Challenges:** A user raised concerns regarding how LLM \"cell pointers\" handle spreadsheet structural changes (e.g., inserting or deleting rows). The creator currently prevents structural edits while agents are running and relies on standard spreadsheet reference rewriting. \n*   **Proposed Solutions:** Participants suggested using internal \"named cells\" or unique identifiers for every cell to ensure reference stability during row shifts, an idea the creator plans to explore.\n*   **Related Projects:** The thread mentions other efforts in the agent-spreadsheet space, such as TrueCalc, which aims to provide similar capabilities for different use cases like independent auditing."
+  }
+]
